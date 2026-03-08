@@ -1011,6 +1011,14 @@ const Testimonial = () => {
   
   const reviews = [
     {
+      name: "Gabriella",
+      text: "Alla bitar jag valde stämde helt. Blev inget kvar på tallriken efter då det var så fantastiskt gott🍣😋 Ett plus var också chilimajo som följde med. Gav en extra god krydda på sushin, mums. Hos Itamae kommer det ätas fler gånger till 😁"
+    },
+    {
+      name: "Anna",
+      text: "Fantastisk upplevelse! Sushin var otroligt fräsch och vackert upplagd. Personalen var mycket tillmötesgående och skapade en välkomnande atmosfär. Vi kommer definitivt tillbaka snart!"
+    },
+    {
       name: "Camilla Murray",
       text: "Me and my family eat there often and we have NO DOUBT when we order take-in food: ALWAYS ITAMAE! Not only the quality and deliciousness of the food, service is GREAT!!!!!"
     },
@@ -1037,14 +1045,6 @@ const Testimonial = () => {
     {
       name: "Allan Yacoub",
       text: "Good sushi with very friendly staff who are happy to make sure you get a plate with exactly the sushi pieces you want. Happy to see solutions instead of problems."
-    },
-    {
-      name: "Gabriella",
-      text: "Alla bitar jag valde stämde helt. Blev inget kvar på tallriken efter då det var så fantastiskt gott🍣😋 Ett plus var också chilimajo som följde med. Gav en extra god krydda på sushin, mums. Hos Itamae kommer det ätas fler gånger till 😁"
-    },
-    {
-      name: "Anna",
-      text: "Fantastisk upplevelse! Sushin var otroligt fräsch och vackert upplagd. Personalen var mycket tillmötesgående och skapade en välkomnande atmosfär. Vi kommer definitivt tillbaka snart!"
     }
   ];
 
@@ -1060,7 +1060,7 @@ const Testimonial = () => {
       <div className="max-w-4xl mx-auto px-6 text-center space-y-8 min-h-[300px] flex flex-col justify-center">
         <div className="text-itamae-green/20 text-8xl font-serif h-12 flex items-center justify-center">“</div>
         
-        <div className="relative h-[320px] md:h-[220px] flex items-center justify-center overflow-hidden">
+        <div className="relative min-h-[320px] md:min-h-[200px] flex items-center justify-center overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
