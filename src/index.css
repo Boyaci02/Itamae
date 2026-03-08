@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-itamae-green: #001a2c; /* Darker Prussian Blue */
+  --color-itamae-red: #005fab;   /* Requested Button Blue */
+  --color-itamae-cream: #FFFFF0; /* Ivory White */
+  --color-itamae-charcoal: #1A1A1A;
+  --color-itamae-gray: #6B6B6B;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-itamae-cream text-itamae-green antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
