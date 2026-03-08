@@ -1190,8 +1190,8 @@ const Footer = () => {
           <h2 className="text-3xl font-bold mt-4">Hållbarhet och samarbeten</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 pt-12 border-t border-white/10">
-          <div className="space-y-6 flex flex-col items-center md:items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 pt-12 border-t border-white/10">
+          <div className="space-y-6 flex flex-col items-center lg:items-start">
             <div className="flex items-center gap-2">
               <img 
                 src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69515d58ee104796b003ea6f.png" 
@@ -1202,31 +1202,41 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="space-y-4 text-center md:text-left">
-            <h4 className="font-bold text-sm uppercase tracking-widest">Länkar</h4>
-            <ul className="space-y-2 text-sm text-white/60">
-              <li>
-                <button 
-                  onClick={scrollToLocations} 
-                  className="hover:text-white transition-colors cursor-pointer"
-                >
-                  Restauranger
-                </button>
-              </li>
-              <li><Link to="/kontakt" className="hover:text-white transition-colors">Kontakt</Link></li>
-              <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
+          <div className="space-y-4 text-center lg:text-left">
+            <button 
+              onClick={scrollToLocations}
+              className="font-bold text-sm uppercase tracking-widest hover:text-white/80 transition-colors cursor-pointer"
+            >
+              Restauranger
+            </button>
+            <ul className="space-y-4 lg:space-y-2 text-sm text-white/60">
+              {locations.map((loc) => (
+                <li key={loc.id}>
+                  <Link to={`/location/${loc.id}`} className="hover:text-white transition-colors block py-1 lg:py-0">
+                    {loc.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          <div className="space-y-4 text-center md:text-left">
+          <div className="space-y-4 text-center lg:text-left">
+            <h4 className="font-bold text-sm uppercase tracking-widest">Länkar</h4>
+            <ul className="space-y-4 lg:space-y-2 text-sm text-white/60">
+              <li><Link to="/kontakt" className="hover:text-white transition-colors block py-1 lg:py-0">Kontakt</Link></li>
+              <li><Link to="/faq" className="hover:text-white transition-colors block py-1 lg:py-0">FAQ</Link></li>
+            </ul>
+          </div>
+
+          <div className="space-y-4 text-center lg:text-left">
             <h4 className="font-bold text-sm uppercase tracking-widest">Kontakt</h4>
             <p className="text-sm text-white/60">info@itamae.se</p>
             <p className="text-sm text-white/60">Odengatan 62 <br /> 113 22 Stockholm</p>
           </div>
 
-          <div className="space-y-4 flex flex-col items-center md:items-start">
-            <h4 className="font-bold text-sm uppercase tracking-widest text-center md:text-left">Följ oss</h4>
-            <div className="flex gap-4 justify-center md:justify-start">
+          <div className="space-y-4 flex flex-col items-center lg:items-start">
+            <h4 className="font-bold text-sm uppercase tracking-widest text-center lg:text-left">Följ oss</h4>
+            <div className="flex gap-4 justify-center lg:justify-start">
               <a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer">
                 <Facebook size={20} className="text-white/60 hover:text-white cursor-pointer" />
               </a>
