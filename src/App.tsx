@@ -16,8 +16,18 @@ import {
   Phone,
   Play
 } from "lucide-react";
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } from "react-router-dom";
+import { useState, useEffect, useLayoutEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, useLocation } from "react-router-dom";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const ItamaeLogo = ({ size = "md" }) => {
   const sizeClasses = size === "lg" ? "h-32" : "h-16";
@@ -531,7 +541,7 @@ const Hero = () => {
             }}
             className="bg-itamae-red text-white px-10 py-4 rounded-full text-lg font-bold hover:brightness-110 transition-all hover:-translate-y-1 shadow-xl hover:shadow-2xl"
           >
-            Välkommen till Itamae
+            Restauranger
           </button>
         </motion.div>
 
@@ -1050,7 +1060,7 @@ const Testimonial = () => {
       <div className="max-w-4xl mx-auto px-6 text-center space-y-8 min-h-[300px] flex flex-col justify-center">
         <div className="text-itamae-green/20 text-8xl font-serif h-12 flex items-center justify-center">“</div>
         
-        <div className="relative overflow-hidden h-auto min-h-[120px]">
+        <div className="relative h-[320px] md:h-[220px] flex items-center justify-center overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -1058,13 +1068,15 @@ const Testimonial = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
-              className="space-y-8"
+              className="w-full"
             >
-              <p className="text-xl md:text-2xl font-medium leading-tight text-balance italic">
-                {reviews[currentIndex].text}
-              </p>
-              <div className="pt-4">
-                <span className="font-bold text-sm tracking-widest uppercase">{reviews[currentIndex].name}</span>
+              <div className="space-y-6">
+                <p className="text-xl md:text-2xl font-medium leading-tight text-balance italic">
+                  {reviews[currentIndex].text}
+                </p>
+                <div className="pt-2">
+                  <span className="font-bold text-sm tracking-widest uppercase">{reviews[currentIndex].name}</span>
+                </div>
               </div>
             </motion.div>
           </AnimatePresence>
@@ -1085,6 +1097,19 @@ const Testimonial = () => {
 };
 
 const OrderCTA = () => {
+  const navigate = useNavigate();
+  
+  const scrollToLocations = () => {
+    if (window.location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById("locations")?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      document.getElementById("locations")?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="bg-itamae-cream overflow-hidden">
       <div className="relative flex flex-col md:flex-row items-stretch min-h-[500px] md:h-[320px]">
@@ -1130,6 +1155,7 @@ const OrderCTA = () => {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                onClick={scrollToLocations}
                 className="bg-itamae-red text-white px-12 py-3.5 rounded-full text-[14px] font-bold transition-all hover:brightness-110 shadow-lg shadow-blue-900/10"
               >
                 Beställ
@@ -1194,7 +1220,7 @@ const Footer = () => {
 
           <div className="space-y-4 text-center md:text-left">
             <h4 className="font-bold text-sm uppercase tracking-widest">Kontakt</h4>
-            <p className="text-sm text-white/60">Mail: info@itamae.se</p>
+            <p className="text-sm text-white/60">info@itamae.se</p>
             <p className="text-sm text-white/60">Odengatan 62 <br /> 113 22 Stockholm</p>
           </div>
 
@@ -1230,6 +1256,7 @@ const Footer = () => {
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen">
         <Navbar />
         <Routes>
