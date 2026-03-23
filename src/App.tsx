@@ -526,7 +526,7 @@ const Hero = () => {
           transition={{ delay: 0.4 }}
           className="text-white text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 tracking-tight"
         >
-          Itamazing <br /> Sushibilites
+          Smaken av <br /> Japan
         </motion.h1>
 
         <motion.div
@@ -563,35 +563,35 @@ const ContentSlider = () => {
   
   const slides = [
     {
-      subtitle: "Sushi + lunch = Itamae Lunch",
-      title: "It's Itamae Lunch time!",
-      body: "Varje vardag fram till kl. 14:00 erbjuder vi lunch från 125 kr*, där du kan välja mellan ett stort urval av våra gästers favoriträtter och dessutom ingår en läsk/Loka!",
-      button: "Ladda ner vår App - Beställ",
-      image: "https://picsum.photos/seed/itamae-lunch/800/800",
+      subtitle: "Sushi & Bowls & Mer",
+      title: "Mer än bara sushi.",
+      body: "Hos Itamae hittar du allt från klassisk nigiri och maki till smakrika bowls, shakemushi och asiatiska rätter. Något för alla – lagat med omsorg sedan år 2000.",
+      button: "Se vår meny",
+      image: "https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=800&h=800&fit=crop&auto=format&q=80&fm=webp",
       imageType: "square"
     },
     {
-      subtitle: "Gratis sushi med vårt lojalitetsprogram",
-      title: "Välkommen till Itamae Family!",
-      body: "Upptäck vårt nya lojalitetsprogram där varje sushi du köper tar dig närmare en gratis måltid! Som medlem får du ett digitalt stämpelkort – efter att ha köpt 6 sushi, bjuder vi på nästa.*",
-      button: "Läs mer om Itamae family",
-      image: "https://picsum.photos/seed/itamae-phone/600/1200",
-      imageType: "phone"
-    },
-    {
-      subtitle: "Barnmeny med Mumin",
-      title: "Itamae Kids – nu med mumintrollen 🐾",
-      body: "Vår barnmeny, Itamae Kids, har fått nytt liv! Nu kan våra yngsta gäster njuta av smakfulla måltider inspirerade av mumintrollens magiska värld ✨🌟 Kombinera barnets val av sushibitar, välj yakiniku med ris – eller varför inte pannkakor med sylt och chokladsås? Barn älskar att välja, vi älskar att möjliggöra 🫶",
-      button: "Till menyn och Itamae Kids",
-      image: "https://picsum.photos/seed/itamae-kids/800/800",
+      subtitle: "Sedan 2000",
+      title: "Välkommen till Itamae.",
+      body: "Itamae betyder köksmaster på japanska – och det är precis vad vi strävar efter att vara. Sedan vi öppnade våra dörrar år 2000 har vi serverat sushi av högsta klass i en stilren och avslappnad miljö.",
+      button: "Om oss",
+      image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&h=800&fit=crop&auto=format&q=80&fm=webp",
       imageType: "square"
     },
     {
-      subtitle: "Ladda ner vår app och ta del av våra erbjudanden",
-      title: "Nyhet! Itamae Deals – exklusiva erbjudanden i vår app!",
-      body: "Vi på Itamae Sushi vill visa vår uppskattning för dig som är en del av Itamae Family! Därför har vi lanserat Itamae Deals – exklusiva erbjudanden som du bara hittar i vår app. Nya deals varje månad! Håll utkik i appen för att ta del av dina favoriträtter till ännu bättre priser!",
-      button: "Läs mer om Itamae Deals",
-      image: "https://picsum.photos/seed/itamae-deals/800/800",
+      subtitle: "Stockholm",
+      title: "Fem restauranger – en och samma passion.",
+      body: "Besök oss på Kungsholmen, Odengatan, Hagastaden, Sundbyberg eller Danderyd. Oavsett var du är i Stockholm finns Itamae nära dig.",
+      button: "Hitta din restaurang",
+      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=800&fit=crop&auto=format&q=80",
+      imageType: "square"
+    },
+    {
+      subtitle: "Beställ online",
+      title: "Itamae – när du vill, var du vill.",
+      body: "Beställ enkelt via Qopla, Foodora, Wolt eller Uber Eats. Njut av din favoritrulle hemma, på jobbet eller var du än befinner dig.",
+      button: "Beställ nu",
+      image: "https://images.unsplash.com/photo-1553621042-f6e147245754?w=800&h=800&fit=crop&auto=format&q=80",
       imageType: "square"
     }
   ];
