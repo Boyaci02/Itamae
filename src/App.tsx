@@ -1111,58 +1111,50 @@ const OrderCTA = () => {
   };
 
   return (
-    <section className="bg-itamae-cream overflow-hidden">
-      <div className="relative flex flex-col md:flex-row items-stretch min-h-[500px] md:h-[320px]">
-        {/* Image Container */}
-        <div className="relative w-full md:w-[65%] h-[300px] md:h-auto">
-          <img 
-            src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a9a87ade2e7dbc01631482.jpg" 
-            alt="Sushi Table" 
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
-          {/* Mobile Gradient (Bottom) */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-40% to-itamae-cream md:hidden" />
-          {/* Desktop Gradient (Right) - Extremely smooth and long fade */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent via-20% to-itamae-cream hidden md:block" />
-        </div>
-        
-        {/* Content Container */}
-        <div className="w-full md:w-[45%] md:absolute md:right-0 md:top-0 md:h-full flex items-center z-10">
-          <div className="px-8 py-12 md:px-16 md:py-0 w-full">
-            <motion.div 
-              initial={{ x: 30, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="flex flex-col items-start"
-            >
-              <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.15em] text-itamae-charcoal mb-4">
-                Takeaway eller ät på plats
-              </span>
-              
-              <h2 className="font-serif text-[38px] md:text-[52px] text-itamae-charcoal font-bold leading-[1.05] mb-1">
-                Sushisugen?
-              </h2>
-              <h2 className="font-serif text-[38px] md:text-[52px] text-itamae-charcoal font-bold leading-[1.05] mb-6">
-                Beställ smidigt!
-              </h2>
-              
-              <p className="text-itamae-charcoal/80 text-[13px] md:text-[14px] leading-relaxed mb-8 max-w-[380px]">
-                Fantastisk sushi är inte långt borta. Snabbt och enkelt – beställ direkt på vår webb.
-              </p>
-              
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                onClick={scrollToLocations}
-                className="bg-itamae-red text-white px-12 py-3.5 rounded-full text-[14px] font-bold transition-all hover:brightness-110 shadow-lg shadow-blue-900/10"
-              >
-                Beställ
-              </motion.button>
-            </motion.div>
-          </div>
-        </div>
+    <section className="relative overflow-hidden min-h-[420px] md:min-h-[500px] flex items-center">
+      {/* Background Image */}
+      <img
+        src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a9a87ade2e7dbc01631482.jpg"
+        alt="Sushi Table"
+        className="absolute inset-0 w-full h-full object-cover"
+        referrerPolicy="no-referrer"
+      />
+      {/* Dark overlay – ingen gradient */}
+      <div className="absolute inset-0 bg-black/45" />
+
+      {/* Content */}
+      <div className="relative z-10 px-8 py-16 md:px-20 md:py-0 w-full max-w-7xl mx-auto">
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col items-start"
+        >
+          <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.15em] text-white/60 mb-4">
+            Direkt från kök till bord
+          </span>
+
+          <h2 className="font-serif text-[38px] md:text-[52px] text-white font-bold leading-[1.05] mb-1">
+            Sushi som smakar
+          </h2>
+          <h2 className="font-serif text-[38px] md:text-[52px] text-white font-bold leading-[1.05] mb-6">
+            mer än vanligt.
+          </h2>
+
+          <p className="text-white/80 text-[13px] md:text-[14px] leading-relaxed mb-8 max-w-[400px]">
+            Varje rulle lagas med omsorg och äkta japanska råvaror. Beställ online eller besök oss på plats.
+          </p>
+
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={scrollToLocations}
+            className="bg-itamae-red text-white px-12 py-3.5 rounded-full text-[14px] font-bold transition-all hover:brightness-110 shadow-lg shadow-black/20"
+          >
+            Beställ
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   );
@@ -1185,12 +1177,7 @@ const Footer = () => {
   return (
     <footer className="bg-itamae-green text-white py-24">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-[0.3em] text-white/40">Itamae Sushi och hållbarhet</span>
-          <h2 className="text-3xl font-bold mt-4">Hållbarhet och samarbeten</h2>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 pt-12 border-t border-white/10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 border-t border-white/10 pt-12">
           <div className="space-y-6 flex flex-col items-center lg:items-start">
             <div className="flex items-center gap-2">
               <img 
