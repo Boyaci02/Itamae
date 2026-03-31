@@ -138,10 +138,10 @@ const LocationCard = ({ location }) => {
   return (
     <Link
       to={`/location/${location.id}`}
-      className="group flex-shrink-0 w-[260px] md:w-[320px] block"
+      className="group flex-shrink-0 w-[300px] md:w-[420px] block"
     >
-      {/* Square Image */}
-      <div className="relative w-full aspect-square overflow-hidden">
+      {/* Landscape Image */}
+      <div className="relative w-full aspect-[4/3] overflow-hidden">
         <img
           src={location.image}
           alt={location.name}
@@ -670,7 +670,7 @@ const Locations = () => {
 
         {/* Horizontal scroll – both mobile and desktop */}
         <div
-          className="flex gap-4 overflow-x-auto pb-4 px-6 snap-x snap-mandatory"
+          className="flex gap-5 overflow-x-auto pb-4 pl-6 pr-6 snap-x snap-mandatory"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {locations.map((loc) => (
