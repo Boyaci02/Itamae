@@ -138,10 +138,10 @@ const LocationCard = ({ location }) => {
   return (
     <Link
       to={`/location/${location.id}`}
-      className="group flex-shrink-0 w-[280px] md:w-[340px] block rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition-colors duration-300"
+      className="group flex-shrink-0 w-[260px] md:w-[320px] block"
     >
-      {/* Image */}
-      <div className="relative h-[200px] md:h-[240px] overflow-hidden">
+      {/* Square Image */}
+      <div className="relative w-full aspect-square overflow-hidden rounded-xl">
         <img
           src={location.image}
           alt={location.name}
@@ -150,18 +150,18 @@ const LocationCard = ({ location }) => {
         />
       </div>
 
-      {/* Text */}
-      <div className="flex items-center justify-between px-5 py-4">
+      {/* Text below image */}
+      <div className="flex items-start justify-between mt-4 px-1">
         <div>
-          <h3 className="text-white font-bold text-[15px] md:text-[17px] uppercase tracking-wide leading-tight mb-1">
+          <h3 className="text-white font-bold text-[14px] md:text-[16px] uppercase tracking-wide leading-tight mb-1.5">
             {location.name}
           </h3>
-          <div className="flex items-center gap-1.5 text-white/50 text-[11px] md:text-[12px] uppercase tracking-wide">
-            <MapPin size={11} className="text-itamae-red flex-shrink-0" />
-            <span>{location.address}, {location.zipCode}</span>
+          <div className="flex items-center gap-1.5 text-white/50 text-[11px] uppercase tracking-wide">
+            <MapPin size={10} className="text-itamae-red flex-shrink-0" />
+            <span>{location.address}</span>
           </div>
         </div>
-        <ArrowRight size={18} className="text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex-shrink-0 ml-3" />
+        <ArrowRight size={16} className="text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex-shrink-0 mt-0.5 ml-2" />
       </div>
     </Link>
   );
@@ -1217,8 +1217,8 @@ export default function App() {
           <Route path="/" element={
             <>
               <Hero />
-              <ContentSlider />
               <Locations />
+              <ContentSlider />
               <InstagramFeed />
               <PhotoGallery />
               <Testimonial />
