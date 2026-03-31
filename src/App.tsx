@@ -1101,48 +1101,37 @@ const OrderCTA = () => {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-[420px] md:min-h-[500px] flex items-center">
-      {/* Background Image */}
-      <img
-        src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a9a87ade2e7dbc01631482.jpg"
-        alt="Sushi Table"
-        className="absolute inset-0 w-full h-full object-cover"
-        referrerPolicy="no-referrer"
-      />
-      {/* Dark overlay – ingen gradient */}
-      <div className="absolute inset-0 bg-black/45" />
+    <section className="bg-itamae-cream py-10 md:py-16 px-4 md:px-10">
+      <div className="relative overflow-hidden rounded-2xl min-h-[260px] md:min-h-[360px] flex items-center justify-center">
+        {/* Background Image */}
+        <img
+          src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a9a87ade2e7dbc01631482.jpg"
+          alt="Sushi Table"
+          className="absolute inset-0 w-full h-full object-cover"
+          referrerPolicy="no-referrer"
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50" />
 
-      {/* Content */}
-      <div className="relative z-10 px-8 py-16 md:px-20 md:py-0 w-full max-w-7xl mx-auto">
+        {/* Content – centered */}
         <motion.div
-          initial={{ y: 30, opacity: 0 }}
+          initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col items-start"
+          className="relative z-10 flex flex-col items-center text-center px-6 py-14 md:py-20"
         >
-          <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.15em] text-white/60 mb-4">
-            Direkt från kök till bord
-          </span>
-
-          <h2 className="font-serif text-[38px] md:text-[52px] text-white font-bold leading-[1.05] mb-1">
-            Sushi som smakar
+          <h2 className="font-serif text-[32px] md:text-[52px] text-white font-bold leading-[1.1] mb-8 max-w-[700px]">
+            Sushi som smakar mer än vanligt. Beställ smidigt online.
           </h2>
-          <h2 className="font-serif text-[38px] md:text-[52px] text-white font-bold leading-[1.05] mb-6">
-            mer än vanligt.
-          </h2>
-
-          <p className="text-white/80 text-[13px] md:text-[14px] leading-relaxed mb-8 max-w-[400px]">
-            Varje rulle lagas med omsorg och äkta japanska råvaror. Beställ online eller besök oss på plats.
-          </p>
 
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={scrollToLocations}
-            className="bg-itamae-red text-white px-12 py-3.5 rounded-full text-[14px] font-bold transition-all hover:brightness-110 shadow-lg shadow-black/20"
+            className="bg-white text-itamae-charcoal px-10 py-3 rounded-full text-[14px] font-semibold transition-all hover:bg-white/90 shadow-md"
           >
-            Beställ
+            Beställ nu
           </motion.button>
         </motion.div>
       </div>
