@@ -1101,7 +1101,7 @@ const OrderCTA = () => {
   };
 
   return (
-    <section className="bg-itamae-cream py-10 md:py-16 px-4 md:px-10">
+    <section className="bg-itamae-cream py-10 md:py-16 px-6">
       <div className="relative overflow-hidden rounded-2xl min-h-[260px] md:min-h-[360px] flex items-center justify-center">
         {/* Background Image */}
         <img
@@ -1121,7 +1121,7 @@ const OrderCTA = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative z-10 flex flex-col items-center text-center px-6 py-14 md:py-20"
         >
-          <h2 className="font-serif text-[32px] md:text-[52px] text-white font-bold leading-[1.1] mb-8 max-w-[700px]">
+          <h2 className="font-serif italic text-[44px] md:text-[72px] text-white font-bold leading-[1.05] mb-8 max-w-[800px]">
             Sushi som smakar mer än vanligt. Beställ smidigt online.
           </h2>
 
