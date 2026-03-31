@@ -1193,9 +1193,119 @@ const OrderCTA = () => {
   );
 };
 
+const newsArticles = [
+  {
+    id: 1,
+    tag: "Nyhet",
+    date: "20 mars 2026",
+    title: "Itamae öppnar på ny plats i Stockholm",
+    excerpt: "Vi är glada att kunna meddela att Itamae snart öppnar en ny restaurang i hjärtat av Stockholm. En ny destination för sushiälskare i stan.",
+    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/67e1c6a4c7ef3f25ac3e2090.jpeg",
+    featured: true,
+  },
+  {
+    id: 2,
+    tag: "Meny",
+    date: "5 mars 2026",
+    title: "Ny vårmeny med japanska smaker",
+    excerpt: "Upplev vårens bästa råvaror i vår nya säsongsmeny – inspirerad av japansk tradition och svenska smaker.",
+    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/67e1c6a4c7ef3f25ac3e208f.jpeg",
+    featured: false,
+  },
+];
+
+const LatestNews = () => {
+  return (
+    <section className="bg-itamae-cream py-24 md:py-32">
+      <div className="max-w-7xl mx-auto px-6 md:px-10">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="flex items-end justify-between mb-12 md:mb-16"
+        >
+          <div>
+            <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-itamae-green/40 block mb-3">Senaste nytt</span>
+            <h2 className="font-serif italic text-itamae-green leading-tight" style={{ fontSize: "clamp(32px, 5vw, 60px)" }}>
+              Nyheter & uppdateringar
+            </h2>
+          </div>
+          <a
+            href="#"
+            className="hidden md:flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/50 hover:text-itamae-green transition-colors group"
+          >
+            Alla nyheter
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
+          </a>
+        </motion.div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {newsArticles.map((article, i) => (
+            <motion.article
+              key={article.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              className={article.featured ? "md:col-span-2" : "md:col-span-1"}
+            >
+              <a href="#" className="group block">
+                {/* Image */}
+                <div className={`overflow-hidden ${article.featured ? "aspect-[21/9]" : "aspect-[16/9]"} mb-5`}>
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+
+                {/* Meta */}
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="bg-itamae-green text-white text-[9px] font-bold uppercase tracking-[0.25em] px-2.5 py-1">
+                    {article.tag}
+                  </span>
+                  <span className="text-itamae-gray text-[11px]">{article.date}</span>
+                </div>
+
+                {/* Title */}
+                <h3 className="font-serif italic text-itamae-green mb-2 leading-snug" style={{ fontSize: article.featured ? "clamp(20px, 2.5vw, 30px)" : "clamp(17px, 2vw, 22px)" }}>
+                  {article.title}
+                </h3>
+
+                {/* Excerpt */}
+                <p className="text-itamae-gray text-sm leading-relaxed mb-4 line-clamp-2">
+                  {article.excerpt}
+                </p>
+
+                {/* Read more */}
+                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-itamae-green group-hover:gap-3 transition-all duration-200">
+                  Läs mer
+                  <ArrowRight size={12} />
+                </span>
+              </a>
+            </motion.article>
+          ))}
+        </div>
+
+        {/* Mobile "Alla nyheter" */}
+        <div className="mt-10 md:hidden">
+          <a href="#" className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/50 hover:text-itamae-green transition-colors group">
+            Alla nyheter
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Footer = () => {
   const navigate = useNavigate();
-  
+
   const scrollToLocations = () => {
     if (window.location.pathname !== "/") {
       navigate("/");
@@ -1207,55 +1317,107 @@ const Footer = () => {
     }
   };
 
-  return (
-    <motion.footer
-      className="bg-itamae-green text-white pt-20 pb-10"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-    >
-      <div className="max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
-        {/* Logo */}
+  const footerCols = [
+    {
+      delay: 0,
+      content: (
         <img
           src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69515d58ee104796b003ea6f.png"
           alt="Itamae Logo"
-          className="h-20 w-auto object-contain mb-10"
+          className="h-16 w-auto object-contain"
           referrerPolicy="no-referrer"
         />
+      ),
+    },
+    {
+      delay: 0.08,
+      content: (
+        <>
+          <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Restauranger</h4>
+          <ul className="space-y-3">
+            {locations.map((loc) => (
+              <li key={loc.id}>
+                <Link to={`/location/${loc.id}`} className="text-white/60 text-[13px] hover:text-white transition-colors">
+                  {loc.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </>
+      ),
+    },
+    {
+      delay: 0.16,
+      content: (
+        <>
+          <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Länkar</h4>
+          <ul className="space-y-3">
+            <li>
+              <Link to="/kontakt" className="text-white/60 text-[13px] hover:text-white transition-colors">Kontakt</Link>
+            </li>
+            <li>
+              <Link to="/faq" className="text-white/60 text-[13px] hover:text-white transition-colors">FAQ</Link>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      delay: 0.24,
+      content: (
+        <>
+          <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Kontakt</h4>
+          <ul className="space-y-3">
+            <li>
+              <a href="mailto:info@itamae.se" className="text-white/60 text-[13px] hover:text-white transition-colors">info@itamae.se</a>
+            </li>
+            <li className="text-white/60 text-[13px]">Stockholm, Sverige</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      delay: 0.32,
+      content: (
+        <>
+          <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Följ oss</h4>
+          <div className="flex gap-4">
+            <motion.a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+              <Facebook size={18} className="text-white/40 hover:text-white transition-colors" />
+            </motion.a>
+            <motion.a href="https://www.instagram.com/itamaesushibar/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+              <Instagram size={18} className="text-white/40 hover:text-white transition-colors" />
+            </motion.a>
+          </div>
+        </>
+      ),
+    },
+  ];
 
-        {/* Nav links */}
-        <nav className="flex flex-wrap justify-center gap-x-10 gap-y-3 mb-10">
-          {[
-            { label: "Restauranger", action: scrollToLocations },
-          ].map(({ label, action }) => (
-            <button key={label} onClick={action} className="text-white/50 text-[12px] font-bold uppercase tracking-[0.2em] hover:text-white transition-colors cursor-pointer">
-              {label}
-            </button>
+  return (
+    <motion.footer
+      className="bg-itamae-green text-white py-24"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+    >
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 border-t border-white/10 pt-12">
+          {footerCols.map((col, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: col.delay }}
+            >
+              {col.content}
+            </motion.div>
           ))}
-          {[
-            { label: "Kontakt", to: "/kontakt" },
-            { label: "FAQ", to: "/faq" },
-          ].map(({ label, to }) => (
-            <Link key={label} to={to} className="text-white/50 text-[12px] font-bold uppercase tracking-[0.2em] hover:text-white transition-colors">
-              {label}
-            </Link>
-          ))}
-        </nav>
-
-        {/* Social icons */}
-        <div className="flex gap-6 mb-16">
-          <motion.a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-            <Facebook size={20} className="text-white/40 hover:text-white transition-colors" />
-          </motion.a>
-          <motion.a href="https://www.instagram.com/itamaesushibar/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-            <Instagram size={20} className="text-white/40 hover:text-white transition-colors" />
-          </motion.a>
         </div>
-
-        {/* Divider */}
-        <div className="w-full border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-[10px] text-white/30 uppercase tracking-widest">
-          <span>© Itamae Sushi 2026</span>
+        <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] text-white/40 uppercase tracking-widest">
+          <div>© Itamae Sushi 2026</div>
           <a href="https://synsnumedia.se/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             Powered by SynsNu
           </a>
@@ -1281,6 +1443,7 @@ export default function App() {
               <PhotoGallery />
               <Testimonial />
               <OrderCTA />
+              <LatestNews />
             </>
           } />
           <Route path="/location/:id" element={<LocationDetail />} />
