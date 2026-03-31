@@ -136,52 +136,32 @@ const locations = [
 
 const LocationCard = ({ location }) => {
   return (
-    <Link 
+    <Link
       to={`/location/${location.id}`}
-      className="relative w-full h-20 md:h-full group overflow-hidden block bg-itamae-green rounded-2xl shadow-lg border border-white/10"
+      className="group flex-shrink-0 w-[280px] md:w-[340px] block rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition-colors duration-300"
     >
-      {/* Desktop Image */}
-      <img 
-        src={location.image} 
-        alt={location.name} 
-        className="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-1000 group-hover:scale-110 group-hover:opacity-60 hidden md:block"
-        referrerPolicy="no-referrer"
-      />
-      
-      {/* Mobile Image (Subtle/Blurred) */}
-      <div className="md:hidden absolute inset-0">
-         <img 
-          src={location.image} 
-          alt={location.name} 
-          className="w-full h-full object-cover opacity-30 blur-[1px]"
+      {/* Image */}
+      <div className="relative h-[200px] md:h-[240px] overflow-hidden">
+        <img
+          src={location.image}
+          alt={location.name}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* Dark Overlay - Desktop only */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent transition-opacity duration-500 hidden md:block" />
-      
-      {/* Content */}
-      <div className="absolute inset-0 p-4 md:p-8 flex flex-col justify-center md:justify-end">
-        <div className="flex flex-col md:block transform transition-transform duration-500 group-hover:-translate-y-1 md:group-hover:-translate-y-2">
-          <h3 className="text-white font-bold text-lg md:text-2xl tracking-tight leading-tight mb-1 md:mb-2 drop-shadow-md font-serif italic">
+      {/* Text */}
+      <div className="flex items-center justify-between px-5 py-4">
+        <div>
+          <h3 className="text-white font-bold text-[15px] md:text-[17px] uppercase tracking-wide leading-tight mb-1">
             {location.name}
           </h3>
-          <div className="flex items-center gap-2">
-            <p className="text-white/80 text-[10px] md:text-sm font-medium tracking-wide drop-shadow-sm uppercase">
-              Se restaurang & meny
-            </p>
-            <ArrowRight size={12} className="text-white/60 group-hover:translate-x-1 transition-transform" />
+          <div className="flex items-center gap-1.5 text-white/50 text-[11px] md:text-[12px] uppercase tracking-wide">
+            <MapPin size={11} className="text-itamae-red flex-shrink-0" />
+            <span>{location.address}, {location.zipCode}</span>
           </div>
         </div>
-        
-        {/* Beställ indicator - Desktop only */}
-        <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0 hidden md:block">
-          <span className={`${location.color === "orange" ? "bg-[#F29400]" : "bg-itamae-red"} text-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-2xl`}>
-            Beställ här
-          </span>
-        </div>
+        <ArrowRight size={18} className="text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex-shrink-0 ml-3" />
       </div>
     </Link>
   );
@@ -681,48 +661,25 @@ const ContentSlider = () => {
 
 const Locations = () => {
   return (
-    <section id="locations" className="bg-itamae-green py-20 md:py-32">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+    <section id="locations" className="bg-itamae-green py-20 md:py-32 overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        <div className="px-6 mb-10">
           <span className="text-white/40 text-xs font-bold uppercase tracking-[0.3em]">Våra restauranger</span>
           <h2 className="text-white text-4xl md:text-5xl font-bold mt-4 font-serif italic">Hitta ditt Itamae</h2>
         </div>
-        
-        {/* Mobile View: Simple Vertical List */}
-        <div className="md:hidden space-y-2">
+
+        {/* Horizontal scroll – both mobile and desktop */}
+        <div
+          className="flex gap-4 overflow-x-auto pb-4 px-6 snap-x snap-mandatory"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
           {locations.map((loc) => (
-            <div key={loc.id} className="w-full">
+            <div key={loc.id} className="snap-start">
               <LocationCard location={loc} />
             </div>
           ))}
-        </div>
-
-        {/* Desktop View: Grid */}
-        <div className="hidden md:grid grid-cols-3 gap-6 h-[600px]">
-          {/* Left Column */}
-          <div className="flex flex-col gap-6 h-full">
-            <div className="flex-1">
-              <LocationCard location={locations[0]} />
-            </div>
-            <div className="flex-1">
-              <LocationCard location={locations[2]} />
-            </div>
-          </div>
-          
-          {/* Middle Column (Full Height) */}
-          <div className="h-full">
-            <LocationCard location={locations[1]} />
-          </div>
-          
-          {/* Right Column */}
-          <div className="flex flex-col gap-6 h-full">
-            <div className="flex-1">
-              <LocationCard location={locations[3]} />
-            </div>
-            <div className="flex-1">
-              <LocationCard location={locations[4]} />
-            </div>
-          </div>
+          {/* Right padding spacer */}
+          <div className="flex-shrink-0 w-2" />
         </div>
       </div>
     </section>
