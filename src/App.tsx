@@ -141,7 +141,7 @@ const LocationCard = ({ location }) => {
       className="group flex-shrink-0 w-[260px] md:w-[320px] block"
     >
       {/* Square Image */}
-      <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+      <div className="relative w-full aspect-square overflow-hidden">
         <img
           src={location.image}
           alt={location.name}
