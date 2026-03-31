@@ -1650,7 +1650,6 @@ export default function App() {
               <PhotoGallery />
               <Testimonial />
               <OrderCTA />
-              <LatestNews />
             </>
           } />
           <Route path="/location/:id" element={<LocationDetail />} />
