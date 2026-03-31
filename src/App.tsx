@@ -170,23 +170,34 @@ const LocationCard = ({ location }) => {
 const KontaktPage = () => (
   <div className="pt-32 pb-24 bg-zinc-100 min-h-screen">
     <div className="max-w-5xl mx-auto px-4 md:px-6">
-      <div className="text-center mb-12 md:mb-16">
+      <motion.div
+        className="text-center mb-12 md:mb-16"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <span className="text-itamae-charcoal/40 text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] block mb-2">Hör av dig till oss</span>
         <h1 className="font-serif text-4xl md:text-6xl text-itamae-charcoal font-bold italic">Kontakt</h1>
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-start">
         {/* Left Column: General Info & Socials */}
-        <div className="space-y-6 md:space-y-8">
+        <motion.div
+          className="space-y-6 md:space-y-8"
+          initial={{ opacity: 0, x: -24 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+        >
           <div className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-black/5 space-y-10 flex flex-col items-center md:items-start text-center md:text-left">
             <div className="w-full">
               <h3 className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-itamae-charcoal/60 mb-4">E-post</h3>
-              <a 
-                href="mailto:info@itamae.se" 
+              <motion.a
+                href="mailto:info@itamae.se"
                 className="text-2xl md:text-4xl font-serif italic text-itamae-charcoal hover:text-itamae-red transition-colors break-words block"
+                whileHover={{ x: 4 }}
               >
                 info@itamae.se
-              </a>
+              </motion.a>
             </div>
 
             <div className="pt-10 border-t border-black/5 w-full flex flex-col items-center md:items-start">
@@ -219,28 +230,40 @@ const KontaktPage = () => (
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Column: Restaurant Phone Numbers */}
-        <div className="bg-itamae-green p-8 md:p-12 rounded-3xl shadow-xl text-white">
+        <motion.div
+          className="bg-itamae-green p-8 md:p-12 rounded-3xl shadow-xl text-white"
+          initial={{ opacity: 0, x: 24 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
+        >
           <h3 className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-white/40 mb-10 text-center md:text-left">Våra restauranger</h3>
           <div className="space-y-2 md:space-y-4">
-            {locations.map((loc) => (
-              <div key={loc.id} className="flex flex-col md:flex-row md:items-center justify-between py-6 border-b border-white/10 last:border-0 gap-4 text-center md:text-left">
+            {locations.map((loc, i) => (
+              <motion.div
+                key={loc.id}
+                className="flex flex-col md:flex-row md:items-center justify-between py-6 border-b border-white/10 last:border-0 gap-4 text-center md:text-left"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.35 + i * 0.07, ease: "easeOut" }}
+              >
                 <div className="flex-1 min-w-0">
                   <h4 className="font-serif italic text-xl md:text-2xl">{loc.name}</h4>
                   <p className="text-white/50 text-[10px] md:text-xs uppercase tracking-widest mt-2">{loc.address}</p>
                 </div>
-                <a 
-                  href={`tel:${loc.phone.replace(/\s/g, '')}`} 
+                <motion.a
+                  href={`tel:${loc.phone.replace(/\s/g, '')}`}
                   className="font-mono text-lg md:text-xl hover:text-itamae-red transition-colors whitespace-nowrap bg-white/10 px-4 py-2 rounded-full md:bg-transparent md:p-0"
+                  whileHover={{ x: 4 }}
                 >
                   {loc.phone}
-                </a>
-              </div>
+                </motion.a>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   </div>
@@ -361,14 +384,19 @@ const Navbar = () => {
             </Link>
             
             <div className="hidden lg:flex items-center gap-8 text-white/80 text-sm font-medium">
-              <button 
+              <motion.button
                 onClick={scrollToLocations}
                 className="hover:text-white transition-colors cursor-pointer"
+                whileHover={{ y: -1 }}
               >
                 Restauranger
-              </button>
-              <Link to="/kontakt" className="hover:text-white transition-colors">Kontakt</Link>
-              <Link to="/faq" className="hover:text-white transition-colors">FAQ</Link>
+              </motion.button>
+              <motion.div whileHover={{ y: -1 }}>
+                <Link to="/kontakt" className="hover:text-white transition-colors">Kontakt</Link>
+              </motion.div>
+              <motion.div whileHover={{ y: -1 }}>
+                <Link to="/faq" className="hover:text-white transition-colors">FAQ</Link>
+              </motion.div>
             </div>
           </div>
 
@@ -672,31 +700,40 @@ const Locations = () => {
     <section id="locations" className="bg-white py-20 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="px-6 mb-10 flex items-end justify-between">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <span className="text-itamae-red/50 text-xs font-bold uppercase tracking-[0.3em]">Våra restauranger</span>
             <h2 className="text-itamae-red text-4xl md:text-5xl font-bold mt-4">Hitta ditt Itamae</h2>
-          </div>
+          </motion.div>
 
           {/* Nav arrows */}
           <div className="flex gap-3 mb-1">
-            <button
+            <motion.button
               onClick={() => scroll("left")}
               aria-label="Föregående"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               className="w-11 h-11 rounded-full border border-itamae-red/30 flex items-center justify-center text-itamae-red hover:bg-itamae-red/10 transition-colors"
             >
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 14L6 9L11 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               onClick={() => scroll("right")}
               aria-label="Nästa"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               className="w-11 h-11 rounded-full border border-itamae-red/30 flex items-center justify-center text-itamae-red hover:bg-itamae-red/10 transition-colors"
             >
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 4L12 9L7 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </button>
+            </motion.button>
           </div>
         </div>
 
@@ -706,10 +743,18 @@ const Locations = () => {
           className="flex gap-5 overflow-x-auto pb-4 pl-6 pr-6 snap-x snap-mandatory"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {locations.map((loc) => (
-            <div key={loc.id} className="snap-start">
+          {locations.map((loc, i) => (
+            <motion.div
+              key={loc.id}
+              className="snap-start"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
+              whileHover={{ y: -4 }}
+            >
               <LocationCard location={loc} />
-            </div>
+            </motion.div>
           ))}
           {/* Right padding spacer */}
           <div className="flex-shrink-0 w-2" />
@@ -841,7 +886,13 @@ const InstagramFeed = () => {
         {/* Profile Headers */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 px-2">
           {/* Instagram Profile */}
-          <div className="flex flex-col items-center gap-4 text-center">
+          <motion.div
+            className="flex flex-col items-center gap-4 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <a 
               href="https://www.instagram.com/itamaesushibar/" 
               target="_blank" 
@@ -871,10 +922,16 @@ const InstagramFeed = () => {
                 Följ oss
               </a>
             </div>
-          </div>
+          </motion.div>
 
           {/* Facebook Profile */}
-          <div className="flex flex-col items-center gap-4 text-center">
+          <motion.div
+            className="flex flex-col items-center gap-4 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+          >
             <a 
               href="https://www.facebook.com/itamaeOfficial/" 
               target="_blank" 
@@ -904,7 +961,7 @@ const InstagramFeed = () => {
                 Följ oss
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
 
       </div>
@@ -1154,10 +1211,22 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-itamae-green text-white py-24">
+    <motion.footer
+      className="bg-itamae-green text-white py-24"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 border-t border-white/10 pt-12">
-          <div className="space-y-6 flex flex-col items-center lg:items-start">
+          <motion.div
+            className="space-y-6 flex flex-col items-center lg:items-start"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0, ease: "easeOut" }}
+          >
             <div className="flex items-center gap-2">
               <img 
                 src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69515d58ee104796b003ea6f.png" 
@@ -1166,10 +1235,16 @@ const Footer = () => {
                 referrerPolicy="no-referrer"
               />
             </div>
-          </div>
+          </motion.div>
 
-          <div className="space-y-4 text-center lg:text-left">
-            <button 
+          <motion.div
+            className="space-y-4 text-center lg:text-left"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.08, ease: "easeOut" }}
+          >
+            <button
               onClick={scrollToLocations}
               className="font-bold text-sm uppercase tracking-widest hover:text-white/80 transition-colors cursor-pointer"
             >
@@ -1184,33 +1259,51 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="space-y-4 text-center lg:text-left">
+          <motion.div
+            className="space-y-4 text-center lg:text-left"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.16, ease: "easeOut" }}
+          >
             <h4 className="font-bold text-sm uppercase tracking-widest">Länkar</h4>
             <ul className="space-y-4 lg:space-y-2 text-sm text-white/60">
               <li><Link to="/kontakt" className="hover:text-white transition-colors block py-1 lg:py-0">Kontakt</Link></li>
               <li><Link to="/faq" className="hover:text-white transition-colors block py-1 lg:py-0">FAQ</Link></li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="space-y-4 text-center lg:text-left">
+          <motion.div
+            className="space-y-4 text-center lg:text-left"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.24, ease: "easeOut" }}
+          >
             <h4 className="font-bold text-sm uppercase tracking-widest">Kontakt</h4>
             <p className="text-sm text-white/60">info@itamae.se</p>
             <p className="text-sm text-white/60">Odengatan 62 <br /> 113 22 Stockholm</p>
-          </div>
+          </motion.div>
 
-          <div className="space-y-4 flex flex-col items-center lg:items-start">
+          <motion.div
+            className="space-y-4 flex flex-col items-center lg:items-start"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.32, ease: "easeOut" }}
+          >
             <h4 className="font-bold text-sm uppercase tracking-widest text-center lg:text-left">Följ oss</h4>
             <div className="flex gap-4 justify-center lg:justify-start">
-              <a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer">
+              <motion.a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
                 <Facebook size={20} className="text-white/60 hover:text-white cursor-pointer" />
-              </a>
-              <a href="https://www.instagram.com/itamaesushibar/" target="_blank" rel="noopener noreferrer">
+              </motion.a>
+              <motion.a href="https://www.instagram.com/itamaesushibar/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
                 <Instagram size={20} className="text-white/60 hover:text-white cursor-pointer" />
-              </a>
+              </motion.a>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] text-white/40 uppercase tracking-widest">
@@ -1225,7 +1318,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
