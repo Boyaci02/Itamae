@@ -578,7 +578,7 @@ const ContentSlider = () => {
       title: "Mer än bara sushi.",
       body: "Hos Itamae hittar du allt från klassisk nigiri och maki till smakrika bowls, shakemushi och asiatiska rätter. Något för alla – lagat med omsorg sedan år 2000.",
       button: "Se vår meny",
-      image: "https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=800&h=800&fit=crop&auto=format&q=80&fm=webp",
+      image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515bb003fa0d841496d7.webp",
       imageType: "square"
     },
     {
@@ -586,7 +586,7 @@ const ContentSlider = () => {
       title: "Välkommen till Itamae.",
       body: "Itamae betyder köksmaster på japanska – och det är precis vad vi strävar efter att vara. Sedan vi öppnade våra dörrar år 2000 har vi serverat sushi av högsta klass i en stilren och avslappnad miljö.",
       button: "Om oss",
-      image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&h=800&fit=crop&auto=format&q=80&fm=webp",
+      image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b618c8df03354631c.webp",
       imageType: "square"
     },
     {
@@ -594,7 +594,7 @@ const ContentSlider = () => {
       title: "Fem restauranger – en och samma passion.",
       body: "Besök oss på Kungsholmen, Odengatan, Hagastaden, Sundbyberg eller Danderyd. Oavsett var du är i Stockholm finns Itamae nära dig.",
       button: "Hitta din restaurang",
-      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=800&fit=crop&auto=format&q=80",
+      image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b36702fccdd431e02.webp",
       imageType: "square"
     },
     {
@@ -602,7 +602,7 @@ const ContentSlider = () => {
       title: "Itamae – när du vill, var du vill.",
       body: "Beställ enkelt via Qopla, Foodora, Wolt eller Uber Eats. Njut av din favoritrulle hemma, på jobbet eller var du än befinner dig.",
       button: "Beställ nu",
-      image: "https://images.unsplash.com/photo-1553621042-f6e147245754?w=800&h=800&fit=crop&auto=format&q=80",
+      image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515bb003fae6b91496db.webp",
       imageType: "square"
     }
   ];
@@ -1200,7 +1200,7 @@ const newsArticles = [
     date: "20 mars 2026",
     title: "Itamae öppnar på ny plats i Stockholm",
     excerpt: "Vi är glada att kunna meddela att Itamae snart öppnar en ny restaurang i hjärtat av Stockholm. En ny destination för sushiälskare i stan.",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/67e1c6a4c7ef3f25ac3e2090.jpeg",
+    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b36702fc576431e00.webp",
     featured: true,
   },
   {
@@ -1209,7 +1209,7 @@ const newsArticles = [
     date: "5 mars 2026",
     title: "Ny vårmeny med japanska smaker",
     excerpt: "Upplev vårens bästa råvaror i vår nya säsongsmeny – inspirerad av japansk tradition och svenska smaker.",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/67e1c6a4c7ef3f25ac3e208f.jpeg",
+    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515bb003fab5b01496de.webp",
     featured: false,
   },
 ];
