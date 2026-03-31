@@ -10,6 +10,7 @@
   --color-itamae-cream: #FFFFF0; /* Ivory White */
   --color-itamae-charcoal: #1A1A1A;
   --color-itamae-gray: #6B6B6B;
+  --color-itamae-gold: #C9A054;  /* Warm gold accent */
 }
 
 @layer base {

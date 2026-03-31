@@ -279,7 +279,7 @@ const FAQPage = () => (
         {[
           { 
             q: "Har ni hemkörning?", 
-            a: "Ja, under respektive restaurang finner ni knappen “Takeaway & Delivery” som länkar till beställningssidan." 
+            a: "Ja, under respektive restaurang finner ni knappen 'Takeaway & Delivery' som länkar till beställningssidan."
           },
           { 
             q: "Finns det vegan sushi?", 
@@ -492,76 +492,79 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen overflow-hidden bg-itamae-green">
+      {/* Parallax video */}
       <motion.div style={{ y }} className="absolute inset-0">
-        <video 
-          autoPlay 
-          muted 
-          loop 
+        <video
+          autoPlay
+          muted
+          loop
           playsInline
           poster="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d6022141b736331db84.jpg"
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover opacity-50"
         >
-          <source 
-            src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d40bffadf054085a170.mov" 
-            type="video/quicktime" 
-          />
-          <source 
-            src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d40bffadf054085a170.mov" 
-            type="video/mp4" 
-          />
-          <img 
-            src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d6022141b736331db84.jpg" 
-            alt="Sushi Crafting Backup" 
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
+          <source src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d40bffadf054085a170.mov" type="video/quicktime" />
+          <source src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d40bffadf054085a170.mov" type="video/mp4" />
+          <img src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d6022141b736331db84.jpg" alt="Sushi" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
         </video>
       </motion.div>
-      
-      <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-        <motion.span 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="text-white/80 text-xs font-bold uppercase tracking-[0.3em] mb-4"
+
+      {/* Very subtle bottom gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+      {/* Est. 2000 – top right */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2 }}
+        className="absolute top-8 right-8 text-white/40 text-[10px] font-bold uppercase tracking-[0.4em]"
+      >
+        Est. 2000
+      </motion.div>
+
+      {/* Main content – bottom left */}
+      <div className="relative h-full flex flex-col justify-end px-8 md:px-16 pb-20 md:pb-24">
+        <motion.span
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+          className="text-white/50 text-[11px] font-bold uppercase tracking-[0.35em] mb-4 block"
         >
           Sushi restaurang
         </motion.span>
-        
-        <motion.h1 
-          initial={{ opacity: 0, y: 30 }}
+
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="text-white text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 tracking-tight"
+          transition={{ delay: 0.5, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+          className="text-white font-serif italic font-bold leading-[0.92] mb-10"
+          style={{ fontSize: "clamp(64px, 11vw, 148px)" }}
         >
-          Smaken av <br /> Japan
+          Smaken<br />av Japan.
         </motion.h1>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.6 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 0.6 }}
         >
-          <button 
-            onClick={() => {
-              const element = document.getElementById("locations");
-              element?.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="bg-itamae-red text-white px-10 py-4 rounded-full text-lg font-bold hover:brightness-110 transition-all hover:-translate-y-1 shadow-xl hover:shadow-2xl"
+          <button
+            onClick={() => document.getElementById("locations")?.scrollIntoView({ behavior: "smooth" })}
+            className="border border-white/60 text-white px-10 py-3.5 text-[13px] font-bold uppercase tracking-[0.15em] hover:bg-white hover:text-itamae-green transition-all duration-300"
           >
-            Restauranger
+            Hitta restaurang
           </button>
         </motion.div>
-
-        <motion.div 
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute bottom-12 flex flex-col items-center gap-2 text-white/60"
-        >
-          <span className="text-[10px] uppercase tracking-widest font-bold">Scroll</span>
-          <ChevronDown size={20} />
-        </motion.div>
       </div>
+
+      {/* Scroll indicator – bottom right */}
+      <motion.div
+        animate={{ y: [0, 8, 0] }}
+        transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
+        className="absolute bottom-10 right-8 md:right-16 flex flex-col items-center gap-2 text-white/40"
+      >
+        <div className="w-px h-12 bg-white/30" />
+        <span className="text-[9px] uppercase tracking-[0.3em] font-bold" style={{ writingMode: "vertical-rl" }}>Scroll</span>
+      </motion.div>
     </section>
   );
 };
@@ -612,75 +615,87 @@ const ContentSlider = () => {
   }, [slides.length]);
 
   return (
-    <section className="bg-itamae-green py-24 overflow-hidden relative min-h-[700px] flex flex-col justify-center">
-      <div className="max-w-7xl mx-auto px-6 w-full">
-        <div className="relative h-[600px] md:h-[550px] overflow-hidden">
-          <AnimatePresence initial={false} mode="popLayout">
+    <section className="bg-itamae-green overflow-hidden">
+      <div className="relative min-h-[560px] md:min-h-[640px] flex flex-col md:flex-row">
+        {/* Left: Image panel */}
+        <div className="relative w-full md:w-1/2 h-[300px] md:h-auto overflow-hidden">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={currentSlide}
+              src={slides[currentSlide].image}
+              alt={slides[currentSlide].title}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 1.05 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="absolute inset-0 w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
+          </AnimatePresence>
+        </div>
+
+        {/* Right: Text panel */}
+        <div className="w-full md:w-1/2 bg-itamae-green flex flex-col justify-between px-10 md:px-16 py-14 md:py-20">
+          {/* Slide counter */}
+          <div className="flex items-center justify-between mb-auto">
+            <span className="text-white/20 text-[11px] font-bold uppercase tracking-[0.3em]">
+              {String(currentSlide + 1).padStart(2, "0")} / {String(slides.length).padStart(2, "0")}
+            </span>
+          </div>
+
+          <AnimatePresence mode="wait">
             <motion.div
               key={currentSlide}
-              initial={{ x: "100%", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: "-100%", opacity: 0 }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="absolute inset-0 grid lg:grid-cols-2 gap-12 items-center"
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.55, ease: "easeOut" }}
+              className="space-y-6 flex-1 flex flex-col justify-center py-10"
             >
-              <div className="flex justify-center lg:justify-end order-2 lg:order-1">
-                {slides[currentSlide].imageType === "phone" ? (
-                  <div className="relative w-48 md:w-64">
-                    <img 
-                      src={slides[currentSlide].image} 
-                      alt={slides[currentSlide].title} 
-                      className="rounded-[2.5rem] shadow-2xl border-4 border-itamae-green/50"
-                      referrerPolicy="no-referrer"
-                    />
-                  </div>
-                ) : (
-                  <div className="relative w-full max-w-md aspect-square">
-                    <img 
-                      src={slides[currentSlide].image} 
-                      alt={slides[currentSlide].title} 
-                      className="w-full h-full object-cover rounded-sm shadow-2xl"
-                      referrerPolicy="no-referrer"
-                    />
-                  </div>
-                )}
-              </div>
-
-              <div className="text-white space-y-6 order-1 lg:order-2 text-left">
-                <span className="text-white/60 text-xs font-bold uppercase tracking-widest block">
-                  {slides[currentSlide].subtitle}
-                </span>
-                <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight font-serif italic">
-                  {slides[currentSlide].title}
-                </h2>
-                <div className="space-y-4">
-                  <p className="text-white/80 text-base md:text-lg leading-relaxed max-w-xl">
-                    {slides[currentSlide].body}
-                  </p>
-                </div>
-                <button 
-                  onClick={() => {
-                    const element = document.getElementById("locations");
-                    element?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                  className="bg-itamae-red text-white px-8 py-3 rounded-full font-bold hover:brightness-110 transition-all hover:-translate-y-1 shadow-lg hover:shadow-xl"
+              <span className="text-white/40 text-[11px] font-bold uppercase tracking-[0.3em]">
+                {slides[currentSlide].subtitle}
+              </span>
+              <h2 className="text-white font-serif italic font-bold leading-[1.05]" style={{ fontSize: "clamp(28px, 3.5vw, 52px)" }}>
+                {slides[currentSlide].title}
+              </h2>
+              <p className="text-white/60 text-[14px] md:text-[15px] leading-relaxed max-w-sm">
+                {slides[currentSlide].body}
+              </p>
+              <div>
+                <button
+                  onClick={() => document.getElementById("locations")?.scrollIntoView({ behavior: "smooth" })}
+                  className="border border-white/30 text-white px-8 py-3 text-[12px] font-bold uppercase tracking-[0.15em] hover:bg-white hover:text-itamae-green transition-all duration-300 mt-2"
                 >
                   {slides[currentSlide].button}
                 </button>
               </div>
             </motion.div>
           </AnimatePresence>
-        </div>
 
-        {/* Indicators */}
-        <div className="flex justify-center gap-2 mt-12">
-          {slides.map((_, index) => (
+          {/* Arrow navigation */}
+          <div className="flex items-center gap-4 mt-8">
             <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`h-1 w-12 rounded-full transition-all duration-300 hover:bg-itamae-red cursor-pointer ${currentSlide === index ? "bg-itamae-red" : "bg-white/20"}`}
-            />
-          ))}
+              onClick={() => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)}
+              className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-all"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </button>
+            <button
+              onClick={() => setCurrentSlide((prev) => (prev + 1) % slides.length)}
+              className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-all"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </button>
+            <div className="flex gap-1.5 ml-2">
+              {slides.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentSlide(i)}
+                  className={`h-px transition-all duration-400 ${i === currentSlide ? "w-8 bg-white" : "w-4 bg-white/25"}`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -688,77 +703,72 @@ const ContentSlider = () => {
 };
 
 const Locations = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  const scroll = (direction: "left" | "right") => {
-    if (!scrollRef.current) return;
-    const amount = 440;
-    scrollRef.current.scrollBy({ left: direction === "right" ? amount : -amount, behavior: "smooth" });
-  };
+  const [hoveredIndex, setHoveredIndex] = useState<number>(0);
 
   return (
-    <section id="locations" className="bg-white py-20 md:py-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div className="px-6 mb-10 flex items-end justify-between">
+    <section id="locations" className="bg-itamae-cream">
+      <div className="flex flex-col md:flex-row min-h-[600px]">
+
+        {/* Left: editorial list */}
+        <div className="w-full md:w-1/2 px-8 md:px-16 py-20 md:py-28 flex flex-col justify-between">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.6 }}
+            className="mb-12"
           >
-            <span className="text-itamae-red/50 text-xs font-bold uppercase tracking-[0.3em]">Våra restauranger</span>
-            <h2 className="text-itamae-red text-4xl md:text-5xl font-bold mt-4">Hitta ditt Itamae</h2>
+            <span className="text-itamae-green/40 text-[11px] font-bold uppercase tracking-[0.35em]">Våra restauranger</span>
+            <h2 className="text-itamae-green text-3xl md:text-4xl font-bold mt-3 tracking-tight">Hitta ditt Itamae</h2>
           </motion.div>
 
-          {/* Nav arrows */}
-          <div className="flex gap-3 mb-1">
-            <motion.button
-              onClick={() => scroll("left")}
-              aria-label="Föregående"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-11 h-11 rounded-full border border-itamae-red/30 flex items-center justify-center text-itamae-red hover:bg-itamae-red/10 transition-colors"
-            >
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 14L6 9L11 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </motion.button>
-            <motion.button
-              onClick={() => scroll("right")}
-              aria-label="Nästa"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-11 h-11 rounded-full border border-itamae-red/30 flex items-center justify-center text-itamae-red hover:bg-itamae-red/10 transition-colors"
-            >
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 4L12 9L7 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </motion.button>
+          <div className="divide-y divide-itamae-green/10">
+            {locations.map((loc, i) => (
+              <Link key={loc.id} to={`/location/${loc.id}`}>
+                <motion.div
+                  className="group flex items-center justify-between py-5 md:py-6 cursor-pointer"
+                  onHoverStart={() => setHoveredIndex(i)}
+                  whileHover={{ x: 8 }}
+                  transition={{ duration: 0.2 }}
+                  initial={{ opacity: 0, x: -16 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.07 }}
+                >
+                  <div className="flex items-baseline gap-5">
+                    <span className="text-itamae-green/25 text-[11px] font-bold tabular-nums">{String(i + 1).padStart(2, "0")}</span>
+                    <div>
+                      <span className="text-itamae-green font-bold text-[22px] md:text-[30px] uppercase tracking-wide leading-none group-hover:text-itamae-red transition-colors duration-200">
+                        {loc.name}
+                      </span>
+                      <p className="text-itamae-green/40 text-[11px] uppercase tracking-widest mt-1">{loc.address}</p>
+                    </div>
+                  </div>
+                  <ArrowRight size={18} className="text-itamae-green/20 group-hover:text-itamae-red transition-colors duration-200 flex-shrink-0" />
+                </motion.div>
+              </Link>
+            ))}
           </div>
         </div>
 
-        {/* Horizontal scroll – both mobile and desktop */}
-        <div
-          ref={scrollRef}
-          className="flex gap-5 overflow-x-auto pb-4 pl-6 pr-6 snap-x snap-mandatory"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {locations.map((loc, i) => (
-            <motion.div
-              key={loc.id}
-              className="snap-start"
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
-              whileHover={{ y: -4 }}
-            >
-              <LocationCard location={loc} />
-            </motion.div>
-          ))}
-          {/* Right padding spacer */}
-          <div className="flex-shrink-0 w-2" />
+        {/* Right: image panel – hidden on mobile */}
+        <div className="hidden md:block md:w-1/2 relative overflow-hidden">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={hoveredIndex}
+              src={locations[hoveredIndex].image}
+              alt={locations[hoveredIndex].name}
+              className="absolute inset-0 w-full h-full object-cover"
+              initial={{ opacity: 0, scale: 1.04 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-itamae-green/20" />
+          </AnimatePresence>
         </div>
+
       </div>
     </section>
   );
@@ -1079,7 +1089,7 @@ const Testimonial = () => {
     },
     {
       name: "Tom Softy",
-      text: "I’m starting to visit this place regularly. Always good service and the food is above average in the area. Really nice offers during weekdays after work hours. Perfect place for sushi lovers and burger lovers to dine together."
+      text: "I'm starting to visit this place regularly. Always good service and the food is above average in the area. Really nice offers during weekdays after work hours. Perfect place for sushi lovers and burger lovers to dine together."
     },
     {
       name: "Пясецький Даніїл",
@@ -1103,38 +1113,46 @@ const Testimonial = () => {
   }, [reviews.length]);
 
   return (
-    <section className="bg-itamae-cream pb-24">
-      <div className="max-w-4xl mx-auto px-6 text-center space-y-8 min-h-[300px] flex flex-col justify-center">
-        <div className="text-itamae-green/20 text-8xl font-serif h-12 flex items-center justify-center">“</div>
-        
-        <div className="relative min-h-[320px] md:min-h-[200px] flex items-center justify-center overflow-hidden">
+    <section className="bg-itamae-green relative overflow-hidden py-32 md:py-48">
+      {/* Decorative large quote mark */}
+      <div
+        className="absolute top-0 left-1/2 -translate-x-1/2 text-white/5 font-serif select-none pointer-events-none leading-none"
+        style={{ fontSize: "clamp(180px, 28vw, 320px)" }}
+        aria-hidden
+      >
+        &ldquo;
+      </div>
+
+      <div className="relative max-w-4xl mx-auto px-8 md:px-16 text-center">
+        <div className="relative min-h-[280px] md:min-h-[220px] flex items-center justify-center overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="w-full"
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="w-full space-y-8"
             >
-              <div className="space-y-6">
-                <p className="text-xl md:text-2xl font-medium leading-tight text-balance italic">
-                  {reviews[currentIndex].text}
-                </p>
-                <div className="pt-2">
-                  <span className="font-bold text-sm tracking-widest uppercase">{reviews[currentIndex].name}</span>
-                </div>
-              </div>
+              <p
+                className="text-white font-serif italic leading-[1.3] text-balance"
+                style={{ fontSize: "clamp(20px, 3vw, 36px)" }}
+              >
+                "{reviews[currentIndex].text}"
+              </p>
+              <span className="text-white/40 text-[11px] font-bold uppercase tracking-[0.35em] block">
+                — {reviews[currentIndex].name}
+              </span>
             </motion.div>
           </AnimatePresence>
         </div>
 
-        <div className="flex justify-center gap-2 pt-8">
+        <div className="flex justify-center gap-2 mt-12">
           {reviews.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrentIndex(i)}
-              className={`h-1 transition-all duration-300 rounded-full ${i === currentIndex ? "w-8 bg-itamae-red" : "w-4 bg-itamae-green/10"}`}
+              className={`h-px transition-all duration-300 ${i === currentIndex ? "w-8 bg-white" : "w-4 bg-white/20"}`}
             />
           ))}
         </div>
@@ -1212,108 +1230,54 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="bg-itamae-green text-white py-24"
+      className="bg-itamae-green text-white pt-20 pb-10"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 border-t border-white/10 pt-12">
-          <motion.div
-            className="space-y-6 flex flex-col items-center lg:items-start"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0, ease: "easeOut" }}
-          >
-            <div className="flex items-center gap-2">
-              <img 
-                src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69515d58ee104796b003ea6f.png" 
-                alt="Itamae Logo" 
-                className="h-16 w-auto object-contain"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-          </motion.div>
+      <div className="max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
+        {/* Logo */}
+        <img
+          src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69515d58ee104796b003ea6f.png"
+          alt="Itamae Logo"
+          className="h-20 w-auto object-contain mb-10"
+          referrerPolicy="no-referrer"
+        />
 
-          <motion.div
-            className="space-y-4 text-center lg:text-left"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.08, ease: "easeOut" }}
-          >
-            <button
-              onClick={scrollToLocations}
-              className="font-bold text-sm uppercase tracking-widest hover:text-white/80 transition-colors cursor-pointer"
-            >
-              Restauranger
+        {/* Nav links */}
+        <nav className="flex flex-wrap justify-center gap-x-10 gap-y-3 mb-10">
+          {[
+            { label: "Restauranger", action: scrollToLocations },
+          ].map(({ label, action }) => (
+            <button key={label} onClick={action} className="text-white/50 text-[12px] font-bold uppercase tracking-[0.2em] hover:text-white transition-colors cursor-pointer">
+              {label}
             </button>
-            <ul className="space-y-4 lg:space-y-2 text-sm text-white/60">
-              {locations.map((loc) => (
-                <li key={loc.id}>
-                  <Link to={`/location/${loc.id}`} className="hover:text-white transition-colors block py-1 lg:py-0">
-                    {loc.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+          ))}
+          {[
+            { label: "Kontakt", to: "/kontakt" },
+            { label: "FAQ", to: "/faq" },
+          ].map(({ label, to }) => (
+            <Link key={label} to={to} className="text-white/50 text-[12px] font-bold uppercase tracking-[0.2em] hover:text-white transition-colors">
+              {label}
+            </Link>
+          ))}
+        </nav>
 
-          <motion.div
-            className="space-y-4 text-center lg:text-left"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.16, ease: "easeOut" }}
-          >
-            <h4 className="font-bold text-sm uppercase tracking-widest">Länkar</h4>
-            <ul className="space-y-4 lg:space-y-2 text-sm text-white/60">
-              <li><Link to="/kontakt" className="hover:text-white transition-colors block py-1 lg:py-0">Kontakt</Link></li>
-              <li><Link to="/faq" className="hover:text-white transition-colors block py-1 lg:py-0">FAQ</Link></li>
-            </ul>
-          </motion.div>
-
-          <motion.div
-            className="space-y-4 text-center lg:text-left"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.24, ease: "easeOut" }}
-          >
-            <h4 className="font-bold text-sm uppercase tracking-widest">Kontakt</h4>
-            <p className="text-sm text-white/60">info@itamae.se</p>
-            <p className="text-sm text-white/60">Odengatan 62 <br /> 113 22 Stockholm</p>
-          </motion.div>
-
-          <motion.div
-            className="space-y-4 flex flex-col items-center lg:items-start"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.32, ease: "easeOut" }}
-          >
-            <h4 className="font-bold text-sm uppercase tracking-widest text-center lg:text-left">Följ oss</h4>
-            <div className="flex gap-4 justify-center lg:justify-start">
-              <motion.a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <Facebook size={20} className="text-white/60 hover:text-white cursor-pointer" />
-              </motion.a>
-              <motion.a href="https://www.instagram.com/itamaesushibar/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <Instagram size={20} className="text-white/60 hover:text-white cursor-pointer" />
-              </motion.a>
-            </div>
-          </motion.div>
+        {/* Social icons */}
+        <div className="flex gap-6 mb-16">
+          <motion.a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+            <Facebook size={20} className="text-white/40 hover:text-white transition-colors" />
+          </motion.a>
+          <motion.a href="https://www.instagram.com/itamaesushibar/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+            <Instagram size={20} className="text-white/40 hover:text-white transition-colors" />
+          </motion.a>
         </div>
 
-        <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] text-white/40 uppercase tracking-widest">
-          <div>© Itamae Sushi 2026</div>
-          <a 
-            href="https://synsnumedia.se/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
-          >
+        {/* Divider */}
+        <div className="w-full border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-[10px] text-white/30 uppercase tracking-widest">
+          <span>© Itamae Sushi 2026</span>
+          <a href="https://synsnumedia.se/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             Powered by SynsNu
           </a>
         </div>
