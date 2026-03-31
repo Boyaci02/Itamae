@@ -499,12 +499,12 @@ const Hero = () => {
           muted
           loop
           playsInline
-          poster="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d6022141b736331db84.jpg"
+          poster="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b618c8d572c54631e.webp"
           className="w-full h-full object-cover opacity-50"
         >
           <source src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d40bffadf054085a170.mov" type="video/quicktime" />
           <source src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d40bffadf054085a170.mov" type="video/mp4" />
-          <img src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a89d6022141b736331db84.jpg" alt="Sushi" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <img src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b618c8d572c54631e.webp" alt="Sushi" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
         </video>
       </motion.div>
 
