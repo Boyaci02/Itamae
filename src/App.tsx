@@ -1196,21 +1196,63 @@ const OrderCTA = () => {
 const newsArticles = [
   {
     id: 1,
+    slug: "ny-plats-stockholm",
     tag: "Nyhet",
     date: "20 mars 2026",
     title: "Itamae öppnar på ny plats i Stockholm",
     excerpt: "Vi är glada att kunna meddela att Itamae snart öppnar en ny restaurang i hjärtat av Stockholm. En ny destination för sushiälskare i stan.",
     image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b36702fc576431e00.webp",
     featured: true,
+    content: [
+      "Vi är otroligt glada att kunna dela med oss av den spännande nyheten att Itamae snart öppnar ytterligare en restaurang i Stockholm. Den nya platsen kommer att ligga centralt och vara lättillgänglig för alla som älskar vår sushi.",
+      "Precis som på våra övriga restauranger kommer den nya platsen att erbjuda hela vår meny – från klassisk nigiri och maki till smakrika bowls och shakemushi. Inredningen följer Itamaes stilrena estetik med en varm och välkomnande atmosfär.",
+      "Datum för öppning och exakt adress kommer att tillkännages inom kort. Följ oss på Instagram och Facebook för att vara den första att få veta mer.",
+    ],
   },
   {
     id: 2,
+    slug: "var-meny-2026",
     tag: "Meny",
     date: "5 mars 2026",
     title: "Ny vårmeny med japanska smaker",
     excerpt: "Upplev vårens bästa råvaror i vår nya säsongsmeny – inspirerad av japansk tradition och svenska smaker.",
     image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515bb003fab5b01496de.webp",
     featured: false,
+    content: [
+      "Med våren i luften lanserar vi en ny säsongsmeny som kombinerar japanska råvaror med det bästa från det svenska köket. Menyn är framtagen av våra kockar med fokus på friska smaker och hög kvalitet.",
+      "Bland nyheterna hittar du bland annat vår nya vår-poke bowl med grillad lax, edamame och en lätt sesamdressing, samt ett urval av säsongsanpassade nigiri med lokalt inspirerade toppings.",
+      "Vårmenyn finns tillgänglig på alla våra restauranger från och med den 5 mars. Välkommen att smaka!",
+    ],
+  },
+  {
+    id: 3,
+    slug: "mot-vara-kockar",
+    tag: "Bakom kulisserna",
+    date: "15 feb 2026",
+    title: "Möt våra kockar",
+    excerpt: "Bakom varje rulle och varje bowl finns ett dedikerat team av kockar som brinner för japansk matkultur. Vi presenterar några av hjärnorna bakom Itamae.",
+    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b7bdf38eaefc96d3d.webp",
+    featured: false,
+    content: [
+      "På Itamae är maten mer än bara en produkt – den är resultatet av passion, precision och många års erfarenhet. Våra kockar kommer från olika bakgrunder men delar en sak: en djup kärlek till japansk matkultur.",
+      "Köksmästare på våra restauranger har utbildat sig i Japan och Sverige, och de kombinerar traditionella tekniker med moderna presentationer. Varje rät som lämnar vårt kök har genomgått samma noggranna kontroll och omsorg.",
+      "Vi är stolta över att ha ett team som hela tiden utmanar sig självt och strävar efter att ge gästerna en upplevelse utöver det vanliga – varje dag.",
+    ],
+  },
+  {
+    id: 4,
+    slug: "25-ar",
+    tag: "Jubileum",
+    date: "1 jan 2026",
+    title: "Itamae firar 25 år",
+    excerpt: "År 2000 öppnade Itamae sina dörrar för första gången. Nu firar vi 25 år av sushi, glädje och fantastiska gäster. Tack för att ni följt oss!",
+    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b618c8d636e546320.webp",
+    featured: false,
+    content: [
+      "Det är svårt att tro att det redan gått 25 år sedan vi öppnade den första Itamae-restaurangen. Det som började som en liten sushibar har vuxit till fem restauranger runt om i Stockholm-regionen – och resan har bara börjat.",
+      "Under dessa 25 år har vi serverat hundratusentals gäster, lanserat otaliga menyer och byggt ett team som vi är otroligt stolta över. Det är ni – våra trogna gäster – som gjort allt detta möjligt.",
+      "För att fira jubileet planerar vi en rad specialevenemang och begränsade menyer under 2026. Håll utkik på vår hemsida och sociala medier för mer information. Skål för 25 år – och för många fler!",
+    ],
   },
 ];
 
@@ -1232,13 +1274,13 @@ const LatestNews = () => {
               Nyheter & uppdateringar
             </h2>
           </div>
-          <a
-            href="#"
+          <Link
+            to="/nyheter"
             className="hidden md:flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/50 hover:text-itamae-green transition-colors group"
           >
             Alla nyheter
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
-          </a>
+          </Link>
         </motion.div>
 
         {/* Grid */}
@@ -1252,7 +1294,7 @@ const LatestNews = () => {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className={article.featured ? "md:col-span-2" : "md:col-span-1"}
             >
-              <a href="#" className="group block">
+              <Link to={`/nyheter/${article.slug}`} className="group block">
                 {/* Image */}
                 <div className={`overflow-hidden ${article.featured ? "aspect-[21/9]" : "aspect-[16/9]"} mb-5`}>
                   <img
@@ -1286,20 +1328,182 @@ const LatestNews = () => {
                   Läs mer
                   <ArrowRight size={12} />
                 </span>
-              </a>
+              </Link>
             </motion.article>
           ))}
         </div>
 
         {/* Mobile "Alla nyheter" */}
         <div className="mt-10 md:hidden">
-          <a href="#" className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/50 hover:text-itamae-green transition-colors group">
+          <Link to="/nyheter" className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/50 hover:text-itamae-green transition-colors group">
             Alla nyheter
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
+  );
+};
+
+const BlogDetail = () => {
+  const { slug } = useParams();
+  const navigate = useNavigate();
+  const article = newsArticles.find((a) => a.slug === slug);
+
+  if (!article) {
+    return (
+      <div className="min-h-screen bg-itamae-cream flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-itamae-green/50 text-sm mb-4">Inlägg hittades inte</p>
+          <Link to="/nyheter" className="text-itamae-green font-bold underline">Tillbaka till nyheter</Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen bg-itamae-cream pt-32 pb-24"
+    >
+      <div className="max-w-4xl mx-auto px-6">
+        {/* Back button */}
+        <button
+          onClick={() => navigate("/nyheter")}
+          className="flex items-center gap-2 text-itamae-green/50 hover:text-itamae-green mb-10 transition-colors group text-[12px] font-bold uppercase tracking-[0.2em]"
+        >
+          <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
+          Tillbaka till nyheter
+        </button>
+
+        {/* Hero image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 1.03 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="aspect-[21/9] overflow-hidden mb-8"
+        >
+          <img
+            src={article.image}
+            alt={article.title}
+            className="w-full h-full object-cover"
+            referrerPolicy="no-referrer"
+          />
+        </motion.div>
+
+        {/* Meta */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex items-center gap-3 mb-5"
+        >
+          <span className="bg-itamae-green text-white text-[9px] font-bold uppercase tracking-[0.25em] px-2.5 py-1">
+            {article.tag}
+          </span>
+          <span className="text-itamae-gray text-[11px]">{article.date}</span>
+        </motion.div>
+
+        {/* Title */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
+          className="font-serif italic text-itamae-green leading-tight mb-8"
+          style={{ fontSize: "clamp(32px, 5vw, 60px)" }}
+        >
+          {article.title}
+        </motion.h1>
+
+        {/* Body */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          className="max-w-2xl space-y-5"
+        >
+          {article.content.map((paragraph, i) => (
+            <p key={i} className="text-itamae-gray leading-relaxed text-[15px]">
+              {paragraph}
+            </p>
+          ))}
+        </motion.div>
+
+        {/* Bottom link */}
+        <div className="mt-16 pt-10 border-t border-itamae-green/10">
+          <Link
+            to="/nyheter"
+            className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/50 hover:text-itamae-green transition-colors group"
+          >
+            Fler nyheter
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
+          </Link>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+const NewsArchive = () => {
+  return (
+    <div className="min-h-screen bg-itamae-cream pt-32 pb-24">
+      <div className="max-w-7xl mx-auto px-6 md:px-10">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-12 md:mb-16"
+        >
+          <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-itamae-green/40 block mb-3">Nyheter</span>
+          <h1 className="font-serif italic text-itamae-green leading-tight" style={{ fontSize: "clamp(36px, 5vw, 64px)" }}>
+            Alla nyheter
+          </h1>
+        </motion.div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {newsArticles.map((article, i) => (
+            <motion.article
+              key={article.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.08 }}
+            >
+              <Link to={`/nyheter/${article.slug}`} className="group block">
+                <div className="overflow-hidden aspect-[16/9] mb-5">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="bg-itamae-green text-white text-[9px] font-bold uppercase tracking-[0.25em] px-2.5 py-1">
+                    {article.tag}
+                  </span>
+                  <span className="text-itamae-gray text-[11px]">{article.date}</span>
+                </div>
+                <h2 className="font-serif italic text-itamae-green mb-2 leading-snug" style={{ fontSize: "clamp(17px, 2vw, 22px)" }}>
+                  {article.title}
+                </h2>
+                <p className="text-itamae-gray text-sm leading-relaxed mb-4 line-clamp-2">
+                  {article.excerpt}
+                </p>
+                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-itamae-green group-hover:gap-3 transition-all duration-200">
+                  Läs mer
+                  <ArrowRight size={12} />
+                </span>
+              </Link>
+            </motion.article>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
@@ -1352,6 +1556,9 @@ const Footer = () => {
         <>
           <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Länkar</h4>
           <ul className="space-y-3">
+            <li>
+              <Link to="/nyheter" className="text-white/60 text-[13px] hover:text-white transition-colors">Nyheter</Link>
+            </li>
             <li>
               <Link to="/kontakt" className="text-white/60 text-[13px] hover:text-white transition-colors">Kontakt</Link>
             </li>
@@ -1447,6 +1654,8 @@ export default function App() {
             </>
           } />
           <Route path="/location/:id" element={<LocationDetail />} />
+          <Route path="/nyheter" element={<NewsArchive />} />
+          <Route path="/nyheter/:slug" element={<BlogDetail />} />
           <Route path="/kontakt" element={<KontaktPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/vilkor" element={<TermsPage />} />
