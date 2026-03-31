@@ -879,101 +879,80 @@ const LocationDetail = () => {
 
 const InstagramFeed = () => {
   return (
-    <section className="relative mt-[5px] py-16 md:py-24 overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a9ef54bffadf30dfba3a8d.png" 
-          alt="Social Background" 
-          className="w-full h-full object-cover object-[center_25%]"
+    <section className="relative overflow-hidden bg-itamae-green py-28 md:py-40">
+      {/* Subtle food image background */}
+      <div className="absolute inset-0">
+        <img
+          src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a9ef54bffadf30dfba3a8d.png"
+          alt=""
+          className="w-full h-full object-cover object-center opacity-20"
           referrerPolicy="no-referrer"
         />
-        {/* Dark overlay to ensure social icons remain visible and match the brand theme */}
-        <div className="absolute inset-0 bg-itamae-green/80" />
       </div>
 
-      <div className="max-w-[1800px] mx-auto px-2 md:px-4 relative z-10">
-        {/* Profile Headers */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 px-2">
-          {/* Instagram Profile */}
-          <motion.div
-            className="flex flex-col items-center gap-4 text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <a 
-              href="https://www.instagram.com/itamaesushibar/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="relative group cursor-pointer"
-            >
-              <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full opacity-75 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]" />
-              <div className="relative w-16 h-16 rounded-full border-2 border-black overflow-hidden bg-itamae-blue flex items-center justify-center">
-                <Instagram size={28} className="text-white" />
-              </div>
-            </a>
-            <div className="flex flex-col items-center gap-3">
-              <a 
-                href="https://www.instagram.com/itamaesushibar/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white font-bold text-xl tracking-widest uppercase hover:text-purple-400 transition-colors"
-              >
-                itamaesushibar
-              </a>
-              <a 
-                href="https://www.instagram.com/itamaesushibar/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-6 py-2 rounded-full text-[11px] font-bold transition-all hover:scale-105"
-              >
-                Följ oss
-              </a>
-            </div>
-          </motion.div>
+      <div className="relative z-10 max-w-4xl mx-auto px-8 md:px-12 text-center">
+        {/* Label */}
+        <motion.span
+          className="text-white/40 text-[11px] font-bold uppercase tracking-[0.35em] block mb-8"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          Följ med bakom kulisserna
+        </motion.span>
 
-          {/* Facebook Profile */}
-          <motion.div
-            className="flex flex-col items-center gap-4 text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
-          >
-            <a 
-              href="https://www.facebook.com/itamaeOfficial/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="relative group cursor-pointer"
-            >
-              <div className="absolute -inset-1 bg-gradient-to-tr from-[#00c6ff] to-[#0072ff] rounded-full opacity-75 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]" />
-              <div className="relative w-16 h-16 rounded-full border-2 border-black overflow-hidden bg-[#1877F2] flex items-center justify-center">
-                <Facebook size={28} className="text-white" />
-              </div>
-            </a>
-            <div className="flex flex-col items-center gap-3">
-              <a 
-                href="https://www.facebook.com/itamaeOfficial/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white font-bold text-xl tracking-widest uppercase hover:text-[#00c6ff] transition-colors"
-              >
-                itamaeOfficial
-              </a>
-              <a 
-                href="https://www.facebook.com/itamaeOfficial/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-6 py-2 rounded-full text-[11px] font-bold transition-all hover:scale-105"
-              >
-                Följ oss
-              </a>
-            </div>
-          </motion.div>
-        </div>
+        {/* Big handle */}
+        <motion.a
+          href="https://www.instagram.com/itamaesushibar/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block font-serif italic text-white leading-none hover:text-white/80 transition-colors duration-300"
+          style={{ fontSize: "clamp(42px, 8vw, 110px)" }}
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
+          @itamaesushibar
+        </motion.a>
 
+        {/* Divider line */}
+        <motion.div
+          className="w-px h-12 bg-white/20 mx-auto my-10"
+          initial={{ scaleY: 0 }}
+          whileInView={{ scaleY: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        />
+
+        {/* Two CTA links */}
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <a
+            href="https://www.instagram.com/itamaesushibar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 border border-white/25 text-white px-8 py-3.5 text-[12px] font-bold uppercase tracking-[0.15em] hover:bg-white hover:text-itamae-green transition-all duration-300"
+          >
+            <Instagram size={14} />
+            Instagram
+          </a>
+          <a
+            href="https://www.facebook.com/itamaeOfficial/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 border border-white/25 text-white px-8 py-3.5 text-[12px] font-bold uppercase tracking-[0.15em] hover:bg-white hover:text-itamae-green transition-all duration-300"
+          >
+            <Facebook size={14} />
+            Facebook
+          </a>
+        </motion.div>
       </div>
     </section>
   );
