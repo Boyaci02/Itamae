@@ -16,7 +16,7 @@ import {
   Phone,
   Play
 } from "lucide-react";
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
@@ -660,16 +660,49 @@ const ContentSlider = () => {
 };
 
 const Locations = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: "left" | "right") => {
+    if (!scrollRef.current) return;
+    const amount = 440;
+    scrollRef.current.scrollBy({ left: direction === "right" ? amount : -amount, behavior: "smooth" });
+  };
+
   return (
     <section id="locations" className="bg-itamae-green py-20 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="px-6 mb-10">
-          <span className="text-white/40 text-xs font-bold uppercase tracking-[0.3em]">Våra restauranger</span>
-          <h2 className="text-white text-4xl md:text-5xl font-bold mt-4 font-serif italic">Hitta ditt Itamae</h2>
+        <div className="px-6 mb-10 flex items-end justify-between">
+          <div>
+            <span className="text-white/40 text-xs font-bold uppercase tracking-[0.3em]">Våra restauranger</span>
+            <h2 className="text-white text-4xl md:text-5xl font-bold mt-4 font-serif italic">Hitta ditt Itamae</h2>
+          </div>
+
+          {/* Nav arrows */}
+          <div className="flex gap-3 mb-1">
+            <button
+              onClick={() => scroll("left")}
+              aria-label="Föregående"
+              className="w-11 h-11 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+            >
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 14L6 9L11 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <button
+              onClick={() => scroll("right")}
+              aria-label="Nästa"
+              className="w-11 h-11 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+            >
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 4L12 9L7 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Horizontal scroll – both mobile and desktop */}
         <div
+          ref={scrollRef}
           className="flex gap-5 overflow-x-auto pb-4 pl-6 pr-6 snap-x snap-mandatory"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
