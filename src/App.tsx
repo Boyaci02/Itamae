@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, useLocation } from "react-router-dom";
+import { useSidMeta, restaurangSchema } from "./seo";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -167,7 +168,9 @@ const LocationCard = ({ location }) => {
   );
 };
 
-const KontaktPage = () => (
+const KontaktPage = () => {
+  useSidMeta({ titel: "Kontakta oss | Itamae Sushi", beskrivning: "Kontakta Itamae Sushi. Hitta telefonnummer, adresser och öppettider till våra fem restauranger i Stockholm, eller skicka ett meddelande till oss." });
+  return (
   <div className="pt-32 pb-24 bg-zinc-100 min-h-screen">
     <div className="max-w-5xl mx-auto px-4 md:px-6">
       <motion.div
@@ -267,9 +270,12 @@ const KontaktPage = () => (
       </div>
     </div>
   </div>
-);
+  );
+};
 
-const FAQPage = () => (
+const FAQPage = () => {
+  useSidMeta({ titel: "Vanliga frågor | Itamae Sushi", beskrivning: "Svar på vanliga frågor om Itamae Sushi: bordsbokning, takeaway, allergier, catering och öppettider på våra restauranger i Stockholm." });
+  return (
   <div className="pt-32 pb-24 bg-zinc-100 min-h-screen">
     <div className="max-w-3xl mx-auto px-6">
       <h1 className="font-serif text-5xl text-itamae-charcoal mb-4">FAQ</h1>
@@ -321,9 +327,12 @@ const FAQPage = () => (
       </div>
     </div>
   </div>
-);
+  );
+};
 
-const TermsPage = () => (
+const TermsPage = () => {
+  useSidMeta({ titel: "Villkor | Itamae Sushi", beskrivning: "Villkor för beställning, betalning och bokning hos Itamae Sushi." });
+  return (
   <div className="pt-32 pb-24 bg-zinc-100 min-h-screen">
     <div className="max-w-3xl mx-auto px-6">
       <h1 className="font-serif text-5xl text-itamae-charcoal mb-8">Vilkor</h1>
@@ -341,7 +350,8 @@ const TermsPage = () => (
       </div>
     </div>
   </div>
-);
+  );
+};
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -778,6 +788,16 @@ const LocationDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const location = locations.find(l => l.id === id);
+
+  useSidMeta(location ? {
+    titel: `Itamae ${location.name} | Sushi på ${location.address}`,
+    beskrivning: `Itamae ${location.name} ligger på ${location.address}, ${location.zipCode}. Färsk sushi, sashimi och japanska favoriter. Öppet ${location.hours.var} på vardagar. Ring ${location.phone} eller beställ online.`,
+    bild: location.image,
+    schema: restaurangSchema(location),
+  } : {
+    titel: "Restaurangen hittades inte | Itamae Sushi",
+    beskrivning: "Sidan kunde inte hittas. Se alla våra restauranger på itamae.se.",
+  });
 
   if (!location) return <div className="min-h-screen bg-itamae-green flex items-center justify-center text-white">Location not found</div>;
 
