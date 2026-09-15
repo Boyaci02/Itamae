@@ -738,8 +738,7 @@ const Locations = () => {
                 <motion.div
                   className="group flex items-center justify-between py-5 md:py-6 cursor-pointer"
                   onHoverStart={() => setHoveredIndex(i)}
-                  whileHover={{ x: 8 }}
-                  transition={{ duration: 0.2 }}
+                  whileHover={{ x: 8, transition: { duration: 0.2 } }}
                   initial={{ opacity: 0, x: -16 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
