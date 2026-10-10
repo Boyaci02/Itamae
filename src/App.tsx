@@ -49,7 +49,7 @@ const locations = [
     name: "Kungsholmen",
     address: "Fleminggatan 16",
     zipCode: "112 26 Stockholm",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a861d636702fd298b4a0cd.jpg",
+    image: "/img/69a861d636702fd298b4a0cd.webp",
     orderUrl: "https://qopla.com/restaurant/itamae---kungsholmen/qyZRx7WVdM/order",
     color: "blue",
     isGrill: false,
@@ -210,6 +210,7 @@ const KontaktPage = () => {
                   href="https://www.instagram.com/itamaesushibar/" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  aria-label="Instagram"
                   className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform"
                 >
                   <Instagram size={24} className="md:w-7 md:h-7" />
@@ -218,6 +219,7 @@ const KontaktPage = () => {
                   href="https://www.facebook.com/itamaeOfficial/" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  aria-label="Facebook"
                   className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#1877F2] flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform"
                 >
                   <Facebook size={24} className="md:w-7 md:h-7" />
@@ -422,6 +424,7 @@ const Navbar = () => {
             
             <button 
               className="text-white lg:hidden z-50 p-2"
+              aria-label={mobileMenuOpen ? "Stäng meny" : "Öppna meny"}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -686,12 +689,14 @@ const ContentSlider = () => {
           <div className="flex items-center gap-4 mt-8">
             <button
               onClick={() => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)}
+              aria-label="Föregående bild"
               className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-all"
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </button>
             <button
               onClick={() => setCurrentSlide((prev) => (prev + 1) % slides.length)}
+              aria-label="Nästa bild"
               className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-all"
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -701,6 +706,7 @@ const ContentSlider = () => {
                 <button
                   key={i}
                   onClick={() => setCurrentSlide(i)}
+                  aria-label={`Gå till bild ${i + 1}`}
                   className={`h-px transition-all duration-400 ${i === currentSlide ? "w-8 bg-white" : "w-4 bg-white/25"}`}
                 />
               ))}
@@ -902,8 +908,10 @@ const InstagramFeed = () => {
       {/* Subtle food image background */}
       <div className="absolute inset-0">
         <img
-          src="https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a9ef54bffadf30dfba3a8d.png"
+          src="/img/69a9ef54bffadf30dfba3a8d.webp"
           alt=""
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover object-center opacity-20"
           referrerPolicy="no-referrer"
         />
@@ -1150,6 +1158,7 @@ const Testimonial = () => {
             <button
               key={i}
               onClick={() => setCurrentIndex(i)}
+              aria-label={`Gå till bild ${i + 1}`}
               className={`h-px transition-all duration-300 ${i === currentIndex ? "w-8 bg-white" : "w-4 bg-white/20"}`}
             />
           ))}
@@ -1556,7 +1565,7 @@ const Footer = () => {
       delay: 0.08,
       content: (
         <>
-          <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Restauranger</h4>
+          <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Restauranger</h3>
           <ul className="space-y-3">
             {locations.map((loc) => (
               <li key={loc.id}>
@@ -1573,7 +1582,7 @@ const Footer = () => {
       delay: 0.16,
       content: (
         <>
-          <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Länkar</h4>
+          <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Länkar</h3>
           <ul className="space-y-3">
             <li>
               <Link to="/nyheter" className="text-white/60 text-[13px] hover:text-white transition-colors">Nyheter</Link>
@@ -1592,7 +1601,7 @@ const Footer = () => {
       delay: 0.24,
       content: (
         <>
-          <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Kontakt</h4>
+          <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Kontakt</h3>
           <ul className="space-y-3">
             <li>
               <a href="mailto:info@itamae.se" className="text-white/60 text-[13px] hover:text-white transition-colors">info@itamae.se</a>
@@ -1606,12 +1615,12 @@ const Footer = () => {
       delay: 0.32,
       content: (
         <>
-          <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Följ oss</h4>
+          <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Följ oss</h3>
           <div className="flex gap-4">
-            <motion.a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+            <motion.a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
               <Facebook size={18} className="text-white/40 hover:text-white transition-colors" />
             </motion.a>
-            <motion.a href="https://www.instagram.com/itamaesushibar/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+            <motion.a href="https://www.instagram.com/itamaesushibar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
               <Instagram size={18} className="text-white/40 hover:text-white transition-colors" />
             </motion.a>
           </div>
