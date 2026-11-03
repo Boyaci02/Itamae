@@ -354,22 +354,13 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 * (i + 1) }}
                 >
-                  {item.to ? (
-                    <Link 
-                      to={item.to} 
-                      className="text-white text-4xl font-serif italic hover:text-itamae-red transition-colors block"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                    <button 
-                      className="text-white text-4xl font-serif italic hover:text-itamae-red transition-colors w-full"
-                      onClick={item.onClick}
-                    >
-                      {item.label}
-                    </button>
-                  )}
+                  <Link 
+                    to={item.to} 
+                    className="text-white text-4xl font-serif italic hover:text-itamae-red transition-colors block"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
                 </motion.div>
               ))}
               
