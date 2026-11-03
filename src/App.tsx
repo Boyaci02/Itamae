@@ -17,8 +17,11 @@ import {
   Play
 } from "lucide-react";
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
-import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, useLocation } from "react-router-dom";
-import { useSidMeta, restaurangSchema } from "./seo";
+import { Routes, Route, Link, useParams, useNavigate, useLocation } from "react-router-dom";
+import { locations } from "./data/platser";
+import { publiceradeNyheter } from "./data/nyheter";
+import { FAQ_ALLMAN } from "./sidor";
+import { LocationDetail, RestaurangerPage, MenyPage, NotFound, SidHuvud } from "./sidkomponenter";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -42,98 +45,6 @@ const ItamaeLogo = ({ size = "md" }) => {
     />
   );
 };
-
-const locations = [
-  {
-    id: "kungsholmen",
-    name: "Kungsholmen",
-    address: "Fleminggatan 16",
-    zipCode: "112 26 Stockholm",
-    image: "/img/69a861d636702fd298b4a0cd.webp",
-    orderUrl: "https://qopla.com/restaurant/itamae---kungsholmen/qyZRx7WVdM/order",
-    color: "blue",
-    isGrill: false,
-    phone: "08-32 70 32",
-    hours: {
-      var: "11.00-21.00",
-      lor: "11.00-21.00",
-      son: "11.00-21.00"
-    },
-    mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2ses!4v1772748550829!5m2!1sen!2ses!6m8!1m7!1sV1pAMf7nhbQiMKkkCxsVoA!2m2!1d59.33299706809522!2d18.04512301671291!3f315.73257326866565!4f0.4191554857457902!5f0.7820865974627469" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
-  },
-  {
-    id: "sundbyberg",
-    name: "Sundbyberg",
-    address: "Landsvägen 33",
-    zipCode: "172 63 Sundbyberg",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a861d6bffadfdbf6766b34.jpeg",
-    orderUrl: "https://qopla.com/restaurant/itamae-sushi-&-grill---sundbyberg/qbgL3aM4Ov/order",
-    color: "blue",
-    isGrill: true,
-    phone: "08-28 78 28",
-    hours: {
-      var: "11.00-21.00",
-      lor: "11.00-22.00",
-      son: "11.00-21.00"
-    },
-    hoursDisplay: [
-      { label: "FRE-LÖR", value: "11.00-22.00" },
-      { label: "SÖN-TOR", value: "11.00-21.00" }
-    ],
-    mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2ses!4v1772748163634!5m2!1sen!2ses!6m8!1m7!1sy9eZvuDyk5x5BMHALuCzMw!2m2!1d59.35990314274139!2d17.97223218007605!3f250.7489!4f0!5f0.7820865974627469" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
-  },
-  {
-    id: "hagastaden",
-    name: "Hagastaden",
-    address: "Norra Stationsgatan 66E-66F",
-    zipCode: "113 64 Stockholm",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a861d61d4c8d62911d4785.jpeg",
-    orderUrl: "https://qopla.com/restaurant/itamae---hagastaden/qAa9ZDPdv1/order",
-    color: "blue",
-    isGrill: false,
-    phone: "08-32 71 32",
-    hours: {
-      var: "11.00-21.00",
-      lor: "11.00-21.00",
-      son: "11.00-21.00"
-    },
-    mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2ses!4v1772748289780!5m2!1sen!2ses!6m8!1m7!1sxL07DVIDAr6wlcF-tvvLdg!2m2!1d59.34740445412145!2d18.03680259775461!3f308.7897302305288!4f3.7136599781424167!5f1.8719637665788689" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
-  },
-  {
-    id: "odengatan",
-    name: "Odengatan",
-    address: "Odengatan 62",
-    zipCode: "113 22 Stockholm",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a861d636702f76f6b4a0ce.jpg",
-    orderUrl: "https://qopla.com/restaurant/itamae---odenplan/qvyAzJvzzJ/order",
-    color: "blue",
-    isGrill: false,
-    phone: "08-32 70 20",
-    hours: {
-      var: "11.00-21.00",
-      lor: "11.00-21.00",
-      son: "11.00-21.00"
-    },
-    mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2ses!4v1772748413372!5m2!1sen!2ses!6m8!1m7!1sJquFglDsorZyMqVrdUDX5A!2m2!1d59.34320043629675!2d18.05224510701819!3f333.0793921462883!4f-5.581497786661785!5f2.755265777737071" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
-  },
-  {
-    id: "danderyd",
-    name: "Danderyd",
-    address: "Golfvägen 2",
-    zipCode: "182 31 Danderyd, Stockholm",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69a861d6bffadf11f1766b33.jpg",
-    orderUrl: "https://qopla.com/restaurant/itamae---danderyd/q3Prp4Xj7z/order",
-    color: "blue",
-    isGrill: false,
-    phone: "08-32 73 32",
-    hours: {
-      var: "11.00-21.00",
-      lor: "11.00-21.00",
-      son: "11.00-21.00"
-    },
-    mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2ses!4v1772748474107!5m2!1sen!2ses!6m8!1m7!1sBj9pkpyWlavRp11sY6ZxyA!2m2!1d59.39671684193847!2d18.03666504119831!3f65.52715188774451!4f-1.2362561577949123!5f1.8051929351732046" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
-  }
-];
 
 const LocationCard = ({ location }) => {
   return (
@@ -169,7 +80,6 @@ const LocationCard = ({ location }) => {
 };
 
 const KontaktPage = () => {
-  useSidMeta({ titel: "Kontakta oss | Itamae Sushi", beskrivning: "Kontakta Itamae Sushi. Hitta telefonnummer, adresser och öppettider till våra fem restauranger i Stockholm, eller skicka ett meddelande till oss." });
   return (
   <div className="pt-32 pb-24 bg-zinc-100 min-h-screen">
     <div className="max-w-5xl mx-auto px-4 md:px-6">
@@ -255,7 +165,7 @@ const KontaktPage = () => {
                 transition={{ duration: 0.4, delay: 0.35 + i * 0.07, ease: "easeOut" }}
               >
                 <div className="flex-1 min-w-0">
-                  <h4 className="font-serif italic text-xl md:text-2xl">{loc.name}</h4>
+                  <h2 className="font-serif italic text-xl md:text-2xl"><Link to={`/location/${loc.id}`} className="hover:underline underline-offset-4">{loc.name}</Link></h2>
                   <p className="text-white/50 text-[10px] md:text-xs uppercase tracking-widest mt-2">{loc.address}</p>
                 </div>
                 <motion.a
@@ -276,44 +186,14 @@ const KontaktPage = () => {
 };
 
 const FAQPage = () => {
-  useSidMeta({ titel: "Vanliga frågor | Itamae Sushi", beskrivning: "Svar på vanliga frågor om Itamae Sushi: bordsbokning, takeaway, allergier, catering och öppettider på våra restauranger i Stockholm." });
   return (
   <div className="pt-32 pb-24 bg-zinc-100 min-h-screen">
     <div className="max-w-3xl mx-auto px-6">
-      <h1 className="font-serif text-5xl text-itamae-charcoal mb-4">FAQ</h1>
+      <h1 className="font-serif text-5xl text-itamae-charcoal mb-4">Vanliga frågor</h1>
       <p className="text-itamae-charcoal/60 mb-12 text-lg">Här hittar du vanliga frågor till oss</p>
       
       <div className="space-y-6">
-        {[
-          { 
-            q: "Har ni hemkörning?", 
-            a: "Ja, under respektive restaurang finner ni knappen 'Takeaway & Delivery' som länkar till beställningssidan."
-          },
-          { 
-            q: "Finns det vegan sushi?", 
-            a: "Ja vi har flera olika vegan alternativ. Det skiljer sig lite för respektive restaurang. Se mer på restaurangens sida." 
-          },
-          { 
-            q: "Har ni annan mat än Sushi?", 
-            a: "Ja, förutom sushi har enheterna även andra asiatiska rätter & grill av mycket hög klass i sortimentet." 
-          },
-          { 
-            q: "Hur länge har ni funnits?", 
-            a: "Vi öppnade vår första sushi restaurang redan år 2000." 
-          },
-          { 
-            q: "Vilka öppettider har ni?", 
-            a: "Ni hittar öppettiderna under respektive restaurang." 
-          },
-          { 
-            q: "Hur kan man betala hos er?", 
-            a: "Vi är en kontantfri restaurang, endast kort och Swish tas emot." 
-          },
-          { 
-            q: "Vad betyder Itamae?", 
-            a: "Itamae betyder på japanska: köksmästare, det högsta en sushikock kan uppnå." 
-          }
-        ].map((item, i) => (
+        {FAQ_ALLMAN.map((item, i) => (
           <motion.div 
             key={i} 
             initial={{ opacity: 0, y: 20 }}
@@ -322,7 +202,7 @@ const FAQPage = () => {
             transition={{ delay: i * 0.1 }}
             className="bg-white p-8 rounded-2xl shadow-sm border border-black/5"
           >
-            <h3 className="font-bold text-itamae-charcoal text-xl mb-3">{item.q}</h3>
+            <h2 className="font-bold text-itamae-charcoal text-xl mb-3">{item.q}</h2>
             <p className="text-itamae-charcoal/70 leading-relaxed">{item.a}</p>
           </motion.div>
         ))}
@@ -333,18 +213,17 @@ const FAQPage = () => {
 };
 
 const TermsPage = () => {
-  useSidMeta({ titel: "Villkor | Itamae Sushi", beskrivning: "Villkor för beställning, betalning och bokning hos Itamae Sushi." });
   return (
   <div className="pt-32 pb-24 bg-zinc-100 min-h-screen">
     <div className="max-w-3xl mx-auto px-6">
-      <h1 className="font-serif text-5xl text-itamae-charcoal mb-8">Vilkor</h1>
+      <h1 className="font-serif text-5xl text-itamae-charcoal mb-8">Villkor</h1>
       <div className="bg-white p-8 rounded-2xl shadow-sm prose prose-sm max-w-none">
-        <h3 className="text-itamae-charcoal">Allmänna villkor</h3>
+        <h2 className="text-itamae-charcoal">Allmänna villkor</h2>
         <p className="text-itamae-charcoal/60">
           Här hittar du våra allmänna villkor för användning av vår webbplats och våra tjänster.
           Vi strävar alltid efter att ge dig den bästa möjliga upplevelsen.
         </p>
-        <h3 className="text-itamae-charcoal mt-6">Integritetspolicy</h3>
+        <h2 className="text-itamae-charcoal mt-6">Integritetspolicy</h2>
         <p className="text-itamae-charcoal/60">
           Din integritet är viktig för oss. Vi hanterar dina personuppgifter med största försiktighet
           i enlighet med gällande lagstiftning.
@@ -404,6 +283,9 @@ const Navbar = () => {
                 Restauranger
               </motion.button>
               <motion.div whileHover={{ y: -1 }}>
+                <Link to="/meny" className="hover:text-white transition-colors">Meny</Link>
+              </motion.div>
+              <motion.div whileHover={{ y: -1 }}>
                 <Link to="/kontakt" className="hover:text-white transition-colors">Kontakt</Link>
               </motion.div>
               <motion.div whileHover={{ y: -1 }}>
@@ -445,6 +327,7 @@ const Navbar = () => {
             <div className="flex flex-col gap-10 text-center px-6 w-full max-w-sm">
               {[
                 { label: "Restauranger", onClick: () => { setMobileMenuOpen(false); scrollToLocations(); } },
+                { label: "Meny", to: "/meny" },
                 { label: "Kontakt", to: "/kontakt" },
                 { label: "FAQ", to: "/faq" }
               ].map((item, i) => (
@@ -542,7 +425,7 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.7 }}
           className="text-white/50 text-[11px] font-bold uppercase tracking-[0.35em] mb-4 block"
         >
-          Sushi restaurang
+          Sushi i Stockholm sedan 2000
         </motion.span>
 
         <motion.h1
@@ -788,119 +671,6 @@ const Locations = () => {
     </section>
   );
 };
-
-const LocationDetail = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const location = locations.find(l => l.id === id);
-
-  useSidMeta(location ? {
-    titel: `Itamae ${location.name} | Sushi på ${location.address}`,
-    beskrivning: `Itamae ${location.name} ligger på ${location.address}, ${location.zipCode}. Färsk sushi, sashimi och japanska favoriter. Öppet ${location.hours.var} på vardagar. Ring ${location.phone} eller beställ online.`,
-    bild: location.image,
-    schema: restaurangSchema(location),
-  } : {
-    titel: "Restaurangen hittades inte | Itamae Sushi",
-    beskrivning: "Sidan kunde inte hittas. Se alla våra restauranger på itamae.se.",
-  });
-
-  if (!location) return <div className="min-h-screen bg-itamae-green flex items-center justify-center text-white">Location not found</div>;
-
-  return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="min-h-screen bg-itamae-green pt-32 pb-24 px-6"
-    >
-      <div className="max-w-5xl mx-auto">
-        <button 
-          onClick={() => navigate("/")}
-          className="flex items-center gap-2 text-white/60 hover:text-white mb-12 transition-colors group"
-        >
-          <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-          <span>Tillbaka till start</span>
-        </button>
-
-        <div className="text-center mb-16 space-y-6">
-          <div className="flex justify-center mb-8">
-            <ItamaeLogo size="lg" />
-          </div>
-          <h1 className="text-white text-5xl md:text-6xl font-bold font-serif italic">Itamae {location.name}</h1>
-        </div>
-
-        {/* Action Buttons */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
-          <a 
-            href={location.orderUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-white/5 hover:bg-white/10 text-white h-24 px-8 rounded-2xl font-bold flex flex-col items-center justify-center transition-all border border-white/10 hover:border-white/20 text-center"
-          >
-            <span className="uppercase tracking-[0.2em] text-[10px] text-white/60 mb-1 group-hover:text-white/80 transition-colors">Se vår</span>
-            <span className="text-2xl font-serif italic">Meny</span>
-          </a>
-          
-          <a 
-            href={location.orderUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-itamae-red text-white h-24 px-8 rounded-2xl font-bold flex flex-col items-center justify-center transition-all shadow-xl hover:shadow-itamae-red/20 hover:scale-[1.02] active:scale-[0.98] text-center"
-          >
-            <span className="uppercase tracking-[0.2em] text-[10px] text-white/80 mb-1">Beställ</span>
-            <span className="text-2xl font-serif italic">Takeaway</span>
-          </a>
-        </div>
-
-        {/* Info Boxes */}
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
-          <div className="bg-white p-10 rounded-2xl border border-black/5 text-center space-y-6 shadow-sm">
-            <h3 className="text-itamae-charcoal font-bold text-2xl uppercase tracking-widest">Öppettider</h3>
-            <div className="space-y-2 text-itamae-charcoal/70 text-lg">
-              {location.hoursDisplay ? (
-                location.hoursDisplay.map((h, i) => (
-                  <p key={i}>{h.label}. {h.value}</p>
-                ))
-              ) : (
-                <>
-                  <p>VAR. {location.hours.var}</p>
-                  <p>LÖR. {location.hours.lor}</p>
-                  <p>SÖN. {location.hours.son}</p>
-                </>
-              )}
-            </div>
-          </div>
-          
-          <div className="bg-white p-10 rounded-2xl border border-black/5 text-center space-y-6 shadow-sm">
-            <h3 className="text-itamae-charcoal font-bold text-2xl uppercase tracking-widest">Adress</h3>
-            <div className="space-y-2 text-itamae-charcoal/70 text-lg">
-              <p>{location.address}</p>
-              <p>{location.zipCode}</p>
-              <p>Tel. {location.phone}</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Map */}
-        {location.mapIframe && (
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-            <div dangerouslySetInnerHTML={{ __html: location.mapIframe }} />
-          </div>
-        )}
-
-        {/* Image Gallery / Featured Image */}
-        <div className="mt-16 aspect-video rounded-2xl overflow-hidden shadow-2xl">
-          <img 
-            src={location.image} 
-            alt={location.name} 
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
-        </div>
-      </div>
-    </motion.div>
-  );
-};
-
 
 const InstagramFeed = () => {
   return (
@@ -1221,69 +991,6 @@ const OrderCTA = () => {
   );
 };
 
-const newsArticles = [
-  {
-    id: 1,
-    slug: "ny-plats-stockholm",
-    tag: "Nyhet",
-    date: "20 mars 2026",
-    title: "Itamae öppnar på ny plats i Stockholm",
-    excerpt: "Vi är glada att kunna meddela att Itamae snart öppnar en ny restaurang i hjärtat av Stockholm. En ny destination för sushiälskare i stan.",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b36702fc576431e00.webp",
-    featured: true,
-    content: [
-      "Vi är otroligt glada att kunna dela med oss av den spännande nyheten att Itamae snart öppnar ytterligare en restaurang i Stockholm. Den nya platsen kommer att ligga centralt och vara lättillgänglig för alla som älskar vår sushi.",
-      "Precis som på våra övriga restauranger kommer den nya platsen att erbjuda hela vår meny – från klassisk nigiri och maki till smakrika bowls och shakemushi. Inredningen följer Itamaes stilrena estetik med en varm och välkomnande atmosfär.",
-      "Datum för öppning och exakt adress kommer att tillkännages inom kort. Följ oss på Instagram och Facebook för att vara den första att få veta mer.",
-    ],
-  },
-  {
-    id: 2,
-    slug: "var-meny-2026",
-    tag: "Meny",
-    date: "5 mars 2026",
-    title: "Ny vårmeny med japanska smaker",
-    excerpt: "Upplev vårens bästa råvaror i vår nya säsongsmeny – inspirerad av japansk tradition och svenska smaker.",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515bb003fab5b01496de.webp",
-    featured: false,
-    content: [
-      "Med våren i luften lanserar vi en ny säsongsmeny som kombinerar japanska råvaror med det bästa från det svenska köket. Menyn är framtagen av våra kockar med fokus på friska smaker och hög kvalitet.",
-      "Bland nyheterna hittar du bland annat vår nya vår-poke bowl med grillad lax, edamame och en lätt sesamdressing, samt ett urval av säsongsanpassade nigiri med lokalt inspirerade toppings.",
-      "Vårmenyn finns tillgänglig på alla våra restauranger från och med den 5 mars. Välkommen att smaka!",
-    ],
-  },
-  {
-    id: 3,
-    slug: "mot-vara-kockar",
-    tag: "Bakom kulisserna",
-    date: "15 feb 2026",
-    title: "Möt våra kockar",
-    excerpt: "Bakom varje rulle och varje bowl finns ett dedikerat team av kockar som brinner för japansk matkultur. Vi presenterar några av hjärnorna bakom Itamae.",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b7bdf38eaefc96d3d.webp",
-    featured: false,
-    content: [
-      "På Itamae är maten mer än bara en produkt – den är resultatet av passion, precision och många års erfarenhet. Våra kockar kommer från olika bakgrunder men delar en sak: en djup kärlek till japansk matkultur.",
-      "Köksmästare på våra restauranger har utbildat sig i Japan och Sverige, och de kombinerar traditionella tekniker med moderna presentationer. Varje rät som lämnar vårt kök har genomgått samma noggranna kontroll och omsorg.",
-      "Vi är stolta över att ha ett team som hela tiden utmanar sig självt och strävar efter att ge gästerna en upplevelse utöver det vanliga – varje dag.",
-    ],
-  },
-  {
-    id: 4,
-    slug: "25-ar",
-    tag: "Jubileum",
-    date: "1 jan 2026",
-    title: "Itamae firar 25 år",
-    excerpt: "År 2000 öppnade Itamae sina dörrar för första gången. Nu firar vi 25 år av sushi, glädje och fantastiska gäster. Tack för att ni följt oss!",
-    image: "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69ac515b618c8d636e546320.webp",
-    featured: false,
-    content: [
-      "Det är svårt att tro att det redan gått 25 år sedan vi öppnade den första Itamae-restaurangen. Det som började som en liten sushibar har vuxit till fem restauranger runt om i Stockholm-regionen – och resan har bara börjat.",
-      "Under dessa 25 år har vi serverat hundratusentals gäster, lanserat otaliga menyer och byggt ett team som vi är otroligt stolta över. Det är ni – våra trogna gäster – som gjort allt detta möjligt.",
-      "För att fira jubileet planerar vi en rad specialevenemang och begränsade menyer under 2026. Håll utkik på vår hemsida och sociala medier för mer information. Skål för 25 år – och för många fler!",
-    ],
-  },
-];
-
 const LatestNews = () => {
   return (
     <section className="bg-itamae-cream py-24 md:py-32">
@@ -1313,7 +1020,7 @@ const LatestNews = () => {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {newsArticles.map((article, i) => (
+          {publiceradeNyheter.map((article, i) => (
             <motion.article
               key={article.id}
               initial={{ opacity: 0, y: 30 }}
@@ -1376,7 +1083,7 @@ const LatestNews = () => {
 const BlogDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const article = newsArticles.find((a) => a.slug === slug);
+  const article = publiceradeNyheter.find((a) => a.slug === slug);
 
   if (!article) {
     return (
@@ -1493,7 +1200,7 @@ const NewsArchive = () => {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {newsArticles.map((article, i) => (
+          {publiceradeNyheter.map((article, i) => (
             <motion.article
               key={article.id}
               initial={{ opacity: 0, y: 30 }}
@@ -1585,6 +1292,12 @@ const Footer = () => {
           <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Länkar</h3>
           <ul className="space-y-3">
             <li>
+              <Link to="/meny" className="text-white/60 text-[13px] hover:text-white transition-colors">Meny</Link>
+            </li>
+            <li>
+              <Link to="/restauranger" className="text-white/60 text-[13px] hover:text-white transition-colors">Alla restauranger</Link>
+            </li>
+            <li>
               <Link to="/nyheter" className="text-white/60 text-[13px] hover:text-white transition-colors">Nyheter</Link>
             </li>
             <li>
@@ -1592,6 +1305,9 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/faq" className="text-white/60 text-[13px] hover:text-white transition-colors">FAQ</Link>
+            </li>
+            <li>
+              <Link to="/villkor" className="text-white/60 text-[13px] hover:text-white transition-colors">Villkor</Link>
             </li>
           </ul>
         </>
@@ -1664,8 +1380,9 @@ const Footer = () => {
 
 export default function App() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
+      <SidHuvud />
       <div className="min-h-screen">
         <Navbar />
         <Routes>
@@ -1680,15 +1397,18 @@ export default function App() {
               <OrderCTA />
             </>
           } />
+          <Route path="/restauranger" element={<RestaurangerPage />} />
+          <Route path="/meny" element={<MenyPage />} />
           <Route path="/location/:id" element={<LocationDetail />} />
           <Route path="/nyheter" element={<NewsArchive />} />
           <Route path="/nyheter/:slug" element={<BlogDetail />} />
           <Route path="/kontakt" element={<KontaktPage />} />
           <Route path="/faq" element={<FAQPage />} />
-          <Route path="/vilkor" element={<TermsPage />} />
+          <Route path="/villkor" element={<TermsPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }

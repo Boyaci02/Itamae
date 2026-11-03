@@ -24,3 +24,17 @@
     text-wrap: balance;
   }
 }
+
+/* Hero-entré på de förrenderade sidorna. Ren CSS, så texten syns även utan
+   JavaScript och för crawlare; avstängd vid prefers-reduced-motion. */
+@keyframes itamae-upp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+.itamae-entre { animation: itamae-upp 0.7s cubic-bezier(0.25, 1, 0.5, 1) both; }
+.itamae-entre-sen { animation-delay: 0.12s; }
+@media (prefers-reduced-motion: reduce) {
+  .itamae-entre { animation: none; }
+}
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

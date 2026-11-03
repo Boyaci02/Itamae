@@ -1,0 +1,4960 @@
+{
+ "shop": {
+  "id": "649d30f04f5efa236ce6968d",
+  "publicId": "qAa9ZDPdv1",
+  "name": "Itamae - Hagastaden",
+  "desc": "",
+  "companyId": "642bf73401e5d56b6b4e9908",
+  "menuIds": [
+   "69e5c73eaad5c555ea37b71f",
+   "69e5d68b124b0246c2936f5d",
+   "69e5d7fcaad5c555ea37b8b9",
+   "69e1e5e32e83901dab4a9bf6"
+  ],
+  "organisationNumber": "5593225898",
+  "activeHours": [
+   {
+    "closed": false,
+    "date": null,
+    "dayOfWeek": "MONDAY",
+    "desc": null,
+    "startingHour": "10:15",
+    "stoppingHour": "20:45"
+   },
+   {
+    "closed": false,
+    "date": null,
+    "dayOfWeek": "TUESDAY",
+    "desc": null,
+    "startingHour": "10:15",
+    "stoppingHour": "20:45"
+   },
+   {
+    "closed": false,
+    "date": null,
+    "dayOfWeek": "WEDNESDAY",
+    "desc": null,
+    "startingHour": "10:15",
+    "stoppingHour": "20:45"
+   },
+   {
+    "closed": false,
+    "date": null,
+    "dayOfWeek": "THURSDAY",
+    "desc": null,
+    "startingHour": "10:15",
+    "stoppingHour": "20:45"
+   },
+   {
+    "closed": false,
+    "date": null,
+    "dayOfWeek": "FRIDAY",
+    "desc": null,
+    "startingHour": "10:15",
+    "stoppingHour": "20:45"
+   },
+   {
+    "closed": false,
+    "date": null,
+    "dayOfWeek": "SATURDAY",
+    "desc": null,
+    "startingHour": "10:15",
+    "stoppingHour": "20:45"
+   },
+   {
+    "closed": false,
+    "date": null,
+    "dayOfWeek": "SUNDAY",
+    "desc": null,
+    "startingHour": "10:15",
+    "stoppingHour": "20:45"
+   }
+  ],
+  "contactInformation": {
+   "name": null,
+   "addressLine": "Norra Stationsgatan 66",
+   "addressLine2": null,
+   "postCode": 11366,
+   "city": "Stockholm",
+   "phoneNumber": "08-32 71 32",
+   "phoneNumber2": null,
+   "email": "info@itamae.se",
+   "latLng": null
+  }
+ },
+ "menus": [
+  {
+   "id": "69e5c73eaad5c555ea37b71f",
+   "name": "Delivery Meny - UberEats",
+   "description": "Kungsholmen, Hagastaden, Danderyd och Odenplan ",
+   "disabled": false,
+   "eatingOptions": [
+    "TAKE_AWAY",
+    "HOME_DELIVERY"
+   ],
+   "sortOrder": 0,
+   "menuProductCategories": [
+    {
+     "id": "2c61f31e-68c8-49c3-9c9b-efa191d819e8",
+     "name": "Kombos med dryck",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 0,
+     "menuProducts": [],
+     "menuBundleProducts": [
+      {
+       "id": "f299135d-4c7a-4ceb-a924-cf58f7620b4b",
+       "price": 225.0,
+       "sortOrder": 0,
+       "refBundleProduct": {
+        "id": "688b7cc6a0826c5aac95d3f8",
+        "name": "Halstrad Lax Rulle  + Dryck",
+        "description": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & salladslök. Dryck ingår!",
+        "contents": "",
+        "defaultPrice": 204.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax-rulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "f175fb24-c91a-407a-afdf-5cc8557bb1cd",
+       "price": 218.0,
+       "sortOrder": 1,
+       "refBundleProduct": {
+        "id": "654a05218481e126f2f72abc",
+        "name": "Poké Bowl Lax + Dryck",
+        "description": "Råmarinerad Lax med ris, blandade grönsaker och chilimajonnäs. Dryck ingår!",
+        "contents": "",
+        "defaultPrice": 208.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Laxbowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "3a83a68a-9785-4582-8101-1bdfa2965a36",
+       "price": null,
+       "sortOrder": 2,
+       "refBundleProduct": {
+        "id": "6602ddc5f7ca1d52df9ba0d6",
+        "name": "Shake-Avokado 12 bitar + Dryck",
+        "description": "Nigiri, lax och avokado. Dryck ingår!",
+        "contents": "",
+        "defaultPrice": 239.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shake-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "0cf9ace1-7b8b-45f7-b880-54d975230e7c",
+       "price": null,
+       "sortOrder": 3,
+       "refBundleProduct": {
+        "id": "6602de44e9504c7d51276dab",
+        "name": "California Roll + Dryck",
+        "description": "Crabbstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs & sesamfrön. Dryck ingår.",
+        "contents": "",
+        "defaultPrice": 214.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_California-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "6b54d49a-bf69-4bd4-aabd-0a759a690b28",
+       "price": null,
+       "sortOrder": 4,
+       "refBundleProduct": {
+        "id": "6602de534aae8b0924d3d1d7",
+        "name": "Philadelphia Roll + Dryck",
+        "description": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök & majonnäs, toppad med rostad lök, majonnäs & sesamfrön. Dryck ingår.",
+        "contents": "",
+        "defaultPrice": 218.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Philadelphia-roll_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "4f6f3246-101b-40d6-9914-8b41957a7b77",
+     "name": "Sushi Moriawase",
+     "description": "Kockens val",
+     "disabled": false,
+     "sortOrder": 1,
+     "menuProducts": [
+      {
+       "id": "f1fe3494-0426-4ab1-88af-df3286564e65",
+       "price": 159.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642feada5a5c141b1fb46b19",
+        "name": "Nami",
+        "description": "Liten, 8 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 129.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Nami_wolt.jpg"
+       }
+      },
+      {
+       "id": "1624c92e-9da4-4248-9b51-b509fc15bbbf",
+       "price": 179.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642fead72ad8ce42ddaedcb4",
+        "name": "Joo",
+        "description": "Stor, 11 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Joo_wolt.jpg"
+       }
+      },
+      {
+       "id": "03675ea8-4ae7-4803-8321-42c4b107bbc3",
+       "price": 209.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642feb7e8d885618b23528e3",
+        "name": "Toku-Joo",
+        "description": "Special, 14 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Toko-joo_wolt.jpg"
+       }
+      },
+      {
+       "id": "361192e5-fce2-4d62-90a2-008bb31f0a7c",
+       "price": null,
+       "sortOrder": 10,
+       "refProduct": {
+        "id": "69e8879b3c2e9f6e4fa050c3",
+        "name": "Familjesushi 30 Bitar",
+        "description": "Blandade nigiri och rullar.",
+        "contents": "",
+        "defaultPrice": 475.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Familjesushi_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": [
+      {
+       "id": "27122ad4-c903-49e4-a78f-5c355fc1e8d3",
+       "price": 179.0,
+       "sortOrder": 3,
+       "refBundleProduct": {
+        "id": "655c5beed54c834fc8a80e8d",
+        "name": "Shake-Zushi",
+        "description": "Nigiri och lax. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shaki-zushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "c16800b1-c74b-41e4-9990-cc2a5685aa45",
+       "price": 179.0,
+       "sortOrder": 4,
+       "refBundleProduct": {
+        "id": "655c5c5858835001093d18a9",
+        "name": "Shake-Avokado",
+        "description": "Nigiri, lax och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shake-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "7e538020-045c-404f-a303-e1895e4330cb",
+       "price": 179.0,
+       "sortOrder": 5,
+       "refBundleProduct": {
+        "id": "655c5c5983aa572c8e0e6142",
+        "name": "Ebi to Shake-Zushi",
+        "description": "Nigiri, lax och räka. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-to-shake-zushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "beae7651-5992-487f-804e-36ec08ee6600",
+       "price": 179.0,
+       "sortOrder": 6,
+       "refBundleProduct": {
+        "id": "69e1d5d9d1878e6ba4f506c3",
+        "name": "Maguro-Avokado",
+        "description": "Nigiri, tonfisk och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Maguro-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "d66ed53f-e36d-486a-81f3-3650cf783132",
+       "price": 179.0,
+       "sortOrder": 7,
+       "refBundleProduct": {
+        "id": "69e1d67cf347ba25cf1cbb0a",
+        "name": "Ebi-Avokado",
+        "description": "Nigiri, räkor och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "1e92c162-6945-4ec9-b5b8-1a6c07027d57",
+       "price": 179.0,
+       "sortOrder": 8,
+       "refBundleProduct": {
+        "id": "65b7a439c9f4a3130c829012",
+        "name": "Halstrad Lax",
+        "description": "Halstrad lax nigiri. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax_wolt.jpg"
+       }
+      },
+      {
+       "id": "670d1bc7-b2e9-475a-b5e0-45b1fd19226e",
+       "price": 179.0,
+       "sortOrder": 9,
+       "refBundleProduct": {
+        "id": "69e1d6cef347ba25cf1cbb12",
+        "name": "Vegetarisk Sushi",
+        "description": "Vegetarisk nigiri. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Veg-sushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "dfda5b93-6101-4911-8491-1dccb1321d25",
+       "price": null,
+       "sortOrder": 11,
+       "refBundleProduct": {
+        "id": "69e88772b472336f4f829bf4",
+        "name": "Familjesushi 50/100 Bitar",
+        "description": "Blandade nigiri och rullar. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 795.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Familjesushi_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "37104c1e-0343-4dd5-bf62-6279834832c2",
+     "name": "Sashimi",
+     "description": "Råa fiskfiléer med grönsaker & ris ",
+     "disabled": false,
+     "sortOrder": 2,
+     "menuProducts": [
+      {
+       "id": "2131e867-8ddd-449e-9cd0-ad509007900f",
+       "price": 279.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "69e1d84b37e3556a1373f2c5",
+        "name": "Sashimi Shake",
+        "description": "Laxfiléer.",
+        "contents": "",
+        "defaultPrice": 239.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Sashimi-shake_wolt.jpg"
+       }
+      },
+      {
+       "id": "87e66628-d95b-4bb2-8aa8-0978869afed2",
+       "price": 299.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "69e1d84e98277075c285539e",
+        "name": "Sashimi Moriawase",
+        "description": "Blandade fiskfiléer.",
+        "contents": "",
+        "defaultPrice": 269.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Sashimi-moriawase_wolt.jpg"
+       }
+      },
+      {
+       "id": "a915ca20-5e84-4705-a93c-5c53bfee3b02",
+       "price": 199.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "69e1d88298277075c28553a6",
+        "name": "Chirashi",
+        "description": "Utvalda fiskfiléer & skaldjur på en bädd av sushiris och sjögräs, toppad med rom & salladslök.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chirashi_wolt.jpg"
+       }
+      },
+      {
+       "id": "bfbd0286-e4ec-403f-ad9f-95a3a5585888",
+       "price": 209.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "69e1d8cb3681a34a084d61aa",
+        "name": "Chirashi Shake",
+        "description": "Laxfiléer på en bädd av sushiris och sjögräs, toppad med rom & salladslök.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chirashi-shake_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "20859cac-80b4-4d6f-b22c-e0c57c3c3126",
+     "name": "Temaki",
+     "description": "Sjögrässtrutar",
+     "disabled": false,
+     "sortOrder": 3,
+     "menuProducts": [],
+     "menuBundleProducts": [
+      {
+       "id": "32c4a6d5-48d5-49f5-9a9d-6432057f25f0",
+       "price": 69.0,
+       "sortOrder": 0,
+       "refBundleProduct": {
+        "id": "642fef9d5a5c141b1fb46cac",
+        "name": "Temaki",
+        "description": "T.ex. Lax-Purjo, Tonfisk-Koriander, Räka-Rom",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Temaki_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "0b9bfcbb-c887-4cad-9f19-593195b1a3f6",
+     "name": "Bowls",
+     "description": "Med ris, blandade grönsaker & chilimajonnäs",
+     "disabled": false,
+     "sortOrder": 4,
+     "menuProducts": [
+      {
+       "id": "e283da66-dfbf-4b11-a32c-ae241647ee20",
+       "price": 189.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff1a16978206fb14c2411",
+        "name": "Poké Bowl Tonfisk",
+        "description": "Råmarinerad tonfisk med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tunabowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "7698e708-f19c-4b24-9b41-4e3a291c481b",
+       "price": 189.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff1bf4636f60cbf1890dc",
+        "name": "Yakiniku Bowl",
+        "description": "Tunnskivat nötkött med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakinikubowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "c4e9d46a-9c00-40e1-a9ce-950bc8983754",
+       "price": 189.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff2276978206fb14c2434",
+        "name": "Poké Bowl Lax",
+        "description": "Råmarinerad lax med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Laxbowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "05f5e58d-5224-402c-a556-6623f2428aec",
+       "price": 189.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642ff1c02ad8ce42ddaedec4",
+        "name": "Poké Bowl Ångkokt Lax",
+        "description": "Ångkokt lax med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_angkokt-lax-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "c28def05-579a-49a6-9992-aaf26d35a4e8",
+       "price": 189.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff226210181390723f226",
+        "name": "Chicken Teriyaki Bowl",
+        "description": "Teriyakimarinerad kyckling med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chicken-teriyaki-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "2b671e21-afd4-464b-8c84-dea768c9618e",
+       "price": 179.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "642ff1c02a26a76cfd8981e7",
+        "name": "Avokado Bowl",
+        "description": "Avokado med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_avokado-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "de35c596-8c73-49a1-8b16-30147904538a",
+       "price": 179.0,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff2272ad8ce42ddaedeed",
+        "name": "Poké Bowl Tofu",
+        "description": "Råmarinerad tofu med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tofu-bowl_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "f2438ec0-ea54-4f01-b967-091a9d02c55d",
+     "name": "Makimono",
+     "description": "Rullar",
+     "disabled": false,
+     "sortOrder": 5,
+     "menuProducts": [
+      {
+       "id": "b25c7349-09d9-4049-af63-91b5711a1db2",
+       "price": 185.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff423a15c4d47a2e27e42",
+        "name": "California Roll",
+        "description": "Crabbstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs & sesamfrön",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_California-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "9752a475-f64d-40ac-a919-1eb9f1f37838",
+       "price": 189.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff4206978206fb14c24be",
+        "name": "Philadelphia Roll",
+        "description": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök & majonnäs, toppad med rostad lök, majonnäs & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Philadelphia-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "af721947-264a-42a9-ab2e-37aa862aa790",
+       "price": 195.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff5294636f60cbf1891d8",
+        "name": "Ebi Roll",
+        "description": "Tempurafiterad räka, avokado, gurka, picklad rödlök & gräslök, toppad med chilimajonnäs, rostad lök & rom",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "fcaadf98-780f-40dd-98ad-06b9dc80cdf3",
+       "price": 195.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642ff5298d885618b2352bcf",
+        "name": "Spicy Tuna Roll",
+        "description": "Tonfisk, avokado, gurka, koriander & krispsallad, toppad med teriyakimajonnäs & rostad lök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Spicy-tuna-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "9ff61f3f-4b8b-4052-9ab8-bf9602c1c579",
+       "price": 195.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff41f210181390723f2c5",
+        "name": "Halstrad Lax-Rulle",
+        "description": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & salladslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax-rulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "69bb2141-aafd-44dd-92a8-02a71e2a8ee1",
+       "price": 185.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "642ff35c19d8dc74e04cb546",
+        "name": "Avocado Roll",
+        "description": "Avokado, gurka, krispsallad, toppad med avokado, chilimajonnäs, rostad ris, salladslök & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Avokado-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "4f5c17bc-4e2e-4c30-ab9b-780313f79a86",
+       "price": 199.0,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff4e00bccf465b1e26505",
+        "name": "Rainbow Roll",
+        "description": "Crabbstick, avokado, gurka, krispsallad, toppad med lax, tonfisk, räkor, avokado, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & gräslök",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Rainbow-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "1b3e8d14-ee8f-47f5-bbee-23dccfbb9e1c",
+       "price": 195.0,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "642ff41e2ad8ce42ddaedf81",
+        "name": "Räkrulle",
+        "description": "Räkor, avokado, gurka, kimchi, toppad med majonnäs, chilimajonnäs, rostad lök, sesamfrön & salladslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Rakrulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "eb07865e-1886-44ec-b2da-0ed3ea5c30d0",
+       "price": 209.0,
+       "sortOrder": 8,
+       "refProduct": {
+        "id": "642ff4dfa15c4d47a2e27e85",
+        "name": "Itamae Special Roll",
+        "description": "Tempurafriterad räka, avokado, gurka, gräslök, toppad med halstrad laxöring, tonfisk, majonnäs, teriyakisås, chilimajonnäs, rostad lök, rom & sesamfrön",
+        "contents": "",
+        "defaultPrice": 185.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Itamae-special-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "29e557b7-f94e-4612-8ff0-a50c7e1a4684",
+       "price": 195.0,
+       "sortOrder": 9,
+       "refProduct": {
+        "id": "642ff4252a26a76cfd89829c",
+        "name": "Spicy Shake Roll",
+        "description": "Lax, avokado, gurka, koriander, krispsallad, toppad med majonnäs, sriracha, rostad lök och gräslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Spicy-shake-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "29451238-1255-4659-9a0c-74a48fa05b9f",
+       "price": 189.0,
+       "sortOrder": 10,
+       "refProduct": {
+        "id": "642ff4245a5c141b1fb46e19",
+        "name": "Tofurulle",
+        "description": "Friterad tofu, avokado, gurka, krispsallad, toppad med chilimajonnäs, rostad lök, gräslök & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tofu-roll_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "8f143d74-a8b2-47fd-9b89-fbbe5188a242",
+     "name": "Varma Rätter",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 6,
+     "menuProducts": [
+      {
+       "id": "a534b18e-a11c-4690-af14-f7ff68f8ce7a",
+       "price": 179.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642fed88913a9234f9ae4b01",
+        "name": "Yakiniku",
+        "description": "Tunnskivad nötkött med yakinikusås och ris.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakiniku_wolt.jpg"
+       }
+      },
+      {
+       "id": "8ae31985-1640-4538-b281-4ef4b176f463",
+       "price": 179.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642fed8c6b9122170804de22",
+        "name": "Shake-Mushi",
+        "description": "Ångkokt lax med ponzumayo och ris.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shake-mushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "04ddd3bb-0d5a-4cda-9ad0-9bef45a0c5f5",
+       "price": 169.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642fed8c5a5c141b1fb46c01",
+        "name": "Yakitori",
+        "description": "4st kycklingspett och ris.",
+        "contents": "",
+        "defaultPrice": 149.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakitori_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "dd969a36-b24a-4437-9bb1-88e7d5938e0e",
+     "name": "Barnmeny",
+     "description": null,
+     "disabled": false,
+     "sortOrder": 7,
+     "menuProducts": [
+      {
+       "id": "d98fe47d-3ada-4f61-94c3-77b33cd40e07",
+       "price": 129.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "68a882d07f4bf82748e6791d",
+        "name": "Barn Yakiniku",
+        "description": "Tunnskivad nötkött med yakinikusås och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-yakiniku_wolt.jpg"
+       }
+      },
+      {
+       "id": "39a584ad-d592-4274-8d1a-57e7e4cc1a72",
+       "price": 129.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "68a882d145f2b339f53b4b7c",
+        "name": "Barn Shake-Mushi",
+        "description": "Ångkokt lax med ponzumayo och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-shake-mashu_wolt.jpg"
+       }
+      },
+      {
+       "id": "37fedcf2-db72-4ed7-ad20-be7c5ad57a58",
+       "price": 129.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "68a882d10be67f394ddc9b20",
+        "name": "Barn Yakitori",
+        "description": "2 st kycklingspett och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-yakitori_wolt.jpg"
+       }
+      },
+      {
+       "id": "42582f52-9237-4239-adcb-4725ae0ef3b5",
+       "price": 129.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "69e8b54dce5b2461e543eec8",
+        "name": "Barn Sushi 6 Bitar",
+        "description": "Valfri nigiri och rullar utan topping",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-sushi_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "7fd1b45a-ce1e-43ef-8c43-342efe25bc00",
+     "name": "Side Orders",
+     "description": "Tillägsbeställning",
+     "disabled": false,
+     "sortOrder": 8,
+     "menuProducts": [
+      {
+       "id": "2dcf9992-2fc9-42ec-9327-42bd1ac3de0d",
+       "price": 69.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642feed02a26a76cfd8980ea",
+        "name": "Edamame",
+        "description": "Sojabönor.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Edamame_wolt.jpg"
+       }
+      },
+      {
+       "id": "76a39823-3ed7-4215-9a0a-7111a9406277",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642feed22ad8ce42ddaeddc4",
+        "name": "Misoshiru",
+        "description": "Misosoppa.",
+        "contents": "",
+        "defaultPrice": 20.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_misosoppa_wolt.jpg"
+       }
+      },
+      {
+       "id": "9643a814-679d-4597-baf4-1d9780c52f8d",
+       "price": 69.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642feed2a15c4d47a2e27cc0",
+        "name": "Chuka Ika Sallad",
+        "description": "Marinerad bläckfisksallad med chili & kikuragesvamp.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chuka-ika-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "15a0b729-479a-47f2-9ba5-9d411165844d",
+       "price": 69.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642fef194636f60cbf189019",
+        "name": "Yakitori 2st",
+        "description": "2st kycklingspett.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_yakitori-side_wolt.jpg"
+       }
+      },
+      {
+       "id": "f537acdd-2577-4df0-a75c-56dc2ae6c7aa",
+       "price": 69.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642fef1a06e6f53e5b7add09",
+        "name": "Goman Wakame Sallad",
+        "description": "Marinerade havsalger i sesamolja, chili.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Goman-wakame-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "ff2a532d-dec1-4556-8ac1-4b79cf2e1cac",
+       "price": 69.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "65266c71dd5682145c3c9b69",
+        "name": "Kimchi",
+        "description": "Marinerad salladsskål.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Kimchi_wolt.jpg"
+       }
+      },
+      {
+       "id": "5ce746a5-d1df-4b42-a9e4-d15762da0424",
+       "price": 25.0,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "69e1e2643681a34a084d6299",
+        "name": "Extra Ris",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ris_wolt.jpg"
+       }
+      },
+      {
+       "id": "80a07cf2-f6cd-401e-b1e6-ad74ec31804b",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "69e733ceadc82e624ddb8333",
+        "name": "Extra Sallad",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 39.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Extra-sallad_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "119334eb-994c-4fc0-92b0-3ed10c04c551",
+     "name": "Såser",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 9,
+     "menuProducts": [
+      {
+       "id": "0ba248e8-477b-4421-86f2-666fc7d18079",
+       "price": 20.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "6447e52f05027c7c0b4ee951",
+        "name": "Chilimajonnäs",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chilimajjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "430ce675-039a-4851-8a9d-c18e6521639f",
+       "price": 20.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "6447e5305b9ef6500cbfc81d",
+        "name": "Ponzu Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ponzu-majjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "00889a57-2ce0-4298-b945-4d637d3b69df",
+       "price": 20.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "6447e530c521bb3f24fa08d8",
+        "name": "Srirachasås",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_sriracha_wolt.jpg"
+       }
+      },
+      {
+       "id": "22f2487a-3bf4-4791-80be-7c860b300ff9",
+       "price": 20.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "6447e5315bac4e5f38f8987d",
+        "name": "Japansk Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Japansk-majjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "6562dfd7-dff2-4ff8-8fff-95e99a4a32d3",
+       "price": 20.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "6447e5315f99cd450ba6ca8d",
+        "name": "Tryffel Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tryffelmajjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "b446f858-ac72-407a-9f20-de68725adc2e",
+       "price": 10.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "69e1e33a2ce3e54a13efcf0f",
+        "name": "Itamae Soya",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_soja_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "a4c8dd53-3f6a-4acb-a6cc-aee7312f7a29",
+     "name": "Dryck",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 10,
+     "menuProducts": [
+      {
+       "id": "c4a31373-1cd2-4c45-b8e3-3ee9cc0ec96c",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff5a00bccf465b1e26554",
+        "name": "Pepsi 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_33cl.jpg"
+       }
+      },
+      {
+       "id": "4350fdf6-c47a-43eb-b89a-3dc8d0781f00",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff5a38d885618b2352bf8",
+        "name": "Pepsi Max 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_Max_33cl.jpg"
+       }
+      },
+      {
+       "id": "08ecc1b9-7607-4e3e-9eae-1afca6f4f285",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff60e2ad8ce42ddaee016",
+        "name": "Zingo Apelsin 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Zingo_Apelsin_33cl.jpg"
+       }
+      },
+      {
+       "id": "d74ca6a0-b808-401f-bb20-10dc15ac45a3",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "6777f9df3b7e611948055790",
+        "name": "Zingo Apelsin Zero 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Zingo_Apelsin_Zero_33cl.jpg"
+       }
+      },
+      {
+       "id": "de3a5a3f-1b19-45fb-b45b-311afd64a963",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff5a22ad8ce42ddaedff2",
+        "name": "7up Free 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/7Up_Free_33cl.jpg"
+       }
+      },
+      {
+       "id": "37d9a12f-8635-41c4-8cd5-e7daf54cb0aa",
+       "price": null,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "69f32d2e58ee4305b65efa86",
+        "name": "7UP Pink Lemonade Zero 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/wST_7up_Zero_Pink_Lemonade_33_Can_Sleek_HiRes_Marknad__1_.jpg"
+       }
+      },
+      {
+       "id": "71908f24-01bf-4a58-9616-d05b88c1ea8c",
+       "price": null,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff5daaadf595b5c089142",
+        "name": "Ramlösa Original 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Naturell_33cl.jpg"
+       }
+      },
+      {
+       "id": "bbc0df65-5cb7-4d69-83b2-ade0d24f02ff",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "6777f9f7ced9c3780994d37d",
+        "name": "Ramlösa Citrus 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Citrus_33cl.jpg"
+       }
+      },
+      {
+       "id": "699cb718-93c5-4588-a8e9-bcd66e2d8959",
+       "price": null,
+       "sortOrder": 8,
+       "refProduct": {
+        "id": "642ff5da19d8dc74e04cb5f9",
+        "name": "Ramlösa Granatäpple 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Granatapple_33cl.jpg"
+       }
+      },
+      {
+       "id": "a197ef9c-ff2e-4716-82ee-df564f0c2d19",
+       "price": null,
+       "sortOrder": 9,
+       "refProduct": {
+        "id": "642ff5a2a15c4d47a2e27ec6",
+        "name": "Carlsberg Alkoholfri 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 37.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/carlsberg-alkoholfri-ekologisk-ol-33cl-1.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    }
+   ]
+  },
+  {
+   "id": "69e5d68b124b0246c2936f5d",
+   "name": "Delivery Meny - Wolt",
+   "description": "Kungsholmen, Hagastaden, Danderyd och Odenplan",
+   "disabled": false,
+   "eatingOptions": [
+    "TAKE_AWAY",
+    "HOME_DELIVERY"
+   ],
+   "sortOrder": 0,
+   "menuProductCategories": [
+    {
+     "id": "e827f84a-d35e-451d-a556-587ded718644",
+     "name": "Sushi Moriawase",
+     "description": "Kockens val",
+     "disabled": false,
+     "sortOrder": 0,
+     "menuProducts": [
+      {
+       "id": "a0ca174e-4217-4b71-b9a4-4b1be7b944af",
+       "price": 159.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642feada5a5c141b1fb46b19",
+        "name": "Nami",
+        "description": "Liten, 8 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 129.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Nami_wolt.jpg"
+       }
+      },
+      {
+       "id": "2d30000a-7a0a-4140-806a-1a914cb0f6b7",
+       "price": 179.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642fead72ad8ce42ddaedcb4",
+        "name": "Joo",
+        "description": "Stor, 11 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Joo_wolt.jpg"
+       }
+      },
+      {
+       "id": "32db8e5f-c4b6-4885-b3f7-3d9a11802ff0",
+       "price": 209.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642feb7e8d885618b23528e3",
+        "name": "Toku-Joo",
+        "description": "Special, 14 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Toko-joo_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": [
+      {
+       "id": "82ea59ce-6f9c-41bd-b00c-2391ef7dd26b",
+       "price": null,
+       "sortOrder": 0,
+       "refBundleProduct": {
+        "id": "688b7a2bd461ff1c4ea18f32",
+        "name": "Toku-Joo + Dryck",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 237.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Toko-joo_wolt.jpg"
+       }
+      },
+      {
+       "id": "82c0eec2-1739-434d-9e0b-bf0296e7dbc7",
+       "price": 179.0,
+       "sortOrder": 4,
+       "refBundleProduct": {
+        "id": "655c5beed54c834fc8a80e8d",
+        "name": "Shake-Zushi",
+        "description": "Nigiri och lax. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shaki-zushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "091aaa0a-376f-4df5-9271-7ffc1674af1b",
+       "price": 179.0,
+       "sortOrder": 5,
+       "refBundleProduct": {
+        "id": "655c5c5858835001093d18a9",
+        "name": "Shake-Avokado",
+        "description": "Nigiri, lax och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shake-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "befc28b5-ca82-4e6f-aca0-6bba3d87a5f8",
+       "price": 179.0,
+       "sortOrder": 6,
+       "refBundleProduct": {
+        "id": "655c5c5983aa572c8e0e6142",
+        "name": "Ebi to Shake-Zushi",
+        "description": "Nigiri, lax och räka. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-to-shake-zushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "c3075b59-025b-4a06-bd92-8232ae82bbb7",
+       "price": 179.0,
+       "sortOrder": 7,
+       "refBundleProduct": {
+        "id": "69e1d5d9d1878e6ba4f506c3",
+        "name": "Maguro-Avokado",
+        "description": "Nigiri, tonfisk och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Maguro-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "38bf73fc-a988-4c63-bcc1-51b04ba25500",
+       "price": 179.0,
+       "sortOrder": 8,
+       "refBundleProduct": {
+        "id": "69e1d67cf347ba25cf1cbb0a",
+        "name": "Ebi-Avokado",
+        "description": "Nigiri, räkor och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "bb2e04b9-10e5-476e-b44a-3552e9c7a487",
+       "price": 179.0,
+       "sortOrder": 9,
+       "refBundleProduct": {
+        "id": "65b7a439c9f4a3130c829012",
+        "name": "Halstrad Lax",
+        "description": "Halstrad lax nigiri. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax_wolt.jpg"
+       }
+      },
+      {
+       "id": "2534d025-166c-4b50-a26f-497273efeece",
+       "price": 179.0,
+       "sortOrder": 10,
+       "refBundleProduct": {
+        "id": "69e1d6cef347ba25cf1cbb12",
+        "name": "Vegetarisk Sushi",
+        "description": "Vegetarisk nigiri. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Veg-sushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "5b6b08d9-5938-46ee-ad94-b5a0133b51b7",
+       "price": 475.0,
+       "sortOrder": 11,
+       "refBundleProduct": {
+        "id": "69e1d7138db25c2acded1b8e",
+        "name": "Familjesushi",
+        "description": "Blandade nigiri och rullar. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 399.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Familjesushi_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "76313914-f5a2-4c36-9262-6b10b252fb9f",
+     "name": "Sashimi",
+     "description": "Råa fiskfiléer med grönsaker & ris ",
+     "disabled": false,
+     "sortOrder": 1,
+     "menuProducts": [
+      {
+       "id": "2c8e7f44-29f0-409f-9f97-9302b7204304",
+       "price": 279.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "69e1d84b37e3556a1373f2c5",
+        "name": "Sashimi Shake",
+        "description": "Laxfiléer.",
+        "contents": "",
+        "defaultPrice": 239.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Sashimi-shake_wolt.jpg"
+       }
+      },
+      {
+       "id": "4a4d0a4c-2d21-4dad-b141-41f35297ab3b",
+       "price": 299.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "69e1d84e98277075c285539e",
+        "name": "Sashimi Moriawase",
+        "description": "Blandade fiskfiléer.",
+        "contents": "",
+        "defaultPrice": 269.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Sashimi-moriawase_wolt.jpg"
+       }
+      },
+      {
+       "id": "5c91443d-0803-451f-958b-8b89339c2411",
+       "price": 199.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "69e1d88298277075c28553a6",
+        "name": "Chirashi",
+        "description": "Utvalda fiskfiléer & skaldjur på en bädd av sushiris och sjögräs, toppad med rom & salladslök.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chirashi_wolt.jpg"
+       }
+      },
+      {
+       "id": "e6625ecd-298a-4d70-874e-efb25ae3a962",
+       "price": 209.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "69e1d8cb3681a34a084d61aa",
+        "name": "Chirashi Shake",
+        "description": "Laxfiléer på en bädd av sushiris och sjögräs, toppad med rom & salladslök.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chirashi-shake_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "ed8be3a0-34df-4118-9acb-69c74448bf3a",
+     "name": "Temaki",
+     "description": "Sjögrässtrutar",
+     "disabled": false,
+     "sortOrder": 2,
+     "menuProducts": [],
+     "menuBundleProducts": [
+      {
+       "id": "1d7aa83e-95c9-4061-bd5d-bb5de96c8861",
+       "price": 69.0,
+       "sortOrder": 0,
+       "refBundleProduct": {
+        "id": "642fef9d5a5c141b1fb46cac",
+        "name": "Temaki",
+        "description": "T.ex. Lax-Purjo, Tonfisk-Koriander, Räka-Rom",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Temaki_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "6c7f2f37-049c-4f98-9740-5f2cc8497eef",
+     "name": "Bowls",
+     "description": "Med ris, blandade grönsaker & chilimajonnäs",
+     "disabled": false,
+     "sortOrder": 3,
+     "menuProducts": [
+      {
+       "id": "00fe16e7-2f7a-4695-b2f0-5dbcbf35a061",
+       "price": 189.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff1a16978206fb14c2411",
+        "name": "Poké Bowl Tonfisk",
+        "description": "Råmarinerad tonfisk med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tunabowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "44a82cd0-0e15-459e-8e35-ebb12a0bbe4a",
+       "price": 189.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff1bf4636f60cbf1890dc",
+        "name": "Yakiniku Bowl",
+        "description": "Tunnskivat nötkött med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakinikubowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "e7be01c3-9fa2-4190-b92c-1dcaa653a4ba",
+       "price": 189.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff2276978206fb14c2434",
+        "name": "Poké Bowl Lax",
+        "description": "Råmarinerad lax med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Laxbowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "608a5a55-5c93-40fd-9e02-2b4f8d39f84a",
+       "price": 189.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642ff1c02ad8ce42ddaedec4",
+        "name": "Poké Bowl Ångkokt Lax",
+        "description": "Ångkokt lax med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_angkokt-lax-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "37122201-5467-4440-a090-b32fd311d62f",
+       "price": 189.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff226210181390723f226",
+        "name": "Chicken Teriyaki Bowl",
+        "description": "Teriyakimarinerad kyckling med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chicken-teriyaki-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "88e5a805-603b-4b94-8631-2337a913b01f",
+       "price": 179.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "642ff1c02a26a76cfd8981e7",
+        "name": "Avokado Bowl",
+        "description": "Avokado med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_avokado-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "bfeb4e98-6673-4131-b246-515274a07aee",
+       "price": 179.0,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff2272ad8ce42ddaedeed",
+        "name": "Poké Bowl Tofu",
+        "description": "Råmarinerad tofu med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tofu-bowl_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "4cc38a72-bc92-46f3-9c7c-6820e32342e8",
+     "name": "Makimono",
+     "description": "Rullar",
+     "disabled": false,
+     "sortOrder": 4,
+     "menuProducts": [
+      {
+       "id": "2b1cbe57-e2ff-40de-8256-4f3d9cb37c8c",
+       "price": 185.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff423a15c4d47a2e27e42",
+        "name": "California Roll",
+        "description": "Crabbstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs & sesamfrön",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_California-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "38d4b10e-ef91-4cf4-92d0-5d1632bbb065",
+       "price": 189.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff4206978206fb14c24be",
+        "name": "Philadelphia Roll",
+        "description": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök & majonnäs, toppad med rostad lök, majonnäs & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Philadelphia-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "674fd8e9-08e6-4906-864f-b6d99744794a",
+       "price": 195.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff5294636f60cbf1891d8",
+        "name": "Ebi Roll",
+        "description": "Tempurafiterad räka, avokado, gurka, picklad rödlök & gräslök, toppad med chilimajonnäs, rostad lök & rom",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "b3e86ada-fe32-49af-9b79-bc6a2bda89a3",
+       "price": 195.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642ff5298d885618b2352bcf",
+        "name": "Spicy Tuna Roll",
+        "description": "Tonfisk, avokado, gurka, koriander & krispsallad, toppad med teriyakimajonnäs & rostad lök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Spicy-tuna-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "7d7a677e-2294-496b-a326-24fdbb993790",
+       "price": 195.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff41f210181390723f2c5",
+        "name": "Halstrad Lax-Rulle",
+        "description": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & salladslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax-rulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "6100ea2e-130a-4060-bae5-3204fd8f9c59",
+       "price": 185.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "642ff35c19d8dc74e04cb546",
+        "name": "Avocado Roll",
+        "description": "Avokado, gurka, krispsallad, toppad med avokado, chilimajonnäs, rostad ris, salladslök & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Avokado-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "825267d3-39fe-4d6e-a8c6-b67173b259ed",
+       "price": 199.0,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff4e00bccf465b1e26505",
+        "name": "Rainbow Roll",
+        "description": "Crabbstick, avokado, gurka, krispsallad, toppad med lax, tonfisk, räkor, avokado, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & gräslök",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Rainbow-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "597adc3a-22f3-4a31-a396-8186a2122a93",
+       "price": 195.0,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "642ff41e2ad8ce42ddaedf81",
+        "name": "Räkrulle",
+        "description": "Räkor, avokado, gurka, kimchi, toppad med majonnäs, chilimajonnäs, rostad lök, sesamfrön & salladslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Rakrulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "df0ddf9b-4ad5-4a14-8ee3-8aedaac09dcd",
+       "price": 209.0,
+       "sortOrder": 8,
+       "refProduct": {
+        "id": "642ff4dfa15c4d47a2e27e85",
+        "name": "Itamae Special Roll",
+        "description": "Tempurafriterad räka, avokado, gurka, gräslök, toppad med halstrad laxöring, tonfisk, majonnäs, teriyakisås, chilimajonnäs, rostad lök, rom & sesamfrön",
+        "contents": "",
+        "defaultPrice": 185.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Itamae-special-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "a7433b76-4f3f-4f96-aee6-f92afcd230d3",
+       "price": 195.0,
+       "sortOrder": 9,
+       "refProduct": {
+        "id": "642ff4252a26a76cfd89829c",
+        "name": "Spicy Shake Roll",
+        "description": "Lax, avokado, gurka, koriander, krispsallad, toppad med majonnäs, sriracha, rostad lök och gräslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Spicy-shake-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "2d6f9fe2-4d6b-411d-b626-d0c04b0cc77b",
+       "price": 189.0,
+       "sortOrder": 10,
+       "refProduct": {
+        "id": "642ff4245a5c141b1fb46e19",
+        "name": "Tofurulle",
+        "description": "Friterad tofu, avokado, gurka, krispsallad, toppad med chilimajonnäs, rostad lök, gräslök & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tofu-roll_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "f97f7c2e-84e3-4cb1-81b8-5243e4ba8140",
+     "name": "Varma Rätter",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 5,
+     "menuProducts": [
+      {
+       "id": "f4575c1f-e8ce-4abf-b671-3bc0b2e7c00a",
+       "price": 179.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642fed88913a9234f9ae4b01",
+        "name": "Yakiniku",
+        "description": "Tunnskivad nötkött med yakinikusås och ris.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakiniku_wolt.jpg"
+       }
+      },
+      {
+       "id": "ca892be4-54c5-4b73-9b3b-2d84fe8f19d2",
+       "price": 179.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642fed8c6b9122170804de22",
+        "name": "Shake-Mushi",
+        "description": "Ångkokt lax med ponzumayo och ris.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shake-mushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "4902c97a-c253-4b7e-adf7-907d7391ffd2",
+       "price": 169.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642fed8c5a5c141b1fb46c01",
+        "name": "Yakitori",
+        "description": "4st kycklingspett och ris.",
+        "contents": "",
+        "defaultPrice": 149.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakitori_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "f852e71d-11d4-4c4f-804f-1042585ae8ea",
+     "name": "Barnmeny",
+     "description": null,
+     "disabled": false,
+     "sortOrder": 6,
+     "menuProducts": [
+      {
+       "id": "aefcf3bc-a7ea-4518-b06f-e8186553ff61",
+       "price": 129.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "68a882d07f4bf82748e6791d",
+        "name": "Barn Yakiniku",
+        "description": "Tunnskivad nötkött med yakinikusås och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-yakiniku_wolt.jpg"
+       }
+      },
+      {
+       "id": "ef680116-779d-4ff5-be52-b42d14976565",
+       "price": 129.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "68a882d145f2b339f53b4b7c",
+        "name": "Barn Shake-Mushi",
+        "description": "Ångkokt lax med ponzumayo och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-shake-mashu_wolt.jpg"
+       }
+      },
+      {
+       "id": "1a83d3cf-93fc-415d-8f72-9d2d583ef510",
+       "price": 129.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "68a882d10be67f394ddc9b20",
+        "name": "Barn Yakitori",
+        "description": "2 st kycklingspett och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-yakitori_wolt.jpg"
+       }
+      },
+      {
+       "id": "4dbb96c9-61ae-4f4d-aafd-03557cc8ed1e",
+       "price": 129.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "69e8b54dce5b2461e543eec8",
+        "name": "Barn Sushi 6 Bitar",
+        "description": "Valfri nigiri och rullar utan topping",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-sushi_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "4029a3a7-f2d9-49e8-ae0e-5000d65efdb0",
+     "name": "Side Orders",
+     "description": "Tillägsbeställning",
+     "disabled": false,
+     "sortOrder": 7,
+     "menuProducts": [
+      {
+       "id": "28a791f0-3c91-4cb6-8365-6992edbd52e9",
+       "price": 69.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642feed02a26a76cfd8980ea",
+        "name": "Edamame",
+        "description": "Sojabönor.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Edamame_wolt.jpg"
+       }
+      },
+      {
+       "id": "2f7acb70-d26f-4532-a290-90b23935ee2f",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642feed22ad8ce42ddaeddc4",
+        "name": "Misoshiru",
+        "description": "Misosoppa.",
+        "contents": "",
+        "defaultPrice": 20.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_misosoppa_wolt.jpg"
+       }
+      },
+      {
+       "id": "770dbb29-82a8-4deb-9b11-c9b96c6c0811",
+       "price": 69.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642feed2a15c4d47a2e27cc0",
+        "name": "Chuka Ika Sallad",
+        "description": "Marinerad bläckfisksallad med chili & kikuragesvamp.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chuka-ika-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "3e95b7d2-e1a6-4cb1-a6ce-474d72d7ff2f",
+       "price": 69.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642fef194636f60cbf189019",
+        "name": "Yakitori 2st",
+        "description": "2st kycklingspett.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_yakitori-side_wolt.jpg"
+       }
+      },
+      {
+       "id": "1aca1a13-7a82-47e1-ac8f-16c199a620fd",
+       "price": 69.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642fef1a06e6f53e5b7add09",
+        "name": "Goman Wakame Sallad",
+        "description": "Marinerade havsalger i sesamolja, chili.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Goman-wakame-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "5f0578e5-0d6f-43b7-b5dd-9a1632993c8a",
+       "price": 69.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "65266c71dd5682145c3c9b69",
+        "name": "Kimchi",
+        "description": "Marinerad salladsskål.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Kimchi_wolt.jpg"
+       }
+      },
+      {
+       "id": "517606a5-cc2b-4d6d-b3a5-659cf9c85e58",
+       "price": 25.0,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "69e1e2643681a34a084d6299",
+        "name": "Extra Ris",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ris_wolt.jpg"
+       }
+      },
+      {
+       "id": "1e15f69b-c806-40d6-b2ee-840ab5129b21",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "69e733ceadc82e624ddb8333",
+        "name": "Extra Sallad",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 39.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Extra-sallad_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "5897bf34-4230-4b50-a28a-cdcb749bd210",
+     "name": "Såser",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 8,
+     "menuProducts": [
+      {
+       "id": "f96a3278-30cd-4666-94d8-184182042f03",
+       "price": 20.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "6447e52f05027c7c0b4ee951",
+        "name": "Chilimajonnäs",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chilimajjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "c929d3f9-4927-44bc-a3c1-33aab8170ede",
+       "price": 20.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "6447e5305b9ef6500cbfc81d",
+        "name": "Ponzu Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ponzu-majjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "f37a2d88-cf71-44f9-b478-767de16a8915",
+       "price": 20.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "6447e530c521bb3f24fa08d8",
+        "name": "Srirachasås",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_sriracha_wolt.jpg"
+       }
+      },
+      {
+       "id": "12cf704c-d7c1-4a08-b283-41a19d4b4cb1",
+       "price": 20.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "6447e5315bac4e5f38f8987d",
+        "name": "Japansk Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Japansk-majjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "f2d8582b-a774-490a-96b3-277b98a20490",
+       "price": 20.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "6447e5315f99cd450ba6ca8d",
+        "name": "Tryffel Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tryffelmajjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "fd23b1e6-8f55-4b4f-83d1-f59834447f1b",
+       "price": 10.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "69e1e33a2ce3e54a13efcf0f",
+        "name": "Itamae Soya",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_soja_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "4a1b604c-eb74-4acf-91c0-891e4693f2ef",
+     "name": "Dryck",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 9,
+     "menuProducts": [
+      {
+       "id": "d0cdc1a0-28ed-4770-9b8f-a3eb07f84c9f",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff5a00bccf465b1e26554",
+        "name": "Pepsi 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_33cl.jpg"
+       }
+      },
+      {
+       "id": "1cef3e83-0007-403a-ad24-15ae394ff1c4",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff5a38d885618b2352bf8",
+        "name": "Pepsi Max 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_Max_33cl.jpg"
+       }
+      },
+      {
+       "id": "96e85ad6-dc4a-42a2-8a56-50af8b07394d",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff60e2ad8ce42ddaee016",
+        "name": "Zingo Apelsin 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Zingo_Apelsin_33cl.jpg"
+       }
+      },
+      {
+       "id": "5877c6ea-dc60-4204-9be6-e8da40012b89",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "6777f9df3b7e611948055790",
+        "name": "Zingo Apelsin Zero 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Zingo_Apelsin_Zero_33cl.jpg"
+       }
+      },
+      {
+       "id": "327d8029-444f-42a5-afa0-71c83351ec15",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff5a22ad8ce42ddaedff2",
+        "name": "7up Free 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/7Up_Free_33cl.jpg"
+       }
+      },
+      {
+       "id": "e4107630-84d9-4eff-b30d-02c4013af212",
+       "price": null,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "69f32d2e58ee4305b65efa86",
+        "name": "7UP Pink Lemonade Zero 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/wST_7up_Zero_Pink_Lemonade_33_Can_Sleek_HiRes_Marknad__1_.jpg"
+       }
+      },
+      {
+       "id": "4252fa8d-7d09-447d-8b45-e8cb3087e4e5",
+       "price": null,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff5daaadf595b5c089142",
+        "name": "Ramlösa Original 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Naturell_33cl.jpg"
+       }
+      },
+      {
+       "id": "7c36bad1-23ae-42e0-85cf-0716d7a5e785",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "6777f9f7ced9c3780994d37d",
+        "name": "Ramlösa Citrus 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Citrus_33cl.jpg"
+       }
+      },
+      {
+       "id": "3a84cd88-afef-4e9e-bbc9-fa525368e9b1",
+       "price": null,
+       "sortOrder": 8,
+       "refProduct": {
+        "id": "642ff5da19d8dc74e04cb5f9",
+        "name": "Ramlösa Granatäpple 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Granatapple_33cl.jpg"
+       }
+      },
+      {
+       "id": "8b9ed277-391c-4cf1-8d75-7f5ec52370eb",
+       "price": null,
+       "sortOrder": 9,
+       "refProduct": {
+        "id": "642ff5a2a15c4d47a2e27ec6",
+        "name": "Carlsberg Alkoholfri 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 37.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/carlsberg-alkoholfri-ekologisk-ol-33cl-1.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    }
+   ]
+  },
+  {
+   "id": "69e5d7fcaad5c555ea37b8b9",
+   "name": "Delivery Meny - Foodora",
+   "description": "Kungsholmen, Hagastaden, Danderyd och Odenplan",
+   "disabled": false,
+   "eatingOptions": [
+    "TAKE_AWAY",
+    "HOME_DELIVERY"
+   ],
+   "sortOrder": 0,
+   "menuProductCategories": [
+    {
+     "id": "23ee6f5c-280f-4690-984a-d11e23be3905",
+     "name": "Foodora BOGO",
+     "description": null,
+     "disabled": false,
+     "sortOrder": 0,
+     "menuProducts": [
+      {
+       "id": "35637dae-c2b5-42a6-91fc-9ff2788a189f",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "6a047908ec982a229b51590b",
+        "name": "Misoshiru 2st",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 40.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_misosoppa_wolt.jpg"
+       }
+      },
+      {
+       "id": "f0db8ebb-7b22-44a5-8dd4-6d683726c4c8",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "6a04790a93592f1021e50fb9",
+        "name": "Edamame 2st",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 138.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Edamame_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": [
+      {
+       "id": "42fdef51-cd9a-46cc-977b-ac99ed051a3a",
+       "price": null,
+       "sortOrder": 2,
+       "refBundleProduct": {
+        "id": "6a421f0871bf3d4548169d94",
+        "name": "2 Valfri Dryck - till priset av 1",
+        "description": "2 Dryck",
+        "contents": "",
+        "defaultPrice": 60.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_Max_33cl.jpg"
+       }
+      },
+      {
+       "id": "81179b78-7a18-448b-b1ba-ac331f49c115",
+       "price": null,
+       "sortOrder": 3,
+       "refBundleProduct": {
+        "id": "69fc956b48ed1b5f9a8ba385",
+        "name": "2 California Roll + 2 Dryck - till priset av 1",
+        "description": "Crabbstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs & sesamfrön. Dryck ingår!",
+        "contents": "",
+        "defaultPrice": 428.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_California-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "af09aa9c-1553-4087-9697-53dc1fa6b621",
+       "price": null,
+       "sortOrder": 4,
+       "refBundleProduct": {
+        "id": "6a3e64e4d5291d63098678d4",
+        "name": "2 Philadelphia Roll + 2 Dryck - till priset av 1",
+        "description": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök & majonnäs, toppad med rostad lök, majonnäs & sesamfrön. Dryck ingår!",
+        "contents": "",
+        "defaultPrice": 438.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Philadelphia-roll_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "509648c4-be31-4224-8b6f-0092dce71397",
+     "name": "Deal",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 1,
+     "menuProducts": [],
+     "menuBundleProducts": [
+      {
+       "id": "7a282914-c63a-414a-b53a-b8086b932942",
+       "price": 219.0,
+       "sortOrder": 0,
+       "refBundleProduct": {
+        "id": "6602de44e9504c7d51276dab",
+        "name": "California Roll + Dryck",
+        "description": "Crabbstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs & sesamfrön. Dryck ingår.",
+        "contents": "",
+        "defaultPrice": 214.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_California-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "f9b195f9-05f7-4f5b-820f-a12173d7459d",
+       "price": 219.0,
+       "sortOrder": 1,
+       "refBundleProduct": {
+        "id": "6602de534aae8b0924d3d1d7",
+        "name": "Philadelphia Roll + Dryck",
+        "description": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök & majonnäs, toppad med rostad lök, majonnäs & sesamfrön. Dryck ingår.",
+        "contents": "",
+        "defaultPrice": 218.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Philadelphia-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "1c73ebcd-bf87-4b83-86cc-845e77f467c9",
+       "price": 224.0,
+       "sortOrder": 2,
+       "refBundleProduct": {
+        "id": "688b7cc6a0826c5aac95d3f8",
+        "name": "Halstrad Lax Rulle  + Dryck",
+        "description": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & salladslök. Dryck ingår!",
+        "contents": "",
+        "defaultPrice": 204.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax-rulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "1d3848cb-3dcf-4add-86e0-7d8d99a3b120",
+       "price": 218.0,
+       "sortOrder": 3,
+       "refBundleProduct": {
+        "id": "654a05218481e126f2f72abc",
+        "name": "Poké Bowl Lax + Dryck",
+        "description": "Råmarinerad Lax med ris, blandade grönsaker och chilimajonnäs. Dryck ingår!",
+        "contents": "",
+        "defaultPrice": 208.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Laxbowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "8ce23b9b-a6e6-4719-ab30-2cfb81f08c7d",
+       "price": 218.0,
+       "sortOrder": 4,
+       "refBundleProduct": {
+        "id": "6659e9dabf89c575f664924e",
+        "name": "Yakiniku Bowl + Dryck",
+        "description": "Dryck ingår!",
+        "contents": "",
+        "defaultPrice": 214.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakinikubowl_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "67a40c1b-beb6-4ad5-9ecd-be6ad40522c6",
+     "name": "Sushi Moriawase",
+     "description": "Kockens val",
+     "disabled": false,
+     "sortOrder": 2,
+     "menuProducts": [
+      {
+       "id": "4f1938a4-edd3-4091-88f1-0050ca5d9990",
+       "price": 159.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642feada5a5c141b1fb46b19",
+        "name": "Nami",
+        "description": "Liten, 8 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 129.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Nami_wolt.jpg"
+       }
+      },
+      {
+       "id": "1ed6459b-22a5-4434-a939-53ad45cd7563",
+       "price": 179.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642fead72ad8ce42ddaedcb4",
+        "name": "Joo",
+        "description": "Stor, 11 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Joo_wolt.jpg"
+       }
+      },
+      {
+       "id": "e9982bed-0351-40fa-b461-5472fa30d8cd",
+       "price": 209.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642feb7e8d885618b23528e3",
+        "name": "Toku-Joo",
+        "description": "Special, 14 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Toko-joo_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": [
+      {
+       "id": "32ab3629-37e1-42c7-b04d-b17b557d705d",
+       "price": 179.0,
+       "sortOrder": 3,
+       "refBundleProduct": {
+        "id": "655c5beed54c834fc8a80e8d",
+        "name": "Shake-Zushi",
+        "description": "Nigiri och lax. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shaki-zushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "96686539-3d80-4613-b329-53a090b6528a",
+       "price": 179.0,
+       "sortOrder": 4,
+       "refBundleProduct": {
+        "id": "655c5c5858835001093d18a9",
+        "name": "Shake-Avokado",
+        "description": "Nigiri, lax och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shake-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "d162a74c-c3b5-40b2-8f4c-51d8f3f15f5d",
+       "price": 179.0,
+       "sortOrder": 5,
+       "refBundleProduct": {
+        "id": "655c5c5983aa572c8e0e6142",
+        "name": "Ebi to Shake-Zushi",
+        "description": "Nigiri, lax och räka. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-to-shake-zushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "91c03110-c23c-4b96-af74-0a2c5a79c486",
+       "price": 179.0,
+       "sortOrder": 6,
+       "refBundleProduct": {
+        "id": "69e1d5d9d1878e6ba4f506c3",
+        "name": "Maguro-Avokado",
+        "description": "Nigiri, tonfisk och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Maguro-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "bc2cda4c-c87f-4283-86fd-0d2489a48792",
+       "price": 179.0,
+       "sortOrder": 7,
+       "refBundleProduct": {
+        "id": "69e1d67cf347ba25cf1cbb0a",
+        "name": "Ebi-Avokado",
+        "description": "Nigiri, räkor och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "2007c487-8b7b-495c-ab8e-2bfd9631d37b",
+       "price": 179.0,
+       "sortOrder": 8,
+       "refBundleProduct": {
+        "id": "65b7a439c9f4a3130c829012",
+        "name": "Halstrad Lax",
+        "description": "Halstrad lax nigiri. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax_wolt.jpg"
+       }
+      },
+      {
+       "id": "04d8b2fc-a93e-4d15-9dbc-04e237b6f01d",
+       "price": 179.0,
+       "sortOrder": 9,
+       "refBundleProduct": {
+        "id": "69e1d6cef347ba25cf1cbb12",
+        "name": "Vegetarisk Sushi",
+        "description": "Vegetarisk nigiri. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Veg-sushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "79a11500-6ff9-4bf9-9336-b00a7915ac80",
+       "price": 475.0,
+       "sortOrder": 10,
+       "refBundleProduct": {
+        "id": "69e1d7138db25c2acded1b8e",
+        "name": "Familjesushi",
+        "description": "Blandade nigiri och rullar. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 399.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Familjesushi_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "fd40e371-0e86-42eb-a09f-af3603e92867",
+     "name": "Sashimi",
+     "description": "Råa fiskfiléer med grönsaker & ris ",
+     "disabled": false,
+     "sortOrder": 3,
+     "menuProducts": [
+      {
+       "id": "ed8ee200-f530-4199-8ac6-e4908dc35833",
+       "price": 279.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "69e1d84b37e3556a1373f2c5",
+        "name": "Sashimi Shake",
+        "description": "Laxfiléer.",
+        "contents": "",
+        "defaultPrice": 239.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Sashimi-shake_wolt.jpg"
+       }
+      },
+      {
+       "id": "14de752c-74fd-4bd3-a35b-2da09c0c15c2",
+       "price": 299.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "69e1d84e98277075c285539e",
+        "name": "Sashimi Moriawase",
+        "description": "Blandade fiskfiléer.",
+        "contents": "",
+        "defaultPrice": 269.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Sashimi-moriawase_wolt.jpg"
+       }
+      },
+      {
+       "id": "ab78067d-c8fd-4cb7-8ecc-049c8d7688d3",
+       "price": 199.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "69e1d88298277075c28553a6",
+        "name": "Chirashi",
+        "description": "Utvalda fiskfiléer & skaldjur på en bädd av sushiris och sjögräs, toppad med rom & salladslök.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chirashi_wolt.jpg"
+       }
+      },
+      {
+       "id": "1aa81da1-6db2-4298-b828-b983d3badf6f",
+       "price": 209.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "69e1d8cb3681a34a084d61aa",
+        "name": "Chirashi Shake",
+        "description": "Laxfiléer på en bädd av sushiris och sjögräs, toppad med rom & salladslök.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chirashi-shake_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "2cc89612-fd7c-45fb-b741-7a81faae9922",
+     "name": "Temaki",
+     "description": "Sjögrässtrutar",
+     "disabled": false,
+     "sortOrder": 4,
+     "menuProducts": [],
+     "menuBundleProducts": [
+      {
+       "id": "545d69a0-36bb-43fa-a911-97c60011430f",
+       "price": 69.0,
+       "sortOrder": 0,
+       "refBundleProduct": {
+        "id": "642fef9d5a5c141b1fb46cac",
+        "name": "Temaki",
+        "description": "T.ex. Lax-Purjo, Tonfisk-Koriander, Räka-Rom",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Temaki_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "ce71450d-380b-420c-81c4-12457478664c",
+     "name": "Bowls",
+     "description": "Med ris, blandade grönsaker & chilimajonnäs",
+     "disabled": false,
+     "sortOrder": 5,
+     "menuProducts": [
+      {
+       "id": "1acc6996-8d81-45a7-8b70-590aae36b1fb",
+       "price": 189.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff1a16978206fb14c2411",
+        "name": "Poké Bowl Tonfisk",
+        "description": "Råmarinerad tonfisk med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tunabowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "391285df-c2f0-4f74-aeb0-a7a62673c6c1",
+       "price": 189.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff1bf4636f60cbf1890dc",
+        "name": "Yakiniku Bowl",
+        "description": "Tunnskivat nötkött med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakinikubowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "963fbabc-dbe0-4935-8de1-8667e3dbee07",
+       "price": 189.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff2276978206fb14c2434",
+        "name": "Poké Bowl Lax",
+        "description": "Råmarinerad lax med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Laxbowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "e3543e22-b987-4383-aced-638ffdc8e116",
+       "price": 189.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642ff1c02ad8ce42ddaedec4",
+        "name": "Poké Bowl Ångkokt Lax",
+        "description": "Ångkokt lax med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_angkokt-lax-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "5e3d4836-7fc5-42c1-8e5e-c4b1a7e5d4f9",
+       "price": 189.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff226210181390723f226",
+        "name": "Chicken Teriyaki Bowl",
+        "description": "Teriyakimarinerad kyckling med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chicken-teriyaki-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "99338a30-556e-4693-a8f2-0ddefe400883",
+       "price": 179.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "642ff1c02a26a76cfd8981e7",
+        "name": "Avokado Bowl",
+        "description": "Avokado med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_avokado-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "069b98ca-4262-4502-abf5-71c5b5ef08b8",
+       "price": 179.0,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff2272ad8ce42ddaedeed",
+        "name": "Poké Bowl Tofu",
+        "description": "Råmarinerad tofu med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tofu-bowl_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "75bf3ea3-29e6-48f8-9275-3a6f62ec15a4",
+     "name": "Makimono",
+     "description": "Rullar",
+     "disabled": false,
+     "sortOrder": 6,
+     "menuProducts": [
+      {
+       "id": "5aa8c072-594d-47ea-bdc3-9e32306949fb",
+       "price": 185.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff423a15c4d47a2e27e42",
+        "name": "California Roll",
+        "description": "Crabbstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs & sesamfrön",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_California-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "8fc56567-24b0-4cd7-9dfd-42e1fffd8e7b",
+       "price": 189.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff4206978206fb14c24be",
+        "name": "Philadelphia Roll",
+        "description": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök & majonnäs, toppad med rostad lök, majonnäs & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Philadelphia-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "6ceaba8c-0811-42a8-8b34-06825f1f60cd",
+       "price": 195.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff5294636f60cbf1891d8",
+        "name": "Ebi Roll",
+        "description": "Tempurafiterad räka, avokado, gurka, picklad rödlök & gräslök, toppad med chilimajonnäs, rostad lök & rom",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "dd2c9d28-a836-4332-ac72-1797803bbd23",
+       "price": 195.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642ff5298d885618b2352bcf",
+        "name": "Spicy Tuna Roll",
+        "description": "Tonfisk, avokado, gurka, koriander & krispsallad, toppad med teriyakimajonnäs & rostad lök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Spicy-tuna-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "ae4df357-d2fb-4ae2-955f-90244ebea6d3",
+       "price": 195.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff41f210181390723f2c5",
+        "name": "Halstrad Lax-Rulle",
+        "description": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & salladslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax-rulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "7875af05-4b58-4eb2-8136-7d2ee1b09cfa",
+       "price": 185.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "642ff35c19d8dc74e04cb546",
+        "name": "Avocado Roll",
+        "description": "Avokado, gurka, krispsallad, toppad med avokado, chilimajonnäs, rostad ris, salladslök & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Avokado-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "5f136d9f-a55b-41bf-8229-8447e5dbdfbf",
+       "price": 199.0,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff4e00bccf465b1e26505",
+        "name": "Rainbow Roll",
+        "description": "Crabbstick, avokado, gurka, krispsallad, toppad med lax, tonfisk, räkor, avokado, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & gräslök",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Rainbow-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "268b775c-ecda-4259-bcb5-bac89fba8794",
+       "price": 195.0,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "642ff41e2ad8ce42ddaedf81",
+        "name": "Räkrulle",
+        "description": "Räkor, avokado, gurka, kimchi, toppad med majonnäs, chilimajonnäs, rostad lök, sesamfrön & salladslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Rakrulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "fa2940e0-6418-4b66-b834-a070d3762afb",
+       "price": 209.0,
+       "sortOrder": 8,
+       "refProduct": {
+        "id": "642ff4dfa15c4d47a2e27e85",
+        "name": "Itamae Special Roll",
+        "description": "Tempurafriterad räka, avokado, gurka, gräslök, toppad med halstrad laxöring, tonfisk, majonnäs, teriyakisås, chilimajonnäs, rostad lök, rom & sesamfrön",
+        "contents": "",
+        "defaultPrice": 185.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Itamae-special-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "5535f963-88b7-4fd0-8efa-74d5d9c867c0",
+       "price": 195.0,
+       "sortOrder": 9,
+       "refProduct": {
+        "id": "642ff4252a26a76cfd89829c",
+        "name": "Spicy Shake Roll",
+        "description": "Lax, avokado, gurka, koriander, krispsallad, toppad med majonnäs, sriracha, rostad lök och gräslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Spicy-shake-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "a6593142-c610-4403-a8ec-1e54b6008a46",
+       "price": 189.0,
+       "sortOrder": 10,
+       "refProduct": {
+        "id": "642ff4245a5c141b1fb46e19",
+        "name": "Tofurulle",
+        "description": "Friterad tofu, avokado, gurka, krispsallad, toppad med chilimajonnäs, rostad lök, gräslök & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tofu-roll_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "d05305d3-b0c4-4aab-9237-3391d2829e95",
+     "name": "Varma Rätter",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 7,
+     "menuProducts": [
+      {
+       "id": "5d11893c-1fe0-4d64-8f28-75cd0c34fdbb",
+       "price": 179.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642fed88913a9234f9ae4b01",
+        "name": "Yakiniku",
+        "description": "Tunnskivad nötkött med yakinikusås och ris.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakiniku_wolt.jpg"
+       }
+      },
+      {
+       "id": "1ef19445-48eb-4059-a94f-f35beabf07b7",
+       "price": 179.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642fed8c6b9122170804de22",
+        "name": "Shake-Mushi",
+        "description": "Ångkokt lax med ponzumayo och ris.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shake-mushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "b44c3b32-0fe4-4d7f-8c2c-2b1d41a1ab19",
+       "price": 169.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642fed8c5a5c141b1fb46c01",
+        "name": "Yakitori",
+        "description": "4st kycklingspett och ris.",
+        "contents": "",
+        "defaultPrice": 149.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakitori_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "df8f7606-f365-4a74-a243-f5976b32732e",
+     "name": "Barnmeny",
+     "description": null,
+     "disabled": false,
+     "sortOrder": 8,
+     "menuProducts": [
+      {
+       "id": "d7ff6651-069b-4847-9c89-324a15b9860a",
+       "price": 129.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "68a882d07f4bf82748e6791d",
+        "name": "Barn Yakiniku",
+        "description": "Tunnskivad nötkött med yakinikusås och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-yakiniku_wolt.jpg"
+       }
+      },
+      {
+       "id": "99300382-6cb5-448a-b231-472412d8d70e",
+       "price": 129.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "68a882d145f2b339f53b4b7c",
+        "name": "Barn Shake-Mushi",
+        "description": "Ångkokt lax med ponzumayo och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-shake-mashu_wolt.jpg"
+       }
+      },
+      {
+       "id": "0d941027-7d0f-4f45-8752-93be43fdfc0f",
+       "price": 129.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "68a882d10be67f394ddc9b20",
+        "name": "Barn Yakitori",
+        "description": "2 st kycklingspett och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-yakitori_wolt.jpg"
+       }
+      },
+      {
+       "id": "91cd0b6c-7f03-4544-a9d2-5446070ee611",
+       "price": 129.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "69e8b54dce5b2461e543eec8",
+        "name": "Barn Sushi 6 Bitar",
+        "description": "Valfri nigiri och rullar utan topping",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-sushi_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "43ebe4d1-1cea-49ad-9426-442b765c9e70",
+     "name": "Side Orders",
+     "description": "Tillägsbeställning",
+     "disabled": false,
+     "sortOrder": 9,
+     "menuProducts": [
+      {
+       "id": "44efc4c3-07d5-46a9-919a-6c42fa0983d3",
+       "price": 69.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642feed02a26a76cfd8980ea",
+        "name": "Edamame",
+        "description": "Sojabönor.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Edamame_wolt.jpg"
+       }
+      },
+      {
+       "id": "805c081e-6e85-4b41-90c1-78b352caa9e9",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642feed22ad8ce42ddaeddc4",
+        "name": "Misoshiru",
+        "description": "Misosoppa.",
+        "contents": "",
+        "defaultPrice": 20.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_misosoppa_wolt.jpg"
+       }
+      },
+      {
+       "id": "800eec4f-dab3-41dd-875a-0ca6b62a1787",
+       "price": 69.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642feed2a15c4d47a2e27cc0",
+        "name": "Chuka Ika Sallad",
+        "description": "Marinerad bläckfisksallad med chili & kikuragesvamp.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chuka-ika-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "6eb6765a-b7ea-4dac-859e-d4fd11ab3701",
+       "price": 69.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642fef194636f60cbf189019",
+        "name": "Yakitori 2st",
+        "description": "2st kycklingspett.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_yakitori-side_wolt.jpg"
+       }
+      },
+      {
+       "id": "353f10a8-6373-4ac3-9e46-43d3e45f6841",
+       "price": 69.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642fef1a06e6f53e5b7add09",
+        "name": "Goman Wakame Sallad",
+        "description": "Marinerade havsalger i sesamolja, chili.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Goman-wakame-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "b765acb7-709a-4d54-854b-a368c37594cd",
+       "price": 69.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "65266c71dd5682145c3c9b69",
+        "name": "Kimchi",
+        "description": "Marinerad salladsskål.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Kimchi_wolt.jpg"
+       }
+      },
+      {
+       "id": "1887d229-b644-4cfc-901a-faf0863a0b03",
+       "price": 25.0,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "69e1e2643681a34a084d6299",
+        "name": "Extra Ris",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ris_wolt.jpg"
+       }
+      },
+      {
+       "id": "1a14e78e-a42b-4fd0-bc90-a5498f70fc23",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "69e733ceadc82e624ddb8333",
+        "name": "Extra Sallad",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 39.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Extra-sallad_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "1295d120-b0a6-42fd-92e3-c7dbabb2fd59",
+     "name": "Såser",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 10,
+     "menuProducts": [
+      {
+       "id": "f2ed9ea0-a83c-4661-8570-453e28020c93",
+       "price": 20.0,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "6447e52f05027c7c0b4ee951",
+        "name": "Chilimajonnäs",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chilimajjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "04541d0e-8ae9-41c5-9d7a-7784aaac1d28",
+       "price": 20.0,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "6447e5305b9ef6500cbfc81d",
+        "name": "Ponzu Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ponzu-majjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "b62f448a-b519-4ef5-bb21-cbeeec60a6d0",
+       "price": 20.0,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "6447e530c521bb3f24fa08d8",
+        "name": "Srirachasås",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_sriracha_wolt.jpg"
+       }
+      },
+      {
+       "id": "220e1788-d683-4eb7-8a73-56e41e2b0e3d",
+       "price": 20.0,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "6447e5315bac4e5f38f8987d",
+        "name": "Japansk Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Japansk-majjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "210c9d05-533e-45b9-afac-e46f3e6dec9a",
+       "price": 20.0,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "6447e5315f99cd450ba6ca8d",
+        "name": "Tryffel Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tryffelmajjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "2b3e2c4e-f289-43a9-986e-a5e62715503b",
+       "price": 10.0,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "69e1e33a2ce3e54a13efcf0f",
+        "name": "Itamae Soya",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_soja_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "0596aebf-5ee7-468d-b076-814630b11dae",
+     "name": "Dryck",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 11,
+     "menuProducts": [
+      {
+       "id": "d2812b2b-089a-4376-9309-f8c8730a7b66",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff5a00bccf465b1e26554",
+        "name": "Pepsi 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_33cl.jpg"
+       }
+      },
+      {
+       "id": "5769b6cd-c962-435a-a54a-e596ed45b74e",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff5a38d885618b2352bf8",
+        "name": "Pepsi Max 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_Max_33cl.jpg"
+       }
+      },
+      {
+       "id": "8e2c7448-c631-43d3-a604-689db3d787da",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff60e2ad8ce42ddaee016",
+        "name": "Zingo Apelsin 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Zingo_Apelsin_33cl.jpg"
+       }
+      },
+      {
+       "id": "675353d4-9655-430b-8871-fc3acb6e46bb",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "6777f9df3b7e611948055790",
+        "name": "Zingo Apelsin Zero 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Zingo_Apelsin_Zero_33cl.jpg"
+       }
+      },
+      {
+       "id": "5e1a2035-8b68-4364-b4c2-c1c086cc4fd7",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff5a22ad8ce42ddaedff2",
+        "name": "7up Free 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/7Up_Free_33cl.jpg"
+       }
+      },
+      {
+       "id": "e5972c79-3c0f-4f2d-9094-af713a28150f",
+       "price": null,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "69f32d2e58ee4305b65efa86",
+        "name": "7UP Pink Lemonade Zero 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/wST_7up_Zero_Pink_Lemonade_33_Can_Sleek_HiRes_Marknad__1_.jpg"
+       }
+      },
+      {
+       "id": "ab986fc4-eed8-405e-b144-5a1c460225e4",
+       "price": null,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff5daaadf595b5c089142",
+        "name": "Ramlösa Original 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Naturell_33cl.jpg"
+       }
+      },
+      {
+       "id": "16a2c074-3293-4afc-a71e-6f77dd5c760a",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "6777f9f7ced9c3780994d37d",
+        "name": "Ramlösa Citrus 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Citrus_33cl.jpg"
+       }
+      },
+      {
+       "id": "7411ca4a-8324-4aec-9afb-c3e4a0b51cbe",
+       "price": null,
+       "sortOrder": 8,
+       "refProduct": {
+        "id": "642ff5da19d8dc74e04cb5f9",
+        "name": "Ramlösa Granatäpple 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Granatapple_33cl.jpg"
+       }
+      },
+      {
+       "id": "a6eb725f-a556-4ebc-bd0a-ba181dc32e9e",
+       "price": null,
+       "sortOrder": 9,
+       "refProduct": {
+        "id": "642ff5a2a15c4d47a2e27ec6",
+        "name": "Carlsberg Alkoholfri 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 37.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/carlsberg-alkoholfri-ekologisk-ol-33cl-1.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    }
+   ]
+  },
+  {
+   "id": "69e1e5e32e83901dab4a9bf6",
+   "name": "Meny",
+   "description": "Kungsholmen, Hagastaden, Danderyd och Odenplan",
+   "disabled": false,
+   "eatingOptions": [
+    "EAT_HERE",
+    "TAKE_AWAY"
+   ],
+   "sortOrder": 0,
+   "menuProductCategories": [
+    {
+     "id": "368c55ac-770b-4875-b88b-bcb8439a68b3",
+     "name": "BOGO Deal – Sushi & Dryck",
+     "description": "Perfekt att dela! Köp 1 få 1 på utvalda specialpaket.",
+     "disabled": false,
+     "sortOrder": 0,
+     "menuProducts": [
+      {
+       "id": "a629c985-a85a-4865-8d86-a83bee3155b3",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "6a0c6df7d487724613eb3ace",
+        "name": "Köp 1 Få 1 – 2x Edamame",
+        "description": "2 Edamame",
+        "contents": "",
+        "defaultPrice": 118.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Edamame_wolt.jpg"
+       }
+      },
+      {
+       "id": "5c619ffd-4a3d-491f-9a07-3b9962446a18",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "6a70badfc7cbd5080f3bfbbb",
+        "name": "Köp 1 Få 1 – 2x Misoshiru",
+        "description": "Misosoppa",
+        "contents": "",
+        "defaultPrice": 40.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_misosoppa_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": [
+      {
+       "id": "571a2640-13e2-4ba6-b8c3-9b263555f730",
+       "price": null,
+       "sortOrder": 0,
+       "refBundleProduct": {
+        "id": "6a0c5226ff41e847929eb987",
+        "name": "Köp 1 Få 1 – 2x California Roll + 2x Dryck",
+        "description": "2 California Roll + 2 Dryck",
+        "contents": "",
+        "defaultPrice": 368.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_California-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "6359bee4-a6aa-421f-ad4f-02ac486e9788",
+       "price": null,
+       "sortOrder": 1,
+       "refBundleProduct": {
+        "id": "6a70ba6d073ed31447630fb0",
+        "name": "Köp 1 Få 1 – 2x Philadelphia Roll + 2 Dryck - till priset av 1",
+        "description": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök & majonnäs, toppad med rostad lök, majonnäs & sesamfrön. Dryck ingår!",
+        "contents": "",
+        "defaultPrice": 390.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Philadelphia-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "18e38933-8c81-4cdd-89c9-7bcafc1682f2",
+       "price": null,
+       "sortOrder": 2,
+       "refBundleProduct": {
+        "id": "6a0c5208eb49b0054d605446",
+        "name": "Köp 1 Få 1 – 2x Valfri Dryck",
+        "description": "2 Dryck",
+        "contents": "",
+        "defaultPrice": 50.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_Max_33cl.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "32a01498-8862-4dc2-8345-1e5b52790f23",
+     "name": "Sushi Moriawase",
+     "description": "Kockens val",
+     "disabled": false,
+     "sortOrder": 1,
+     "menuProducts": [
+      {
+       "id": "75fc545e-d4c5-4f23-af3a-2d68eada35a1",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642fead72ad8ce42ddaedcb4",
+        "name": "Joo",
+        "description": "Stor, 11 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Joo_wolt.jpg"
+       }
+      },
+      {
+       "id": "782f3756-cc4a-47ec-8a5e-daff38a2fef7",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642feada5a5c141b1fb46b19",
+        "name": "Nami",
+        "description": "Liten, 8 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 129.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Nami_wolt.jpg"
+       }
+      },
+      {
+       "id": "c28459b7-a295-45ef-a757-45e64c73804f",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642feb7e8d885618b23528e3",
+        "name": "Toku-Joo",
+        "description": "Special, 14 bitar blandade nigiri och norimaki.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Toko-joo_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": [
+      {
+       "id": "5c5b5ceb-ea7c-4836-8d40-ee824dbf212f",
+       "price": null,
+       "sortOrder": 3,
+       "refBundleProduct": {
+        "id": "655c5beed54c834fc8a80e8d",
+        "name": "Shake-Zushi",
+        "description": "Nigiri och lax. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shaki-zushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "e4cdcf96-0240-4f34-92a3-2b027e426e75",
+       "price": null,
+       "sortOrder": 4,
+       "refBundleProduct": {
+        "id": "655c5c5858835001093d18a9",
+        "name": "Shake-Avokado",
+        "description": "Nigiri, lax och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shake-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "2139e13c-085d-4bf1-a913-e2d9197bfeab",
+       "price": null,
+       "sortOrder": 5,
+       "refBundleProduct": {
+        "id": "655c5c5983aa572c8e0e6142",
+        "name": "Ebi to Shake-Zushi",
+        "description": "Nigiri, lax och räka. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-to-shake-zushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "531230e0-309c-4af8-932e-40a998863acb",
+       "price": null,
+       "sortOrder": 6,
+       "refBundleProduct": {
+        "id": "69e1d5d9d1878e6ba4f506c3",
+        "name": "Maguro-Avokado",
+        "description": "Nigiri, tonfisk och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Maguro-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "65106829-88d1-476a-84ab-027c93a3a5e4",
+       "price": null,
+       "sortOrder": 7,
+       "refBundleProduct": {
+        "id": "69e1d67cf347ba25cf1cbb0a",
+        "name": "Ebi-Avokado",
+        "description": "Nigiri, räkor och avokado. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-avokado_wolt.jpg"
+       }
+      },
+      {
+       "id": "b3fb44af-aeed-4b95-9f7a-64876bfcf5b0",
+       "price": 159.0,
+       "sortOrder": 8,
+       "refBundleProduct": {
+        "id": "65b7a439c9f4a3130c829012",
+        "name": "Halstrad Lax",
+        "description": "Halstrad lax nigiri. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax_wolt.jpg"
+       }
+      },
+      {
+       "id": "5e126ea9-1550-4a02-bdee-e04b0c7ce945",
+       "price": null,
+       "sortOrder": 9,
+       "refBundleProduct": {
+        "id": "69e1d6cef347ba25cf1cbb12",
+        "name": "Vegetarisk Sushi",
+        "description": "Vegetarisk nigiri. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Veg-sushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "315208de-9f50-43bc-af9b-ad34a75e0da5",
+       "price": null,
+       "sortOrder": 10,
+       "refBundleProduct": {
+        "id": "69e1d7138db25c2acded1b8e",
+        "name": "Familjesushi",
+        "description": "Blandade nigiri och rullar. Välj antal bitar i nästa steg.",
+        "contents": "",
+        "defaultPrice": 399.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Familjesushi_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "c69a4fdc-52b6-46e3-9566-2ed54cd44860",
+     "name": "Sashimi",
+     "description": "Råa fiskfiléer med grönsaker & ris ",
+     "disabled": false,
+     "sortOrder": 2,
+     "menuProducts": [
+      {
+       "id": "4111c7e6-4daf-40d6-b1c7-f226a0747b82",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "69e1d84b37e3556a1373f2c5",
+        "name": "Sashimi Shake",
+        "description": "Laxfiléer.",
+        "contents": "",
+        "defaultPrice": 239.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Sashimi-shake_wolt.jpg"
+       }
+      },
+      {
+       "id": "a8473100-4c7d-46d3-be95-9458224f8f51",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "69e1d84e98277075c285539e",
+        "name": "Sashimi Moriawase",
+        "description": "Blandade fiskfiléer.",
+        "contents": "",
+        "defaultPrice": 269.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Sashimi-moriawase_wolt.jpg"
+       }
+      },
+      {
+       "id": "7e49f8bf-36cc-4529-a51c-24b0a0662f1e",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "69e1d88298277075c28553a6",
+        "name": "Chirashi",
+        "description": "Utvalda fiskfiléer & skaldjur på en bädd av sushiris och sjögräs, toppad med rom & salladslök.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chirashi_wolt.jpg"
+       }
+      },
+      {
+       "id": "84dbe7b7-6d3e-46bf-aef6-5dc8e15e3d1c",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "69e1d8cb3681a34a084d61aa",
+        "name": "Chirashi Shake",
+        "description": "Laxfiléer på en bädd av sushiris och sjögräs, toppad med rom & salladslök.",
+        "contents": "",
+        "defaultPrice": 189.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chirashi-shake_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "18205160-532c-47a4-8ab0-5365ccef661a",
+     "name": "Temaki",
+     "description": "Sjögrässtrutar",
+     "disabled": false,
+     "sortOrder": 3,
+     "menuProducts": [],
+     "menuBundleProducts": [
+      {
+       "id": "033c1f2a-e1ad-4654-8b52-29a7281ff2e7",
+       "price": null,
+       "sortOrder": 0,
+       "refBundleProduct": {
+        "id": "642fef9d5a5c141b1fb46cac",
+        "name": "Temaki",
+        "description": "T.ex. Lax-Purjo, Tonfisk-Koriander, Räka-Rom",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Temaki_wolt.jpg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "32e82c3b-f2c5-4e20-bd49-d824454fe922",
+     "name": "Bowls",
+     "description": "Med ris, blandade grönsaker & chilimajonnäs",
+     "disabled": false,
+     "sortOrder": 4,
+     "menuProducts": [
+      {
+       "id": "0e96889e-1628-46df-8975-ca5dd8a87ea4",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff1a16978206fb14c2411",
+        "name": "Poké Bowl Tonfisk",
+        "description": "Råmarinerad tonfisk med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tunabowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "25d16b70-9b3e-4d75-a0cb-f3334b070dfe",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff1bf4636f60cbf1890dc",
+        "name": "Yakiniku Bowl",
+        "description": "Tunnskivat nötkött med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakinikubowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "b3ae6818-2685-4e40-a1a0-23fe9e2ee680",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff1c02ad8ce42ddaedec4",
+        "name": "Poké Bowl Ångkokt Lax",
+        "description": "Ångkokt lax med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_angkokt-lax-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "cb47c8e2-624d-4a26-af18-21bb73675114",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642ff1c02a26a76cfd8981e7",
+        "name": "Avokado Bowl",
+        "description": "Avokado med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_avokado-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "91f63e01-83d7-4f1c-b000-cea736d6dec5",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff226210181390723f226",
+        "name": "Chicken Teriyaki Bowl",
+        "description": "Teriyakimarinerad kyckling med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chicken-teriyaki-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "55149982-5ffc-42e7-b4d3-042034e55aa0",
+       "price": null,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "642ff2272ad8ce42ddaedeed",
+        "name": "Poké Bowl Tofu",
+        "description": "Råmarinerad tofu med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tofu-bowl_wolt.jpg"
+       }
+      },
+      {
+       "id": "655e9232-f457-442d-a5bd-cf0825a35e6a",
+       "price": null,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff2276978206fb14c2434",
+        "name": "Poké Bowl Lax",
+        "description": "Råmarinerad lax med ris, blandade grönsaker & chilimajonnäs",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Laxbowl_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "76a2fbfd-81bd-48c2-8355-235a3eda712b",
+     "name": "Makimono",
+     "description": "Rullar",
+     "disabled": false,
+     "sortOrder": 5,
+     "menuProducts": [
+      {
+       "id": "d47b95b3-2a8f-4285-b39f-063d6e91b9cd",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff35c19d8dc74e04cb546",
+        "name": "Avocado Roll",
+        "description": "Avokado, gurka, krispsallad, toppad med avokado, chilimajonnäs, rostad ris, salladslök & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Avokado-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "e6323b30-f0b7-4697-b10a-a609468ee25a",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff41e2ad8ce42ddaedf81",
+        "name": "Räkrulle",
+        "description": "Räkor, avokado, gurka, kimchi, toppad med majonnäs, chilimajonnäs, rostad lök, sesamfrön & salladslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Rakrulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "b934dec6-6e48-4758-9480-0fdfcc514eb8",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff41f210181390723f2c5",
+        "name": "Halstrad Lax-Rulle",
+        "description": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & salladslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Halstrad-lax-rulle_wolt.jpg"
+       }
+      },
+      {
+       "id": "295a8a34-d00c-4807-aa9f-7f63341b0f1e",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642ff4206978206fb14c24be",
+        "name": "Philadelphia Roll",
+        "description": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök & majonnäs, toppad med rostad lök, majonnäs & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Philadelphia-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "5241b90a-63b4-42fe-bccf-aae817ca7b0d",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff423a15c4d47a2e27e42",
+        "name": "California Roll",
+        "description": "Crabbstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs & sesamfrön",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_California-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "ce9a5c47-5575-4378-830b-2ee3a67d8b99",
+       "price": null,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "642ff4245a5c141b1fb46e19",
+        "name": "Tofurulle",
+        "description": "Friterad tofu, avokado, gurka, krispsallad, toppad med chilimajonnäs, rostad lök, gräslök & sesamfrön",
+        "contents": "",
+        "defaultPrice": 165.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tofu-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "fe79b9f1-6152-4d48-84c1-e1b58c16daf8",
+       "price": null,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff4252a26a76cfd89829c",
+        "name": "Spicy Shake Roll",
+        "description": "Lax, avokado, gurka, koriander, krispsallad, toppad med majonnäs, sriracha, rostad lök och gräslök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Spicy-shake-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "897e89cd-0f17-4c7a-96ac-d08952d5786d",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "642ff4dfa15c4d47a2e27e85",
+        "name": "Itamae Special Roll",
+        "description": "Tempurafriterad räka, avokado, gurka, gräslök, toppad med halstrad laxöring, tonfisk, majonnäs, teriyakisås, chilimajonnäs, rostad lök, rom & sesamfrön",
+        "contents": "",
+        "defaultPrice": 185.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Itamae-special-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "422a36d1-b229-47bb-9de2-7647f393ff55",
+       "price": null,
+       "sortOrder": 8,
+       "refProduct": {
+        "id": "642ff4e00bccf465b1e26505",
+        "name": "Rainbow Roll",
+        "description": "Crabbstick, avokado, gurka, krispsallad, toppad med lax, tonfisk, räkor, avokado, majonnäs, teriyakisås, rostad lök, rom, sesamfrön & gräslök",
+        "contents": "",
+        "defaultPrice": 175.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Rainbow-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "8944185d-4dba-484d-b83c-475fd1952132",
+       "price": null,
+       "sortOrder": 9,
+       "refProduct": {
+        "id": "642ff5298d885618b2352bcf",
+        "name": "Spicy Tuna Roll",
+        "description": "Tonfisk, avokado, gurka, koriander & krispsallad, toppad med teriyakimajonnäs & rostad lök",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Spicy-tuna-roll_wolt.jpg"
+       }
+      },
+      {
+       "id": "5d1928e5-aa9a-4157-9152-fc9c415ff7b8",
+       "price": null,
+       "sortOrder": 10,
+       "refProduct": {
+        "id": "642ff5294636f60cbf1891d8",
+        "name": "Ebi Roll",
+        "description": "Tempurafiterad räka, avokado, gurka, picklad rödlök & gräslök, toppad med chilimajonnäs, rostad lök & rom",
+        "contents": "",
+        "defaultPrice": 169.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ebi-roll_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "8078c320-d302-41af-ae23-565c0c56d40c",
+     "name": "Varma Rätter",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 6,
+     "menuProducts": [
+      {
+       "id": "7e398289-2fcf-49b9-9003-ba88da6c0b6c",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642fed88913a9234f9ae4b01",
+        "name": "Yakiniku",
+        "description": "Tunnskivad nötkött med yakinikusås och ris.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakiniku_wolt.jpg"
+       }
+      },
+      {
+       "id": "352e6150-9558-4268-96d4-7915df4ec4d9",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642fed8c6b9122170804de22",
+        "name": "Shake-Mushi",
+        "description": "Ångkokt lax med ponzumayo och ris.",
+        "contents": "",
+        "defaultPrice": 159.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Shake-mushi_wolt.jpg"
+       }
+      },
+      {
+       "id": "f3822d6f-d7ca-4548-a009-9c3f27b6538f",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642fed8c5a5c141b1fb46c01",
+        "name": "Yakitori",
+        "description": "4st kycklingspett och ris.",
+        "contents": "",
+        "defaultPrice": 149.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Yakitori_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "457c1d20-195a-465d-a240-b73965e412d3",
+     "name": "Barnmeny",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 7,
+     "menuProducts": [
+      {
+       "id": "15e58193-7855-4b03-a17e-1079f346e6a4",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "68a882d07f4bf82748e6791d",
+        "name": "Barn Yakiniku",
+        "description": "Tunnskivad nötkött med yakinikusås och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-yakiniku_wolt.jpg"
+       }
+      },
+      {
+       "id": "d995341a-74c4-41b0-860a-913565c04fe8",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "68a882d145f2b339f53b4b7c",
+        "name": "Barn Shake-Mushi",
+        "description": "Ångkokt lax med ponzumayo och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-shake-mashu_wolt.jpg"
+       }
+      },
+      {
+       "id": "3cb13415-e091-4d8f-9679-19339e567815",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "68a882d10be67f394ddc9b20",
+        "name": "Barn Yakitori",
+        "description": "2 st kycklingspett och ris",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-yakitori_wolt.jpg"
+       }
+      },
+      {
+       "id": "0e983f62-ab4c-4846-aa34-aab52bac7b1c",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "69e8b54dce5b2461e543eec8",
+        "name": "Barn Sushi 6 Bitar",
+        "description": "Valfri nigiri och rullar utan topping",
+        "contents": "",
+        "defaultPrice": 119.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Barn-sushi_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "c748c628-c7cd-4a48-b7ac-bd7a9905c2b8",
+     "name": "Side Orders",
+     "description": "Tillägsbeställning",
+     "disabled": false,
+     "sortOrder": 8,
+     "menuProducts": [
+      {
+       "id": "fb39d170-bca4-4f1a-8923-53ab497729c9",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642feed02a26a76cfd8980ea",
+        "name": "Edamame",
+        "description": "Sojabönor.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Edamame_wolt.jpg"
+       }
+      },
+      {
+       "id": "ced3943e-9b1d-4033-a28c-6747966f8793",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642feed22ad8ce42ddaeddc4",
+        "name": "Misoshiru",
+        "description": "Misosoppa.",
+        "contents": "",
+        "defaultPrice": 20.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_misosoppa_wolt.jpg"
+       }
+      },
+      {
+       "id": "0c0cde58-315d-4848-92cc-eee844156d6b",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642feed2a15c4d47a2e27cc0",
+        "name": "Chuka Ika Sallad",
+        "description": "Marinerad bläckfisksallad med chili & kikuragesvamp.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chuka-ika-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "cc7787ff-ae38-419d-b024-01e3c8251fe4",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642fef194636f60cbf189019",
+        "name": "Yakitori 2st",
+        "description": "2st kycklingspett.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_yakitori-side_wolt.jpg"
+       }
+      },
+      {
+       "id": "f14e4508-8d5a-48a8-842e-7f3777e2975e",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642fef1a06e6f53e5b7add09",
+        "name": "Goman Wakame Sallad",
+        "description": "Marinerade havsalger i sesamolja, chili.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Goman-wakame-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "2d90f092-86b7-4ac4-9a19-9e89f2476b97",
+       "price": null,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "65266c71dd5682145c3c9b69",
+        "name": "Kimchi",
+        "description": "Marinerad salladsskål.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Kimchi_wolt.jpg"
+       }
+      },
+      {
+       "id": "6a6c4257-7c03-41b4-a28d-460aaa3d72b6",
+       "price": null,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "69e1e2643681a34a084d6299",
+        "name": "Extra Ris",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ris_wolt.jpg"
+       }
+      },
+      {
+       "id": "8794c962-9b86-496c-ac80-116280d2dbb0",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "69e733ceadc82e624ddb8333",
+        "name": "Extra Sallad",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 39.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Extra-sallad_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "14c3605a-5ed1-4c53-9325-83bfc1a4b173",
+     "name": "Såser",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 9,
+     "menuProducts": [
+      {
+       "id": "7b3440d2-6be8-4c7e-b80b-39463b2ce12a",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "6447e52f05027c7c0b4ee951",
+        "name": "Chilimajonnäs",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chilimajjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "99807620-47ac-4721-a71d-fd21169a4faa",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "6447e5305b9ef6500cbfc81d",
+        "name": "Ponzu Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ponzu-majjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "945799a3-4e8b-4f4b-a728-ff8e314a6b8b",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "6447e530c521bb3f24fa08d8",
+        "name": "Srirachasås",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_sriracha_wolt.jpg"
+       }
+      },
+      {
+       "id": "f8c257f1-b8eb-492a-8d2a-0ef85114add0",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "6447e5315bac4e5f38f8987d",
+        "name": "Japansk Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Japansk-majjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "9cf28dd6-6766-4fc7-b218-c943108d715e",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "6447e5315f99cd450ba6ca8d",
+        "name": "Tryffel Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tryffelmajjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "b5e8766c-7040-40bb-a5dc-1ba73789ef7c",
+       "price": null,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "69e1e33a2ce3e54a13efcf0f",
+        "name": "Itamae Soya",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_soja_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "296f6d16-2819-4d7a-b294-adba0337daeb",
+     "name": "Dryck",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 10,
+     "menuProducts": [
+      {
+       "id": "b79bf14c-74b6-4b11-9ee2-cda1f42f8a10",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642ff5a00bccf465b1e26554",
+        "name": "Pepsi 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_33cl.jpg"
+       }
+      },
+      {
+       "id": "d2c5295c-9a27-411f-b954-4357ecfb9156",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642ff5a38d885618b2352bf8",
+        "name": "Pepsi Max 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Pepsi_Max_33cl.jpg"
+       }
+      },
+      {
+       "id": "cc2efcf6-32e8-4aa1-8397-14cf3a474e86",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "642ff60e2ad8ce42ddaee016",
+        "name": "Zingo Apelsin 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Zingo_Apelsin_33cl.jpg"
+       }
+      },
+      {
+       "id": "7e67efa0-21ef-4a3b-901d-52e800e53677",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "6777f9df3b7e611948055790",
+        "name": "Zingo Apelsin Zero 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Zingo_Apelsin_Zero_33cl.jpg"
+       }
+      },
+      {
+       "id": "eccd924c-e063-461f-b58a-591670b49401",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642ff5a22ad8ce42ddaedff2",
+        "name": "7up Free 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/7Up_Free_33cl.jpg"
+       }
+      },
+      {
+       "id": "4ed39185-9e77-4664-ba5b-51fc91dff8f2",
+       "price": null,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "69f32d2e58ee4305b65efa86",
+        "name": "7UP Pink Lemonade Zero 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/wST_7up_Zero_Pink_Lemonade_33_Can_Sleek_HiRes_Marknad__1_.jpg"
+       }
+      },
+      {
+       "id": "ce156ce9-7fe2-4a3c-9be6-7b7533ea34cc",
+       "price": null,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "642ff5daaadf595b5c089142",
+        "name": "Ramlösa Original 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Naturell_33cl.jpg"
+       }
+      },
+      {
+       "id": "7b7723d8-9e31-48fe-a520-0db223489e4b",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "6777f9f7ced9c3780994d37d",
+        "name": "Ramlösa Citrus 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Citrus_33cl.jpg"
+       }
+      },
+      {
+       "id": "c785f662-3040-4f84-b04b-4cd2f96c8ae3",
+       "price": null,
+       "sortOrder": 8,
+       "refProduct": {
+        "id": "642ff5da19d8dc74e04cb5f9",
+        "name": "Ramlösa Granatäpple 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 30.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://qopla.s3-eu-west-1.amazonaws.com/foodIconsV2/Ramlosa_Granatapple_33cl.jpg"
+       }
+      },
+      {
+       "id": "4de4dc2a-918e-4985-8b38-c4cbbfde27b3",
+       "price": null,
+       "sortOrder": 9,
+       "refProduct": {
+        "id": "642ff5a2a15c4d47a2e27ec6",
+        "name": "Carlsberg Alkoholfri 33cl",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 37.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/carlsberg-alkoholfri-ekologisk-ol-33cl-1.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    },
+    {
+     "id": "4d21ac5f-bd87-4b4d-a0be-e15aa5d81bca",
+     "name": "Ny menykategori",
+     "description": "",
+     "disabled": false,
+     "sortOrder": 11,
+     "menuProducts": [
+      {
+       "id": "d207ddcf-a0c2-4b78-9fa2-f98a01a6d674",
+       "price": null,
+       "sortOrder": 0,
+       "refProduct": {
+        "id": "642feed22ad8ce42ddaeddc4",
+        "name": "Misoshiru",
+        "description": "Misosoppa.",
+        "contents": "",
+        "defaultPrice": 20.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_misosoppa_wolt.jpg"
+       }
+      },
+      {
+       "id": "8763cd2e-64d5-41e0-9217-cfd029c6e59e",
+       "price": null,
+       "sortOrder": 1,
+       "refProduct": {
+        "id": "642fef194636f60cbf189019",
+        "name": "Yakitori 2st",
+        "description": "2st kycklingspett.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_yakitori-side_wolt.jpg"
+       }
+      },
+      {
+       "id": "779046d3-1b56-486d-8a85-eb917685ed4a",
+       "price": null,
+       "sortOrder": 2,
+       "refProduct": {
+        "id": "65266c71dd5682145c3c9b69",
+        "name": "Kimchi",
+        "description": "Marinerad salladsskål.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Kimchi_wolt.jpg"
+       }
+      },
+      {
+       "id": "1634f4da-4623-4338-9beb-7820f894194d",
+       "price": null,
+       "sortOrder": 3,
+       "refProduct": {
+        "id": "642feed02a26a76cfd8980ea",
+        "name": "Edamame",
+        "description": "Sojabönor.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Edamame_wolt.jpg"
+       }
+      },
+      {
+       "id": "c8dc9655-86a9-49d0-b82c-eb054ede762b",
+       "price": null,
+       "sortOrder": 4,
+       "refProduct": {
+        "id": "642fef1a06e6f53e5b7add09",
+        "name": "Goman Wakame Sallad",
+        "description": "Marinerade havsalger i sesamolja, chili.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Goman-wakame-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "e873a024-ae61-4b04-aa34-57bd7d984aba",
+       "price": null,
+       "sortOrder": 5,
+       "refProduct": {
+        "id": "642feed2a15c4d47a2e27cc0",
+        "name": "Chuka Ika Sallad",
+        "description": "Marinerad bläckfisksallad med chili & kikuragesvamp.",
+        "contents": "",
+        "defaultPrice": 59.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chuka-ika-sallad_wolt.jpg"
+       }
+      },
+      {
+       "id": "ad1e3cae-2124-42d5-8ba8-00231a4811c9",
+       "price": null,
+       "sortOrder": 6,
+       "refProduct": {
+        "id": "6447e5305b9ef6500cbfc81d",
+        "name": "Ponzu Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Ponzu-majjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "db2cc0f1-57eb-4cd5-bdce-d2fb2c0bb88c",
+       "price": null,
+       "sortOrder": 7,
+       "refProduct": {
+        "id": "6447e52f05027c7c0b4ee951",
+        "name": "Chilimajonnäs",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Chilimajjo_wolt.jpg"
+       }
+      },
+      {
+       "id": "898aef22-5eaf-4a04-8512-a6e12fb4e54d",
+       "price": null,
+       "sortOrder": 8,
+       "refProduct": {
+        "id": "6447e5315f99cd450ba6ca8d",
+        "name": "Tryffel Mayo",
+        "description": "",
+        "contents": "",
+        "defaultPrice": 15.0,
+        "disabled": false,
+        "deleted": false,
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/qopla/642bf73401e5d56b6b4e9908/Gallery/medium/Stockholm_Tryffelmajjo_wolt.jpg"
+       }
+      }
+     ],
+     "menuBundleProducts": []
+    }
+   ]
+  }
+ ]
+}

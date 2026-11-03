@@ -1,5 +1,163 @@
 {
-  "rewrites": [
-    { "source": "/((?!assets/|.*\\.[a-zA-Z0-9]+$).*)", "destination": "/index.html" }
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/kungsholmen",
+      "destination": "https://itamae.se/location/kungsholmen",
+      "statusCode": 301
+    },
+    {
+      "source": "/kungsholmen-meny-2",
+      "destination": "https://itamae.se/location/kungsholmen",
+      "statusCode": 301
+    },
+    {
+      "source": "/kungsholmen-meny",
+      "destination": "https://itamae.se/location/kungsholmen",
+      "statusCode": 301
+    },
+    {
+      "source": "/sundbyberg-2",
+      "destination": "https://itamae.se/location/sundbyberg",
+      "statusCode": 301
+    },
+    {
+      "source": "/sundbyberg",
+      "destination": "https://itamae.se/location/sundbyberg",
+      "statusCode": 301
+    },
+    {
+      "source": "/sundbyberg-meny",
+      "destination": "https://itamae.se/location/sundbyberg",
+      "statusCode": 301
+    },
+    {
+      "source": "/hagastaden",
+      "destination": "https://itamae.se/location/hagastaden",
+      "statusCode": 301
+    },
+    {
+      "source": "/hagasatden",
+      "destination": "https://itamae.se/location/hagastaden",
+      "statusCode": 301
+    },
+    {
+      "source": "/hagastaden-meny",
+      "destination": "https://itamae.se/location/hagastaden",
+      "statusCode": 301
+    },
+    {
+      "source": "/odengatan-62",
+      "destination": "https://itamae.se/location/odengatan",
+      "statusCode": 301
+    },
+    {
+      "source": "/odengatan62-meny",
+      "destination": "https://itamae.se/location/odengatan",
+      "statusCode": 301
+    },
+    {
+      "source": "/odengatan",
+      "destination": "https://itamae.se/location/odengatan",
+      "statusCode": 301
+    },
+    {
+      "source": "/odenplan",
+      "destination": "https://itamae.se/location/odengatan",
+      "statusCode": 301
+    },
+    {
+      "source": "/danderyd",
+      "destination": "https://itamae.se/location/danderyd",
+      "statusCode": 301
+    },
+    {
+      "source": "/danderyd-meny",
+      "destination": "https://itamae.se/location/danderyd",
+      "statusCode": 301
+    },
+    {
+      "source": "/morby-centrum",
+      "destination": "https://itamae.se/location/danderyd",
+      "statusCode": 301
+    },
+    {
+      "source": "/arlanda",
+      "destination": "https://itamae.se/restauranger",
+      "statusCode": 301
+    },
+    {
+      "source": "/arlanda-meny",
+      "destination": "https://itamae.se/restauranger",
+      "statusCode": 301
+    },
+    {
+      "source": "/om-oss",
+      "destination": "https://itamae.se/restauranger",
+      "statusCode": 301
+    },
+    {
+      "source": "/blogg-itamae-sushi",
+      "destination": "https://itamae.se/nyheter",
+      "statusCode": 301
+    },
+    {
+      "source": "/i-media-med-itamae-sushi-grill",
+      "destination": "https://itamae.se/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fragor-svar",
+      "destination": "https://itamae.se/faq",
+      "statusCode": 301
+    },
+    {
+      "source": "/vilkor",
+      "destination": "https://itamae.se/villkor",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "destination": "https://itamae.se/",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.itamae.se"
+        }
+      ],
+      "destination": "https://itamae.se/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "itamae.vercel.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    }
   ]
 }

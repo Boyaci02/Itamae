@@ -1,0 +1,2434 @@
+{
+ "hamtad": "2026-11-03",
+ "kalla": "Qopla (api.qopla.com), menyn 'Meny'",
+ "platser": {
+  "kungsholmen": {
+   "qopla": "qyZRx7WVdM",
+   "namn": "Itamae  - Kungsholmen",
+   "sektioner": [
+    {
+     "id": "sushi",
+     "rubrik": "Sushi",
+     "under": "Kockens blandade nigiri och rullar, eller välj en sort",
+     "ratter": [
+      {
+       "namn": "Joo",
+       "pris": 159,
+       "fran": false,
+       "besk": "Stor, 11 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Nami",
+       "pris": 129,
+       "fran": false,
+       "besk": "Liten, 8 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Toku-Joo",
+       "pris": 189,
+       "fran": false,
+       "besk": "Special, 14 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri och lax."
+      },
+      {
+       "namn": "Shake-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och avokado."
+      },
+      {
+       "namn": "Ebi to Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och räka."
+      },
+      {
+       "namn": "Maguro-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, tonfisk och avokado."
+      },
+      {
+       "namn": "Ebi-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, räkor och avokado."
+      },
+      {
+       "namn": "Halstrad Lax",
+       "pris": 159,
+       "fran": true,
+       "besk": "Halstrad lax nigiri."
+      },
+      {
+       "namn": "Vegetarisk Sushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Vegetarisk nigiri."
+      },
+      {
+       "namn": "Familjesushi",
+       "pris": 399,
+       "fran": true,
+       "besk": "Blandade nigiri och rullar."
+      }
+     ]
+    },
+    {
+     "id": "sashimi",
+     "rubrik": "Sashimi och chirashi",
+     "under": "Rå fisk med grönsaker och ris",
+     "ratter": [
+      {
+       "namn": "Sashimi Shake",
+       "pris": 239,
+       "fran": false,
+       "besk": "Laxfiléer."
+      },
+      {
+       "namn": "Sashimi Moriawase",
+       "pris": 269,
+       "fran": false,
+       "besk": "Blandade fiskfiléer."
+      },
+      {
+       "namn": "Chirashi",
+       "pris": 189,
+       "fran": false,
+       "besk": "Utvalda fiskfiléer och skaldjur på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      },
+      {
+       "namn": "Chirashi Shake",
+       "pris": 189,
+       "fran": false,
+       "besk": "Laxfiléer på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      }
+     ]
+    },
+    {
+     "id": "temaki",
+     "rubrik": "Temaki",
+     "under": "Handrullade strutar av sjögräs",
+     "ratter": [
+      {
+       "namn": "Temaki",
+       "pris": 59,
+       "fran": true,
+       "besk": "T.ex. Lax-Purjo, Tonfisk-Koriander, Räka-Rom."
+      }
+     ]
+    },
+    {
+     "id": "bowls",
+     "rubrik": "Poké bowls",
+     "under": "Med ris, blandade grönsaker och chilimajonnäs",
+     "ratter": [
+      {
+       "namn": "Poké Bowl Tonfisk",
+       "pris": 175,
+       "fran": false,
+       "besk": "Råmarinerad tonfisk med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Yakiniku Bowl",
+       "pris": 175,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Ångkokt Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Ångkokt lax med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Avokado Bowl",
+       "pris": 159,
+       "fran": false,
+       "besk": "Avokado med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Chicken Teriyaki Bowl",
+       "pris": 169,
+       "fran": false,
+       "besk": "Teriyakimarinerad kyckling med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Tofu",
+       "pris": 159,
+       "fran": false,
+       "besk": "Råmarinerad tofu med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Råmarinerad lax med ris, blandade grönsaker och chilimajonnäs."
+      }
+     ]
+    },
+    {
+     "id": "rullar",
+     "rubrik": "Rullar",
+     "under": "Uramaki och specialrullar",
+     "ratter": [
+      {
+       "namn": "Avocado Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Avokado, gurka, krispsallad, toppad med avokado, chilimajonnäs, rostad ris, salladslök och sesamfrön."
+      },
+      {
+       "namn": "Räkrulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Räkor, avokado, gurka, kimchi, toppad med majonnäs, chilimajonnäs, rostad lök, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Halstrad Lax-Rulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Philadelphia Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök och majonnäs, toppad med rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "California Roll",
+       "pris": 159,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "Tofurulle",
+       "pris": 165,
+       "fran": false,
+       "besk": "Friterad tofu, avokado, gurka, krispsallad, toppad med chilimajonnäs, rostad lök, gräslök och sesamfrön."
+      },
+      {
+       "namn": "Spicy Shake Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, koriander, krispsallad, toppad med majonnäs, sriracha, rostad lök och gräslök."
+      },
+      {
+       "namn": "Itamae Special Roll",
+       "pris": 185,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, gräslök, toppad med halstrad laxöring, tonfisk, majonnäs, teriyakisås, chilimajonnäs, rostad lök, rom och sesamfrön."
+      },
+      {
+       "namn": "Rainbow Roll",
+       "pris": 175,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, krispsallad, toppad med lax, tonfisk, räkor, avokado, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och gräslök."
+      },
+      {
+       "namn": "Spicy Tuna Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tonfisk, avokado, gurka, koriander och krispsallad, toppad med teriyakimajonnäs och rostad lök."
+      },
+      {
+       "namn": "Ebi Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, picklad rödlök och gräslök, toppad med chilimajonnäs, rostad lök och rom."
+      }
+     ]
+    },
+    {
+     "id": "varmratter",
+     "rubrik": "Varma rätter",
+     "under": "Med ris",
+     "ratter": [
+      {
+       "namn": "Yakiniku",
+       "pris": 159,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Shake-Mushi",
+       "pris": 159,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      },
+      {
+       "namn": "Yakitori",
+       "pris": 149,
+       "fran": false,
+       "besk": "4 st kycklingspett och ris."
+      }
+     ]
+    },
+    {
+     "id": "barnmeny",
+     "rubrik": "Barnmeny",
+     "under": "Mindre portioner",
+     "ratter": [
+      {
+       "namn": "Barn Yakiniku",
+       "pris": 119,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Barn Shake-Mushi",
+       "pris": 119,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      },
+      {
+       "namn": "Barn Yakitori",
+       "pris": 119,
+       "fran": false,
+       "besk": "2 st kycklingspett och ris."
+      },
+      {
+       "namn": "Barn Sushi 6 Bitar",
+       "pris": 119,
+       "fran": false,
+       "besk": "Valfri nigiri och rullar utan topping."
+      }
+     ]
+    },
+    {
+     "id": "tillbehor",
+     "rubrik": "Tillbehör",
+     "under": "Att ha vid sidan av",
+     "ratter": [
+      {
+       "namn": "Edamame",
+       "pris": 59,
+       "fran": false,
+       "besk": "Sojabönor."
+      },
+      {
+       "namn": "Misoshiru",
+       "pris": 20,
+       "fran": false,
+       "besk": "Misosoppa."
+      },
+      {
+       "namn": "Chuka Ika Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad bläckfisksallad med chili och kikuragesvamp."
+      },
+      {
+       "namn": "Yakitori 2 st",
+       "pris": 59,
+       "fran": false,
+       "besk": "2 st kycklingspett."
+      },
+      {
+       "namn": "Goman Wakame Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerade havsalger i sesamolja, chili."
+      },
+      {
+       "namn": "Kimchi",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad salladsskål."
+      },
+      {
+       "namn": "Extra Ris",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Extra Sallad",
+       "pris": 39,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "saser",
+     "rubrik": "Såser",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Chilimajonnäs",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ponzu Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Srirachasås",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Japansk Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Tryffel Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Itamae Soya",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "dryck",
+     "rubrik": "Dryck",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Pepsi 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Pepsi Max 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7up Free 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7UP Pink Lemonade Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Original 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Citrus 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Granatäpple 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Carlsberg Alkoholfri 33cl",
+       "pris": 37,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    }
+   ]
+  },
+  "odengatan": {
+   "qopla": "qvyAzJvzzJ",
+   "namn": "Itamae - Odenplan",
+   "sektioner": [
+    {
+     "id": "sushi",
+     "rubrik": "Sushi",
+     "under": "Kockens blandade nigiri och rullar, eller välj en sort",
+     "ratter": [
+      {
+       "namn": "Joo",
+       "pris": 159,
+       "fran": false,
+       "besk": "Stor, 11 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Nami",
+       "pris": 129,
+       "fran": false,
+       "besk": "Liten, 8 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Toku-Joo",
+       "pris": 189,
+       "fran": false,
+       "besk": "Special, 14 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri och lax."
+      },
+      {
+       "namn": "Shake-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och avokado."
+      },
+      {
+       "namn": "Ebi to Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och räka."
+      },
+      {
+       "namn": "Maguro-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, tonfisk och avokado."
+      },
+      {
+       "namn": "Ebi-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, räkor och avokado."
+      },
+      {
+       "namn": "Halstrad Lax",
+       "pris": 159,
+       "fran": true,
+       "besk": "Halstrad lax nigiri."
+      },
+      {
+       "namn": "Vegetarisk Sushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Vegetarisk nigiri."
+      },
+      {
+       "namn": "Familjesushi",
+       "pris": 399,
+       "fran": true,
+       "besk": "Blandade nigiri och rullar."
+      }
+     ]
+    },
+    {
+     "id": "sashimi",
+     "rubrik": "Sashimi och chirashi",
+     "under": "Rå fisk med grönsaker och ris",
+     "ratter": [
+      {
+       "namn": "Sashimi Shake",
+       "pris": 239,
+       "fran": false,
+       "besk": "Laxfiléer."
+      },
+      {
+       "namn": "Sashimi Moriawase",
+       "pris": 269,
+       "fran": false,
+       "besk": "Blandade fiskfiléer."
+      },
+      {
+       "namn": "Chirashi",
+       "pris": 189,
+       "fran": false,
+       "besk": "Utvalda fiskfiléer och skaldjur på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      },
+      {
+       "namn": "Chirashi Shake",
+       "pris": 189,
+       "fran": false,
+       "besk": "Laxfiléer på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      }
+     ]
+    },
+    {
+     "id": "temaki",
+     "rubrik": "Temaki",
+     "under": "Handrullade strutar av sjögräs",
+     "ratter": [
+      {
+       "namn": "Temaki",
+       "pris": 59,
+       "fran": true,
+       "besk": "T.ex. Lax-Purjo, Tonfisk-Koriander, Räka-Rom."
+      }
+     ]
+    },
+    {
+     "id": "bowls",
+     "rubrik": "Poké bowls",
+     "under": "Med ris, blandade grönsaker och chilimajonnäs",
+     "ratter": [
+      {
+       "namn": "Poké Bowl Tonfisk",
+       "pris": 175,
+       "fran": false,
+       "besk": "Råmarinerad tonfisk med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Yakiniku Bowl",
+       "pris": 175,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Ångkokt Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Ångkokt lax med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Avokado Bowl",
+       "pris": 159,
+       "fran": false,
+       "besk": "Avokado med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Chicken Teriyaki Bowl",
+       "pris": 169,
+       "fran": false,
+       "besk": "Teriyakimarinerad kyckling med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Tofu",
+       "pris": 159,
+       "fran": false,
+       "besk": "Råmarinerad tofu med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Råmarinerad lax med ris, blandade grönsaker och chilimajonnäs."
+      }
+     ]
+    },
+    {
+     "id": "rullar",
+     "rubrik": "Rullar",
+     "under": "Uramaki och specialrullar",
+     "ratter": [
+      {
+       "namn": "Avocado Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Avokado, gurka, krispsallad, toppad med avokado, chilimajonnäs, rostad ris, salladslök och sesamfrön."
+      },
+      {
+       "namn": "Räkrulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Räkor, avokado, gurka, kimchi, toppad med majonnäs, chilimajonnäs, rostad lök, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Halstrad Lax-Rulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Philadelphia Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök och majonnäs, toppad med rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "California Roll",
+       "pris": 159,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "Tofurulle",
+       "pris": 165,
+       "fran": false,
+       "besk": "Friterad tofu, avokado, gurka, krispsallad, toppad med chilimajonnäs, rostad lök, gräslök och sesamfrön."
+      },
+      {
+       "namn": "Spicy Shake Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, koriander, krispsallad, toppad med majonnäs, sriracha, rostad lök och gräslök."
+      },
+      {
+       "namn": "Itamae Special Roll",
+       "pris": 185,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, gräslök, toppad med halstrad laxöring, tonfisk, majonnäs, teriyakisås, chilimajonnäs, rostad lök, rom och sesamfrön."
+      },
+      {
+       "namn": "Rainbow Roll",
+       "pris": 175,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, krispsallad, toppad med lax, tonfisk, räkor, avokado, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och gräslök."
+      },
+      {
+       "namn": "Spicy Tuna Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tonfisk, avokado, gurka, koriander och krispsallad, toppad med teriyakimajonnäs och rostad lök."
+      },
+      {
+       "namn": "Ebi Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, picklad rödlök och gräslök, toppad med chilimajonnäs, rostad lök och rom."
+      }
+     ]
+    },
+    {
+     "id": "varmratter",
+     "rubrik": "Varma rätter",
+     "under": "Med ris",
+     "ratter": [
+      {
+       "namn": "Yakiniku",
+       "pris": 159,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Shake-Mushi",
+       "pris": 159,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      },
+      {
+       "namn": "Yakitori",
+       "pris": 149,
+       "fran": false,
+       "besk": "4 st kycklingspett och ris."
+      }
+     ]
+    },
+    {
+     "id": "barnmeny",
+     "rubrik": "Barnmeny",
+     "under": "Mindre portioner",
+     "ratter": [
+      {
+       "namn": "Barn Yakiniku",
+       "pris": 119,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Barn Shake-Mushi",
+       "pris": 119,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      },
+      {
+       "namn": "Barn Yakitori",
+       "pris": 119,
+       "fran": false,
+       "besk": "2 st kycklingspett och ris."
+      },
+      {
+       "namn": "Barn Sushi 6 Bitar",
+       "pris": 119,
+       "fran": false,
+       "besk": "Valfri nigiri och rullar utan topping."
+      }
+     ]
+    },
+    {
+     "id": "tillbehor",
+     "rubrik": "Tillbehör",
+     "under": "Att ha vid sidan av",
+     "ratter": [
+      {
+       "namn": "Edamame",
+       "pris": 59,
+       "fran": false,
+       "besk": "Sojabönor."
+      },
+      {
+       "namn": "Misoshiru",
+       "pris": 20,
+       "fran": false,
+       "besk": "Misosoppa."
+      },
+      {
+       "namn": "Chuka Ika Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad bläckfisksallad med chili och kikuragesvamp."
+      },
+      {
+       "namn": "Yakitori 2 st",
+       "pris": 59,
+       "fran": false,
+       "besk": "2 st kycklingspett."
+      },
+      {
+       "namn": "Goman Wakame Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerade havsalger i sesamolja, chili."
+      },
+      {
+       "namn": "Kimchi",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad salladsskål."
+      },
+      {
+       "namn": "Extra Ris",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Extra Sallad",
+       "pris": 39,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "saser",
+     "rubrik": "Såser",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Chilimajonnäs",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ponzu Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Srirachasås",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Japansk Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Tryffel Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Itamae Soya",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "dryck",
+     "rubrik": "Dryck",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Pepsi 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Pepsi Max 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7up Free 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7UP Pink Lemonade Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Original 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Citrus 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Granatäpple 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Carlsberg Alkoholfri 33cl",
+       "pris": 37,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    }
+   ]
+  },
+  "hagastaden": {
+   "qopla": "qAa9ZDPdv1",
+   "namn": "Itamae - Hagastaden",
+   "sektioner": [
+    {
+     "id": "sushi",
+     "rubrik": "Sushi",
+     "under": "Kockens blandade nigiri och rullar, eller välj en sort",
+     "ratter": [
+      {
+       "namn": "Joo",
+       "pris": 159,
+       "fran": false,
+       "besk": "Stor, 11 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Nami",
+       "pris": 129,
+       "fran": false,
+       "besk": "Liten, 8 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Toku-Joo",
+       "pris": 189,
+       "fran": false,
+       "besk": "Special, 14 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri och lax."
+      },
+      {
+       "namn": "Shake-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och avokado."
+      },
+      {
+       "namn": "Ebi to Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och räka."
+      },
+      {
+       "namn": "Maguro-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, tonfisk och avokado."
+      },
+      {
+       "namn": "Ebi-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, räkor och avokado."
+      },
+      {
+       "namn": "Halstrad Lax",
+       "pris": 159,
+       "fran": true,
+       "besk": "Halstrad lax nigiri."
+      },
+      {
+       "namn": "Vegetarisk Sushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Vegetarisk nigiri."
+      },
+      {
+       "namn": "Familjesushi",
+       "pris": 399,
+       "fran": true,
+       "besk": "Blandade nigiri och rullar."
+      }
+     ]
+    },
+    {
+     "id": "sashimi",
+     "rubrik": "Sashimi och chirashi",
+     "under": "Rå fisk med grönsaker och ris",
+     "ratter": [
+      {
+       "namn": "Sashimi Shake",
+       "pris": 239,
+       "fran": false,
+       "besk": "Laxfiléer."
+      },
+      {
+       "namn": "Sashimi Moriawase",
+       "pris": 269,
+       "fran": false,
+       "besk": "Blandade fiskfiléer."
+      },
+      {
+       "namn": "Chirashi",
+       "pris": 189,
+       "fran": false,
+       "besk": "Utvalda fiskfiléer och skaldjur på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      },
+      {
+       "namn": "Chirashi Shake",
+       "pris": 189,
+       "fran": false,
+       "besk": "Laxfiléer på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      }
+     ]
+    },
+    {
+     "id": "temaki",
+     "rubrik": "Temaki",
+     "under": "Handrullade strutar av sjögräs",
+     "ratter": [
+      {
+       "namn": "Temaki",
+       "pris": 59,
+       "fran": true,
+       "besk": "T.ex. Lax-Purjo, Tonfisk-Koriander, Räka-Rom."
+      }
+     ]
+    },
+    {
+     "id": "bowls",
+     "rubrik": "Poké bowls",
+     "under": "Med ris, blandade grönsaker och chilimajonnäs",
+     "ratter": [
+      {
+       "namn": "Poké Bowl Tonfisk",
+       "pris": 175,
+       "fran": false,
+       "besk": "Råmarinerad tonfisk med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Yakiniku Bowl",
+       "pris": 175,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Ångkokt Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Ångkokt lax med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Avokado Bowl",
+       "pris": 159,
+       "fran": false,
+       "besk": "Avokado med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Chicken Teriyaki Bowl",
+       "pris": 169,
+       "fran": false,
+       "besk": "Teriyakimarinerad kyckling med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Tofu",
+       "pris": 159,
+       "fran": false,
+       "besk": "Råmarinerad tofu med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Råmarinerad lax med ris, blandade grönsaker och chilimajonnäs."
+      }
+     ]
+    },
+    {
+     "id": "rullar",
+     "rubrik": "Rullar",
+     "under": "Uramaki och specialrullar",
+     "ratter": [
+      {
+       "namn": "Avocado Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Avokado, gurka, krispsallad, toppad med avokado, chilimajonnäs, rostad ris, salladslök och sesamfrön."
+      },
+      {
+       "namn": "Räkrulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Räkor, avokado, gurka, kimchi, toppad med majonnäs, chilimajonnäs, rostad lök, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Halstrad Lax-Rulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Philadelphia Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök och majonnäs, toppad med rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "California Roll",
+       "pris": 159,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "Tofurulle",
+       "pris": 165,
+       "fran": false,
+       "besk": "Friterad tofu, avokado, gurka, krispsallad, toppad med chilimajonnäs, rostad lök, gräslök och sesamfrön."
+      },
+      {
+       "namn": "Spicy Shake Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, koriander, krispsallad, toppad med majonnäs, sriracha, rostad lök och gräslök."
+      },
+      {
+       "namn": "Itamae Special Roll",
+       "pris": 185,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, gräslök, toppad med halstrad laxöring, tonfisk, majonnäs, teriyakisås, chilimajonnäs, rostad lök, rom och sesamfrön."
+      },
+      {
+       "namn": "Rainbow Roll",
+       "pris": 175,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, krispsallad, toppad med lax, tonfisk, räkor, avokado, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och gräslök."
+      },
+      {
+       "namn": "Spicy Tuna Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tonfisk, avokado, gurka, koriander och krispsallad, toppad med teriyakimajonnäs och rostad lök."
+      },
+      {
+       "namn": "Ebi Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, picklad rödlök och gräslök, toppad med chilimajonnäs, rostad lök och rom."
+      }
+     ]
+    },
+    {
+     "id": "varmratter",
+     "rubrik": "Varma rätter",
+     "under": "Med ris",
+     "ratter": [
+      {
+       "namn": "Yakiniku",
+       "pris": 159,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Shake-Mushi",
+       "pris": 159,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      },
+      {
+       "namn": "Yakitori",
+       "pris": 149,
+       "fran": false,
+       "besk": "4 st kycklingspett och ris."
+      }
+     ]
+    },
+    {
+     "id": "barnmeny",
+     "rubrik": "Barnmeny",
+     "under": "Mindre portioner",
+     "ratter": [
+      {
+       "namn": "Barn Yakiniku",
+       "pris": 119,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Barn Shake-Mushi",
+       "pris": 119,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      },
+      {
+       "namn": "Barn Yakitori",
+       "pris": 119,
+       "fran": false,
+       "besk": "2 st kycklingspett och ris."
+      },
+      {
+       "namn": "Barn Sushi 6 Bitar",
+       "pris": 119,
+       "fran": false,
+       "besk": "Valfri nigiri och rullar utan topping."
+      }
+     ]
+    },
+    {
+     "id": "tillbehor",
+     "rubrik": "Tillbehör",
+     "under": "Att ha vid sidan av",
+     "ratter": [
+      {
+       "namn": "Edamame",
+       "pris": 59,
+       "fran": false,
+       "besk": "Sojabönor."
+      },
+      {
+       "namn": "Misoshiru",
+       "pris": 20,
+       "fran": false,
+       "besk": "Misosoppa."
+      },
+      {
+       "namn": "Chuka Ika Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad bläckfisksallad med chili och kikuragesvamp."
+      },
+      {
+       "namn": "Yakitori 2 st",
+       "pris": 59,
+       "fran": false,
+       "besk": "2 st kycklingspett."
+      },
+      {
+       "namn": "Goman Wakame Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerade havsalger i sesamolja, chili."
+      },
+      {
+       "namn": "Kimchi",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad salladsskål."
+      },
+      {
+       "namn": "Extra Ris",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Extra Sallad",
+       "pris": 39,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "saser",
+     "rubrik": "Såser",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Chilimajonnäs",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ponzu Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Srirachasås",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Japansk Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Tryffel Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Itamae Soya",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "dryck",
+     "rubrik": "Dryck",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Pepsi 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Pepsi Max 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7up Free 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7UP Pink Lemonade Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Original 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Citrus 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Granatäpple 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Carlsberg Alkoholfri 33cl",
+       "pris": 37,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    }
+   ]
+  },
+  "sundbyberg": {
+   "qopla": "qbgL3aM4Ov",
+   "namn": "Itamae Sushi & Grill - Sundbyberg",
+   "sektioner": [
+    {
+     "id": "sushi",
+     "rubrik": "Sushi",
+     "under": "Kockens blandade nigiri och rullar, eller välj en sort",
+     "ratter": [
+      {
+       "namn": "Nami",
+       "pris": 129,
+       "fran": false,
+       "besk": "Liten, 8 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Joo",
+       "pris": 159,
+       "fran": false,
+       "besk": "Stor, 11 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Toku-Joo",
+       "pris": 189,
+       "fran": false,
+       "besk": "Special, 14 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri och lax."
+      },
+      {
+       "namn": "Shake-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och avokado."
+      },
+      {
+       "namn": "Ebi to Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och räka."
+      },
+      {
+       "namn": "Maguro-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, tonfisk och avokado."
+      },
+      {
+       "namn": "Ebi-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, räkor och avokado."
+      },
+      {
+       "namn": "Halstrad Lax",
+       "pris": 159,
+       "fran": true,
+       "besk": "Halstrad lax nigiri."
+      },
+      {
+       "namn": "Vegetarisk Sushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Vegetarisk nigiri."
+      },
+      {
+       "namn": "Familjesushi",
+       "pris": 399,
+       "fran": true,
+       "besk": "Blandade nigiri och rullar."
+      }
+     ]
+    },
+    {
+     "id": "sashimi",
+     "rubrik": "Sashimi och chirashi",
+     "under": "Rå fisk med grönsaker och ris",
+     "ratter": [
+      {
+       "namn": "Sashimi Shake",
+       "pris": 239,
+       "fran": false,
+       "besk": "Laxfiléer."
+      },
+      {
+       "namn": "Sashimi Moriawase",
+       "pris": 269,
+       "fran": false,
+       "besk": "Blandade fiskfiléer."
+      },
+      {
+       "namn": "Chirashi",
+       "pris": 189,
+       "fran": false,
+       "besk": "Utvalda fiskfiléer och skaldjur på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      },
+      {
+       "namn": "Chirashi Shake",
+       "pris": 189,
+       "fran": false,
+       "besk": "Laxfiléer på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      }
+     ]
+    },
+    {
+     "id": "temaki",
+     "rubrik": "Temaki",
+     "under": "Handrullade strutar av sjögräs",
+     "ratter": [
+      {
+       "namn": "Temaki",
+       "pris": 59,
+       "fran": true,
+       "besk": "T.ex. Lax-Purjo, Tonfisk-Koriander, Räka-Rom."
+      }
+     ]
+    },
+    {
+     "id": "bowls",
+     "rubrik": "Poké bowls",
+     "under": "Med ris, blandade grönsaker och chilimajonnäs",
+     "ratter": [
+      {
+       "namn": "Poké Bowl Tonfisk",
+       "pris": 175,
+       "fran": false,
+       "besk": "Råmarinerad tonfisk med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Ångkokt Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Ångkokt lax med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Råmarinerad lax med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Yakiniku Bowl",
+       "pris": 175,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Chicken Teriyaki Bowl",
+       "pris": 169,
+       "fran": false,
+       "besk": "Teriyakimarinerad kyckling med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Panko Chicken Bowl",
+       "pris": 179,
+       "fran": false,
+       "besk": "Pankofriterat kycklingbröst toppad med sweet mayo, serveras med avokado, edamame, syrad lök, blandade grönsaker och varmt ris."
+      },
+      {
+       "namn": "Poké Bowl Tofu",
+       "pris": 159,
+       "fran": false,
+       "besk": "Råmarinerad tofu med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Avokado Bowl",
+       "pris": 159,
+       "fran": false,
+       "besk": "Avokado med ris, blandade grönsaker och chilimajonnäs."
+      }
+     ]
+    },
+    {
+     "id": "rullar",
+     "rubrik": "Rullar",
+     "under": "Uramaki och specialrullar",
+     "ratter": [
+      {
+       "namn": "California Roll",
+       "pris": 159,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "Philadelphia Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök och majonnäs, toppad med rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "Ebi Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, picklad rödlök och gräslök, toppad med chilimajonnäs, rostad lök och rom."
+      },
+      {
+       "namn": "Spicy Tuna Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tonfisk, avokado, gurka, koriander och krispsallad, toppad med teriyakimajonnäs och rostad lök."
+      },
+      {
+       "namn": "Crispy Tuna Roll",
+       "pris": 179,
+       "fran": false,
+       "besk": "Tempurafriterad tonfisk med chilimajonnäs."
+      },
+      {
+       "namn": "Tonkatsu Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Inlagd gurka, avokado, friterad kyckling med majo, tonkatsu sås, rostad riskex, gräslök och sesam."
+      },
+      {
+       "namn": "Halstrad Lax-Rulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Avocado Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Avokado, gurka, krispsallad, toppad med avokado, chilimajonnäs, rostad ris, salladslök och sesamfrön."
+      },
+      {
+       "namn": "Rainbow Roll",
+       "pris": 175,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, krispsallad, toppad med lax, tonfisk, räkor, avokado, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och gräslök."
+      },
+      {
+       "namn": "Räkrulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Räkor, avokado, gurka, kimchi, toppad med majonnäs, chilimajonnäs, rostad lök, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Itamae Special Roll",
+       "pris": 185,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, gräslök, toppad med halstrad laxöring, tonfisk, majonnäs, teriyakisås, chilimajonnäs, rostad lök, rom och sesamfrön."
+      },
+      {
+       "namn": "Spicy Shake Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, koriander, krispsallad, toppad med majonnäs, sriracha, rostad lök och gräslök."
+      },
+      {
+       "namn": "Tofurulle",
+       "pris": 165,
+       "fran": false,
+       "besk": "Friterad tofu, avokado, gurka, krispsallad, toppad med chilimajonnäs, rostad lök, gräslök och sesamfrön."
+      },
+      {
+       "namn": "Panerad Burrito",
+       "pris": 165,
+       "fran": false,
+       "besk": "Friterad kyckling dumpling, stekt sparris, cheddarost, schalottenlök och avokado."
+      },
+      {
+       "namn": "Laxröra Burrito",
+       "pris": 169,
+       "fran": false,
+       "besk": "Kryddad rålax, stekt sparris, avokado och friterade grönsaker."
+      }
+     ]
+    },
+    {
+     "id": "varmratter",
+     "rubrik": "Varma rätter",
+     "under": "Med ris",
+     "ratter": [
+      {
+       "namn": "Yakitori",
+       "pris": 149,
+       "fran": false,
+       "besk": "4 st kycklingspett och ris."
+      },
+      {
+       "namn": "Yakiniku",
+       "pris": 159,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Shake-Mushi",
+       "pris": 159,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      }
+     ]
+    },
+    {
+     "id": "hamburgare",
+     "rubrik": "Hamburgare",
+     "under": "Högrev och bringa, serveras med pommes. Går att få med Beyond Meat eller pankokyckling",
+     "ratter": [
+      {
+       "namn": "Cheeseburgare Med Chilimajo",
+       "pris": 139,
+       "fran": false,
+       "besk": "Gjord på högrev och bringa, serveras med pommes."
+      },
+      {
+       "namn": "Husets Cheeseburgare Med Shiitake",
+       "pris": 139,
+       "fran": false,
+       "besk": "Gjord på högrev och bringa med tryffelmajo, serveras med pommes."
+      },
+      {
+       "namn": "Kimosabe Burger",
+       "pris": 145,
+       "fran": false,
+       "besk": "Gjord på högrev och bringa toppad med brieost, rödlöksmarmelad, kalkon-bacon, serveras med pommes."
+      },
+      {
+       "namn": "Svensk Klassiker",
+       "pris": 139,
+       "fran": false,
+       "besk": "Gjord på högrev och bringa toppas med klassisk dressing, tomat, ost, saltgurka och sallad, serveras med pommes."
+      }
+     ]
+    },
+    {
+     "id": "sallader",
+     "rubrik": "Sallader",
+     "under": "Sallad och äggnudlar",
+     "ratter": [
+      {
+       "namn": "Yakiniku Za",
+       "pris": 169,
+       "fran": false,
+       "besk": "Nötkött, sallad och äggnudlar på asiatiskt vis."
+      },
+      {
+       "namn": "Shake Za",
+       "pris": 175,
+       "fran": false,
+       "besk": "Ångkokt lax, sallad och äggnudlar på asiatiskt vis."
+      },
+      {
+       "namn": "Toriniku Za",
+       "pris": 159,
+       "fran": false,
+       "besk": "Kyckling, sallad och äggnudlar på asiatiskt vis."
+      },
+      {
+       "namn": "Panko Za",
+       "pris": 169,
+       "fran": false,
+       "besk": "Pankofriterat kycklingbröst, sallad och äggnudlar på asiatiskt vis."
+      }
+     ]
+    },
+    {
+     "id": "barnmeny",
+     "rubrik": "Barnmeny",
+     "under": "Mindre portioner",
+     "ratter": [
+      {
+       "namn": "Barn Yakiniku",
+       "pris": 119,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Barn Shake-Mushi",
+       "pris": 119,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      },
+      {
+       "namn": "Barn Yakitori",
+       "pris": 119,
+       "fran": false,
+       "besk": "2 st kycklingspett och ris."
+      },
+      {
+       "namn": "Barn Sushi 6 Bitar",
+       "pris": 119,
+       "fran": false,
+       "besk": "Valfri nigiri och rullar utan topping."
+      }
+     ]
+    },
+    {
+     "id": "tillbehor",
+     "rubrik": "Tillbehör",
+     "under": "Att ha vid sidan av",
+     "ratter": [
+      {
+       "namn": "Pommes",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Edamame",
+       "pris": 59,
+       "fran": false,
+       "besk": "Sojabönor."
+      },
+      {
+       "namn": "Misoshiru",
+       "pris": 20,
+       "fran": false,
+       "besk": "Misosoppa."
+      },
+      {
+       "namn": "Chuka Ika Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad bläckfisksallad med chili och kikuragesvamp."
+      },
+      {
+       "namn": "Yakitori 2 st",
+       "pris": 59,
+       "fran": false,
+       "besk": "2 st kycklingspett."
+      },
+      {
+       "namn": "Goman Wakame Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerade havsalger i sesamolja, chili."
+      },
+      {
+       "namn": "Kimchi",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad salladsskål."
+      },
+      {
+       "namn": "Extra Ris",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Extra Sallad",
+       "pris": 39,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "saser",
+     "rubrik": "Såser",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Chilimajonnäs",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ponzu Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Srirachasås",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Japansk Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Tryffel Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Itamae Soya",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "dryck",
+     "rubrik": "Dryck",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Pepsi 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Pepsi Max 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7up Free 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7UP Pink Lemonade Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Original 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Citrus 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Granatäpple 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Carlsberg Alkoholfri 33cl",
+       "pris": 37,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    }
+   ]
+  },
+  "danderyd": {
+   "qopla": "q3Prp4Xj7z",
+   "namn": "Itamae - Danderyd",
+   "sektioner": [
+    {
+     "id": "sushi",
+     "rubrik": "Sushi",
+     "under": "Kockens blandade nigiri och rullar, eller välj en sort",
+     "ratter": [
+      {
+       "namn": "Joo",
+       "pris": 159,
+       "fran": false,
+       "besk": "Stor, 11 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Nami",
+       "pris": 129,
+       "fran": false,
+       "besk": "Liten, 8 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Toku-Joo",
+       "pris": 189,
+       "fran": false,
+       "besk": "Special, 14 bitar blandade nigiri och norimaki."
+      },
+      {
+       "namn": "Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri och lax."
+      },
+      {
+       "namn": "Shake-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och avokado."
+      },
+      {
+       "namn": "Ebi to Shake-Zushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, lax och räka."
+      },
+      {
+       "namn": "Maguro-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, tonfisk och avokado."
+      },
+      {
+       "namn": "Ebi-Avokado",
+       "pris": 159,
+       "fran": true,
+       "besk": "Nigiri, räkor och avokado."
+      },
+      {
+       "namn": "Halstrad Lax",
+       "pris": 159,
+       "fran": true,
+       "besk": "Halstrad lax nigiri."
+      },
+      {
+       "namn": "Vegetarisk Sushi",
+       "pris": 159,
+       "fran": true,
+       "besk": "Vegetarisk nigiri."
+      },
+      {
+       "namn": "Familjesushi",
+       "pris": 399,
+       "fran": true,
+       "besk": "Blandade nigiri och rullar."
+      }
+     ]
+    },
+    {
+     "id": "sashimi",
+     "rubrik": "Sashimi och chirashi",
+     "under": "Rå fisk med grönsaker och ris",
+     "ratter": [
+      {
+       "namn": "Sashimi Shake",
+       "pris": 239,
+       "fran": false,
+       "besk": "Laxfiléer."
+      },
+      {
+       "namn": "Sashimi Moriawase",
+       "pris": 269,
+       "fran": false,
+       "besk": "Blandade fiskfiléer."
+      },
+      {
+       "namn": "Chirashi",
+       "pris": 189,
+       "fran": false,
+       "besk": "Utvalda fiskfiléer och skaldjur på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      },
+      {
+       "namn": "Chirashi Shake",
+       "pris": 189,
+       "fran": false,
+       "besk": "Laxfiléer på en bädd av sushiris och sjögräs, toppad med rom och salladslök."
+      }
+     ]
+    },
+    {
+     "id": "temaki",
+     "rubrik": "Temaki",
+     "under": "Handrullade strutar av sjögräs",
+     "ratter": [
+      {
+       "namn": "Temaki",
+       "pris": 59,
+       "fran": true,
+       "besk": "T.ex. Lax-Purjo, Tonfisk-Koriander, Räka-Rom."
+      }
+     ]
+    },
+    {
+     "id": "bowls",
+     "rubrik": "Poké bowls",
+     "under": "Med ris, blandade grönsaker och chilimajonnäs",
+     "ratter": [
+      {
+       "namn": "Poké Bowl Tonfisk",
+       "pris": 175,
+       "fran": false,
+       "besk": "Råmarinerad tonfisk med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Yakiniku Bowl",
+       "pris": 175,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Ångkokt Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Ångkokt lax med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Avokado Bowl",
+       "pris": 159,
+       "fran": false,
+       "besk": "Avokado med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Chicken Teriyaki Bowl",
+       "pris": 169,
+       "fran": false,
+       "besk": "Teriyakimarinerad kyckling med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Tofu",
+       "pris": 159,
+       "fran": false,
+       "besk": "Råmarinerad tofu med ris, blandade grönsaker och chilimajonnäs."
+      },
+      {
+       "namn": "Poké Bowl Lax",
+       "pris": 169,
+       "fran": false,
+       "besk": "Råmarinerad lax med ris, blandade grönsaker och chilimajonnäs."
+      }
+     ]
+    },
+    {
+     "id": "rullar",
+     "rubrik": "Rullar",
+     "under": "Uramaki och specialrullar",
+     "ratter": [
+      {
+       "namn": "Avocado Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Avokado, gurka, krispsallad, toppad med avokado, chilimajonnäs, rostad ris, salladslök och sesamfrön."
+      },
+      {
+       "namn": "Räkrulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Räkor, avokado, gurka, kimchi, toppad med majonnäs, chilimajonnäs, rostad lök, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Halstrad Lax-Rulle",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, krispsallad, toppad med halstrad lax, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och salladslök."
+      },
+      {
+       "namn": "Philadelphia Roll",
+       "pris": 165,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, philadelphia, krispsallad, gräslök och majonnäs, toppad med rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "California Roll",
+       "pris": 159,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, majonnäs, toppad med teriyakisås, rom, rostad lök, majonnäs och sesamfrön."
+      },
+      {
+       "namn": "Tofurulle",
+       "pris": 165,
+       "fran": false,
+       "besk": "Friterad tofu, avokado, gurka, krispsallad, toppad med chilimajonnäs, rostad lök, gräslök och sesamfrön."
+      },
+      {
+       "namn": "Spicy Shake Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Lax, avokado, gurka, koriander, krispsallad, toppad med majonnäs, sriracha, rostad lök och gräslök."
+      },
+      {
+       "namn": "Itamae Special Roll",
+       "pris": 185,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, gräslök, toppad med halstrad laxöring, tonfisk, majonnäs, teriyakisås, chilimajonnäs, rostad lök, rom och sesamfrön."
+      },
+      {
+       "namn": "Rainbow Roll",
+       "pris": 175,
+       "fran": false,
+       "besk": "Crabstick, avokado, gurka, krispsallad, toppad med lax, tonfisk, räkor, avokado, majonnäs, teriyakisås, rostad lök, rom, sesamfrön och gräslök."
+      },
+      {
+       "namn": "Spicy Tuna Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tonfisk, avokado, gurka, koriander och krispsallad, toppad med teriyakimajonnäs och rostad lök."
+      },
+      {
+       "namn": "Ebi Roll",
+       "pris": 169,
+       "fran": false,
+       "besk": "Tempurafriterad räka, avokado, gurka, picklad rödlök och gräslök, toppad med chilimajonnäs, rostad lök och rom."
+      }
+     ]
+    },
+    {
+     "id": "varmratter",
+     "rubrik": "Varma rätter",
+     "under": "Med ris",
+     "ratter": [
+      {
+       "namn": "Yakiniku",
+       "pris": 159,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Shake-Mushi",
+       "pris": 159,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      },
+      {
+       "namn": "Yakitori",
+       "pris": 149,
+       "fran": false,
+       "besk": "4 st kycklingspett och ris."
+      }
+     ]
+    },
+    {
+     "id": "barnmeny",
+     "rubrik": "Barnmeny",
+     "under": "Mindre portioner",
+     "ratter": [
+      {
+       "namn": "Barn Yakiniku",
+       "pris": 119,
+       "fran": false,
+       "besk": "Tunnskivat nötkött med yakinikusås och ris."
+      },
+      {
+       "namn": "Barn Shake-Mushi",
+       "pris": 119,
+       "fran": false,
+       "besk": "Ångkokt lax med ponzumayo och ris."
+      },
+      {
+       "namn": "Barn Yakitori",
+       "pris": 119,
+       "fran": false,
+       "besk": "2 st kycklingspett och ris."
+      },
+      {
+       "namn": "Barn Sushi 6 Bitar",
+       "pris": 119,
+       "fran": false,
+       "besk": "Valfri nigiri och rullar utan topping."
+      }
+     ]
+    },
+    {
+     "id": "tillbehor",
+     "rubrik": "Tillbehör",
+     "under": "Att ha vid sidan av",
+     "ratter": [
+      {
+       "namn": "Edamame",
+       "pris": 59,
+       "fran": false,
+       "besk": "Sojabönor."
+      },
+      {
+       "namn": "Misoshiru",
+       "pris": 20,
+       "fran": false,
+       "besk": "Misosoppa."
+      },
+      {
+       "namn": "Chuka Ika Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad bläckfisksallad med chili och kikuragesvamp."
+      },
+      {
+       "namn": "Yakitori 2 st",
+       "pris": 59,
+       "fran": false,
+       "besk": "2 st kycklingspett."
+      },
+      {
+       "namn": "Goman Wakame Sallad",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerade havsalger i sesamolja, chili."
+      },
+      {
+       "namn": "Kimchi",
+       "pris": 59,
+       "fran": false,
+       "besk": "Marinerad salladsskål."
+      },
+      {
+       "namn": "Extra Ris",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Extra Sallad",
+       "pris": 39,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "saser",
+     "rubrik": "Såser",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Chilimajonnäs",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ponzu Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Srirachasås",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Japansk Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Tryffel Mayo",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Itamae Soya",
+       "pris": 15,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    },
+    {
+     "id": "dryck",
+     "rubrik": "Dryck",
+     "under": "",
+     "ratter": [
+      {
+       "namn": "Pepsi 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Pepsi Max 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Zingo Apelsin Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7up Free 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "7UP Pink Lemonade Zero 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Original 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Citrus 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Ramlösa Granatäpple 33cl",
+       "pris": 30,
+       "fran": false,
+       "besk": ""
+      },
+      {
+       "namn": "Carlsberg Alkoholfri 33cl",
+       "pris": 37,
+       "fran": false,
+       "besk": ""
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
