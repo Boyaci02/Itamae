@@ -85,6 +85,7 @@ ${exempel}
 ## Sidor
 - [Alla restauranger](${BAS}/restauranger)
 - [Meny](${BAS}/meny)
+- [Sushi bar i Stockholm](${BAS}/sushi-bar)
 - [Vanliga frågor](${BAS}/faq)
 - [Kontakt](${BAS}/kontakt)
 `;

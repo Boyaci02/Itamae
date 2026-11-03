@@ -11,6 +11,7 @@
 import menyData from "./data/meny.json";
 import { locations, hittaPlats, type Plats } from "./data/platser";
 import { newsArticles, publiceradeNyheter } from "./data/nyheter";
+import { SUSHIBAR, SUSHIBAR_FAQ } from "./data/sushibar";
 
 export const BAS = "https://itamae.se";
 const LOGGA = "https://assets.cdn.filesafe.space/1FYpgqYgXr6SzFnCzKew/media/69515d58ee104796b003ea6f.png";
@@ -187,6 +188,16 @@ export function sidData(pathname: string): Sida {
         }), brodsmulor([["Start", "/"], ["Restauranger", "/restauranger"]])),
         status: 200,
       };
+    case "/sushi-bar":
+      return {
+        titel: SUSHIBAR.titel,
+        beskrivning: SUSHIBAR.beskrivning,
+        schema: graf(organisation, ...locations.map(p => {
+          const { hasMenu: _bortaMeny, ...utanMeny } = restaurangSchema(p);
+          return utanMeny;
+        }), faqSchema(SUSHIBAR_FAQ), brodsmulor([["Start", "/"], ["Sushi bar", "/sushi-bar"]])),
+        status: 200,
+      };
     case "/meny":
       return {
         titel: "Itamae meny med priser | Sushi, poké bowls och varma rätter",
@@ -235,13 +246,13 @@ export function sidData(pathname: string): Sida {
 
 /** Alla adresser som förrenderas. 404.html görs separat. */
 export const RUTTER = [
-  "/", "/restauranger", "/meny", ...locations.map(p => `/location/${p.id}`),
+  "/", "/restauranger", "/meny", ...locations.map(p => `/location/${p.id}`), "/sushi-bar",
   "/kontakt", "/faq", "/villkor", "/nyheter", ...publiceradeNyheter.map(n => `/nyheter/${n.slug}`),
 ];
 
 /** Det som ska in i sitemap.xml (nyheterna står utanför tills de är bekräftade). */
 export const SITEMAP = [
-  "/", "/restauranger", "/meny", ...locations.map(p => `/location/${p.id}`), "/kontakt", "/faq", "/villkor",
+  "/", "/restauranger", "/meny", ...locations.map(p => `/location/${p.id}`), "/sushi-bar", "/kontakt", "/faq", "/villkor",
 ];
 
 export { newsArticles };

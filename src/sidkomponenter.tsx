@@ -9,6 +9,7 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, Clock, MapPin, Phone, ShoppingBag } from "lucide-react";
 import { locations, hittaPlats, type Plats } from "./data/platser";
 import menyData from "./data/meny.json";
+import { SUSHIBAR, SUSHIBAR_FAQ, SUSHIBAR_LAGE, SUSHIBAR_STYCKEN } from "./data/sushibar";
 import { menyFor, sidData, BAS } from "./sidor";
 
 /* ---------- Huvudet: titel, beskrivning, canonical och schema vid klick i appen ---------- */
@@ -305,7 +306,7 @@ export const LocationDetail = () => {
             ))}
           </ul>
           <p className="mt-10 text-white/60 text-[14px]">
-            Se också <Link to="/meny" className="text-white underline underline-offset-4">hela menyn</Link> och <Link to="/restauranger" className="text-white underline underline-offset-4">alla restauranger med öppettider</Link>.
+            Se också <Link to="/meny" className="text-white underline underline-offset-4">hela menyn</Link>, <Link to="/restauranger" className="text-white underline underline-offset-4">alla restauranger med öppettider</Link> och <Link to="/sushi-bar" className="text-white underline underline-offset-4">Itamae Sushi Bar i Stockholm</Link>.
           </p>
         </div>
       </section>
@@ -356,7 +357,85 @@ export const RestaurangerPage = () => (
           </li>
         ))}
       </ul>
+      <p className="max-w-6xl mx-auto mt-10 text-itamae-gray text-[15px] leading-relaxed">
+        Letar du efter en sushi bar? Läs mer om <Link to="/sushi-bar" className="text-itamae-red underline underline-offset-4">Itamae Sushi Bar i Stockholm</Link>, vad som finns på menyn och hur du beställer take away.
+      </p>
     </section>
+  </div>
+);
+
+/* ---------- Sushi bar ---------- */
+
+export const SushiBarPage = () => (
+  <div>
+    <section id="hero" className="bg-itamae-green text-white pt-32 md:pt-40 pb-16 md:pb-20 px-6">
+      <div className="max-w-6xl mx-auto itamae-entre">
+        <nav aria-label="Brödsmulor" className="text-[12px] text-white/60 mb-4">
+          <ol className="flex flex-wrap items-center gap-x-2">
+            <li><Link to="/" className="inline-flex items-center min-h-[44px] hover:text-white transition-colors">Start</Link><span aria-hidden="true" className="ml-2">/</span></li>
+            <li aria-current="page" className="text-white/80">Sushi bar</li>
+          </ol>
+        </nav>
+        <Etikett ljus>Itamae Sushi Bar · sedan 2000</Etikett>
+        <h1 className="font-serif italic font-bold leading-[1.02] mt-4 mb-6 md:mb-8 text-balance max-w-[16ch]" style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
+          {SUSHIBAR.h1}
+        </h1>
+        <p className="text-white/75 text-[16px] md:text-[18px] leading-relaxed max-w-[58ch]">{SUSHIBAR.ingress}</p>
+        <div className="mt-8 flex flex-col sm:flex-row gap-3">
+          <a
+            href="#restauranger"
+            className="inline-flex items-center justify-center min-h-[48px] px-7 rounded-full bg-white text-itamae-green text-[14px] font-bold transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Hitta närmaste restaurang
+          </a>
+          <Link
+            to="/meny"
+            className="inline-flex items-center justify-center min-h-[48px] px-7 rounded-full border border-white/40 text-white text-[14px] font-bold transition-colors duration-200 hover:bg-white hover:text-itamae-green"
+          >
+            Se menyn och priserna
+          </Link>
+        </div>
+      </div>
+    </section>
+
+    <section id="om" className="bg-itamae-cream py-14 md:py-28 px-6">
+      <div className="max-w-6xl mx-auto space-y-12 md:space-y-14">
+        {SUSHIBAR_STYCKEN.map(s => (
+          <div key={s.rubrik}>
+            <h2 className="font-serif italic text-itamae-green text-[28px] md:text-[36px] leading-tight mb-4">{s.rubrik}</h2>
+            <div className="space-y-4 text-itamae-charcoal/85 text-[16px] md:text-[17px] leading-[1.7] max-w-[62ch]">
+              {s.text.map((t, i) => <p key={i}>{t}</p>)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="restauranger" className="bg-itamae-green text-white py-14 md:py-28 px-6 scroll-mt-20">
+      <div className="max-w-6xl mx-auto">
+        <Etikett ljus>Fem restauranger</Etikett>
+        <h2 className="font-serif italic text-[32px] md:text-[44px] leading-tight mt-3 mb-10">Hitta din närmaste sushi bar</h2>
+        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {locations.map(l => (
+            <li key={l.id}>
+              <Link to={`/location/${l.id}`} className="group flex h-full flex-col justify-between gap-6 rounded-2xl border border-white/15 p-6 transition-[transform,border-color,background-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/5">
+                <span>
+                  <span className="block font-bold uppercase tracking-wide text-[18px]">{l.fulltNamn}</span>
+                  <span className="block text-white/55 text-[13px] mt-1">{l.address}, {l.zipCode}</span>
+                  <span className="block text-white/75 text-[14px] mt-3 leading-relaxed">{SUSHIBAR_LAGE[l.id]}</span>
+                </span>
+                <span className="inline-flex items-center gap-2 text-[13px] text-white/80">Meny och öppettider <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" /></span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-10 text-white/60 text-[14px]">
+          Se också <Link to="/restauranger" className="text-white underline underline-offset-4">alla restauranger med öppettider</Link> och <Link to="/meny" className="text-white underline underline-offset-4">hela menyn med priser</Link>.
+        </p>
+      </div>
+    </section>
+
+    <Faq rubrik="Vanliga frågor om Itamae Sushi Bar" fragor={SUSHIBAR_FAQ} />
   </div>
 );
 

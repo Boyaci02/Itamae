@@ -21,7 +21,7 @@ import { Routes, Route, Link, useParams, useNavigate, useLocation } from "react-
 import { locations, hittaPlats } from "./data/platser";
 import { publiceradeNyheter } from "./data/nyheter";
 import { FAQ_ALLMAN } from "./sidor";
-import { LocationDetail, RestaurangerPage, MenyPage, NotFound, SidHuvud } from "./sidkomponenter";
+import { LocationDetail, RestaurangerPage, MenyPage, NotFound, SidHuvud, SushiBarPage } from "./sidkomponenter";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -1408,6 +1408,7 @@ export default function App() {
           } />
           <Route path="/restauranger" element={<RestaurangerPage />} />
           <Route path="/meny" element={<MenyPage />} />
+          <Route path="/sushi-bar" element={<SushiBarPage />} />
           <Route path="/location/:id" element={<LocationDetail />} />
           <Route path="/nyheter" element={<NewsArchive />} />
           <Route path="/nyheter/:slug" element={<BlogDetail />} />
