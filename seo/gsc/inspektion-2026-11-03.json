@@ -1,0 +1,106 @@
+{
+ "tid": "2026-11-03T11:59:07",
+ "sitemaps": [
+  {
+   "path": "https://itamae.se/sitemap.xml",
+   "lastSubmitted": "2026-11-03T10:59:07.749Z",
+   "isPending": true,
+   "isSitemapsIndex": false,
+   "type": "sitemap",
+   "lastDownloaded": "2026-10-28T06:49:03.991Z",
+   "warnings": "0",
+   "errors": "0",
+   "contents": [
+    {
+     "type": "web",
+     "submitted": "9",
+     "indexed": "0"
+    }
+   ]
+  }
+ ],
+ "inspektion": {
+  "https://itamae.se/": {
+   "verdict": "PASS",
+   "coverageState": "Angiven och indexerad",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-11-02T05:10:31Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://itamae.se/",
+   "userCanonical": "https://itamae.se/",
+   "referringUrls": [
+    "https://www.itamae.se/hagastaden",
+    "https://www.itamae.se/danderyd",
+    "https://www.itamae.se/nyheter",
+    "https://www.itamae.se/nyheter/var-meny-2026",
+    "https://maindisinisaja.online/all/1483/16.html",
+    "https://wolt.com/sv/swe/stockholm/restaurant/itamae-odenplan",
+    "https://www.pageglimpse.org/itamae.se",
+    "https://wolt.com/en/swe/stockholm/restaurant/itamae-odenplan/items/side-orders-6"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "https://itamae.se/restauranger": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Webbadressen är okänd för Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "https://itamae.se/meny": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Webbadressen är okänd för Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "https://itamae.se/location/kungsholmen": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Upptäckt – inte indexerad för närvarande",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "sitemap": [
+    "https://itamae.se/sitemap.xml"
+   ],
+   "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+  },
+  "https://itamae.se/location/sundbyberg": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Webbadressen är okänd för Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "https://itamae.se/location/hagastaden": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Webbadressen är okänd för Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "https://itamae.se/location/odengatan": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Upptäckt – inte indexerad för närvarande",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "sitemap": [
+    "https://itamae.se/sitemap.xml"
+   ],
+   "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+  },
+  "https://itamae.se/location/danderyd": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Upptäckt – inte indexerad för närvarande",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "sitemap": [
+    "https://itamae.se/sitemap.xml"
+   ],
+   "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+  }
+ }
+}
