@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { Routes, Route, Link, useParams, useNavigate, useLocation } from "react-router-dom";
-import { locations } from "./data/platser";
+import { locations, hittaPlats } from "./data/platser";
 import { publiceradeNyheter } from "./data/nyheter";
 import { FAQ_ALLMAN } from "./sidor";
 import { LocationDetail, RestaurangerPage, MenyPage, NotFound, SidHuvud } from "./sidkomponenter";
@@ -238,6 +238,14 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  // På en restaurangsida leder Beställ direkt till den restaurangens Qopla.
+  const plats = hittaPlats(pathname.match(/^\/location\/([^/]+)/)?.[1]);
+
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileMenuOpen]);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -275,13 +283,9 @@ const Navbar = () => {
             </Link>
             
             <div className="hidden lg:flex items-center gap-8 text-white/80 text-sm font-medium">
-              <motion.button
-                onClick={scrollToLocations}
-                className="hover:text-white transition-colors cursor-pointer"
-                whileHover={{ y: -1 }}
-              >
-                Restauranger
-              </motion.button>
+              <motion.div whileHover={{ y: -1 }}>
+                <Link to="/restauranger" className="hover:text-white transition-colors">Restauranger</Link>
+              </motion.div>
               <motion.div whileHover={{ y: -1 }}>
                 <Link to="/meny" className="hover:text-white transition-colors">Meny</Link>
               </motion.div>
@@ -295,17 +299,30 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            <motion.button 
-              whileHover={{ y: -2 }}
-              whileTap={{ y: 0 }}
-              onClick={scrollToLocations}
-              className="bg-itamae-red text-white px-8 py-2.5 rounded-full text-sm font-bold hover:brightness-110 flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
-            >
-              Beställ
-            </motion.button>
+            {plats ? (
+              <motion.a
+                href={plats.orderUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -2 }}
+                whileTap={{ y: 0 }}
+                className="bg-itamae-red text-white px-8 min-h-[44px] rounded-full text-sm font-bold hover:brightness-110 flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
+              >
+                Beställ
+              </motion.a>
+            ) : (
+              <motion.button 
+                whileHover={{ y: -2 }}
+                whileTap={{ y: 0 }}
+                onClick={scrollToLocations}
+                className="bg-itamae-red text-white px-8 min-h-[44px] rounded-full text-sm font-bold hover:brightness-110 flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
+              >
+                Beställ
+              </motion.button>
+            )}
             
             <button 
-              className="text-white lg:hidden z-50 p-2"
+              className="text-white lg:hidden z-50 p-2.5"
               aria-label={mobileMenuOpen ? "Stäng meny" : "Öppna meny"}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
@@ -326,7 +343,7 @@ const Navbar = () => {
           >
             <div className="flex flex-col gap-10 text-center px-6 w-full max-w-sm">
               {[
-                { label: "Restauranger", onClick: () => { setMobileMenuOpen(false); scrollToLocations(); } },
+                { label: "Restauranger", to: "/restauranger" },
                 { label: "Meny", to: "/meny" },
                 { label: "Kontakt", to: "/kontakt" },
                 { label: "FAQ", to: "/faq" }
@@ -367,7 +384,8 @@ const Navbar = () => {
                   whileTap={{ scale: 0.95 }}
                   onClick={() => {
                     setMobileMenuOpen(false);
-                    scrollToLocations();
+                    if (plats) window.open(plats.orderUrl, "_blank", "noopener");
+                    else scrollToLocations();
                   }}
                   className="bg-itamae-red text-white w-full py-5 rounded-full text-xl font-bold shadow-2xl"
                 >
@@ -1272,7 +1290,7 @@ const Footer = () => {
       delay: 0.08,
       content: (
         <>
-          <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Restauranger</h3>
+          <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Restauranger</p>
           <ul className="space-y-3">
             {locations.map((loc) => (
               <li key={loc.id}>
@@ -1289,7 +1307,7 @@ const Footer = () => {
       delay: 0.16,
       content: (
         <>
-          <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Länkar</h3>
+          <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Länkar</p>
           <ul className="space-y-3">
             <li>
               <Link to="/meny" className="text-white/60 text-[13px] hover:text-white transition-colors">Meny</Link>
@@ -1317,7 +1335,7 @@ const Footer = () => {
       delay: 0.24,
       content: (
         <>
-          <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Kontakt</h3>
+          <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Kontakt</p>
           <ul className="space-y-3">
             <li>
               <a href="mailto:info@itamae.se" className="text-white/60 text-[13px] hover:text-white transition-colors">info@itamae.se</a>
@@ -1331,7 +1349,7 @@ const Footer = () => {
       delay: 0.32,
       content: (
         <>
-          <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Följ oss</h3>
+          <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mb-5">Följ oss</p>
           <div className="flex gap-4">
             <motion.a href="https://www.facebook.com/itamaeOfficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
               <Facebook size={18} className="text-white/40 hover:text-white transition-colors" />

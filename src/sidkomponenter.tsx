@@ -6,7 +6,7 @@
  */
 import { useEffect, type ReactNode } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
-import { ArrowRight, Clock, MapPin, Phone, ShoppingBag } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Clock, MapPin, Phone, ShoppingBag } from "lucide-react";
 import { locations, hittaPlats, type Plats } from "./data/platser";
 import menyData from "./data/meny.json";
 import { menyFor, sidData, BAS } from "./sidor";
@@ -66,7 +66,7 @@ export const rattId = (namn: string) =>
   "ratt-" + namn.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 const Etikett = ({ children, ljus = false }: { children: ReactNode; ljus?: boolean }) => (
-  <span className={`${ljus ? "text-white/55" : "text-itamae-green/55"} text-[11px] font-bold uppercase tracking-[0.3em] block`}>{children}</span>
+  <span className={`${ljus ? "text-white/55" : "text-itamae-green/75"} text-[11px] font-bold uppercase tracking-[0.3em] block`}>{children}</span>
 );
 
 const KnappBestall = ({ url, text = "Beställ take away" }: { url: string; text?: string }) => (
@@ -88,12 +88,12 @@ export const MenyLista = ({ sektioner, rubrikNiva = 3 }: { sektioner: Sektion[];
   const H = rubrikNiva === 2 ? "h2" : "h3";
   return (
     <div>
-      <nav aria-label="Menyns kategorier" className="flex flex-wrap gap-2 mb-10 md:mb-14">
+      <nav aria-label="Menyns kategorier" className="flex flex-nowrap md:flex-wrap gap-2 mb-10 md:mb-14 overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0 [scrollbar-width:none]">
         {sektioner.map(s => (
           <a
             key={s.id}
             href={`#meny-${s.id}`}
-            className="inline-flex items-center min-h-[44px] px-4 rounded-full border border-itamae-green/15 text-itamae-green text-[13px] font-medium transition-colors duration-200 hover:bg-itamae-green hover:text-white"
+            className="inline-flex flex-shrink-0 items-center min-h-[44px] px-4 rounded-full border border-itamae-green/15 text-itamae-green text-[13px] font-medium transition-colors duration-200 hover:bg-itamae-green hover:text-white"
           >
             {s.rubrik}
           </a>
@@ -126,7 +126,7 @@ export const MenyLista = ({ sektioner, rubrikNiva = 3 }: { sektioner: Sektion[];
 };
 
 const Faq = ({ rubrik, fragor }: { rubrik: string; fragor: { q: string; a: string }[] }) => (
-  <section id="faq" className="bg-itamae-cream py-20 md:py-28 px-6">
+  <section id="faq" className="bg-itamae-cream py-14 md:py-28 px-6">
     <div className="max-w-3xl mx-auto">
       <Etikett>Frågor och svar</Etikett>
       <h2 className="font-serif italic text-itamae-green text-[32px] md:text-[44px] leading-tight mt-3 mb-8 md:mb-10">{rubrik}</h2>
@@ -176,14 +176,14 @@ export const LocationDetail = () => {
       <section id="hero" className="bg-itamae-green text-white pt-28 md:pt-36 pb-16 md:pb-24 px-6">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-center">
           <div className="itamae-entre">
-            <nav aria-label="Brödsmulor" className="text-[12px] text-white/50 mb-8">
-              <ol className="flex flex-wrap gap-2">
-                <li><Link to="/" className="hover:text-white transition-colors">Start</Link><span aria-hidden="true" className="ml-2">/</span></li>
-                <li><Link to="/restauranger" className="hover:text-white transition-colors">Restauranger</Link><span aria-hidden="true" className="ml-2">/</span></li>
+            <nav aria-label="Brödsmulor" className="text-[12px] text-white/60 mb-4">
+              <ol className="flex flex-wrap items-center gap-x-2">
+                <li><Link to="/" className="inline-flex items-center min-h-[44px] hover:text-white transition-colors">Start</Link><span aria-hidden="true" className="ml-2">/</span></li>
+                <li><Link to="/restauranger" className="inline-flex items-center min-h-[44px] hover:text-white transition-colors">Restauranger</Link><span aria-hidden="true" className="ml-2">/</span></li>
                 <li aria-current="page" className="text-white/80">{p.name}</li>
               </ol>
             </nav>
-            <Etikett ljus>{p.etikett}</Etikett>
+            <Etikett ljus>{p.etikett.split(" · ")[0]}<span className="hidden sm:inline"> · </span><span className="block sm:inline mt-1 sm:mt-0">{p.etikett.split(" · ")[1]}</span></Etikett>
             <h1 className="font-serif italic font-bold leading-[1.02] mt-4 mb-6 md:mb-8 text-balance" style={{ fontSize: "clamp(40px, 6.4vw, 84px)" }}>
               {p.h1}
             </h1>
@@ -191,7 +191,7 @@ export const LocationDetail = () => {
             <ul className="mt-8 space-y-3 text-[15px]">
               <li className="flex items-start gap-3"><MapPin size={18} className="mt-0.5 text-white/50 flex-shrink-0" aria-hidden="true" /><span>{p.address}, {p.zipCode}</span></li>
               <li className="flex items-start gap-3"><Clock size={18} className="mt-0.5 text-white/50 flex-shrink-0" aria-hidden="true" /><Tider p={p} ljus /></li>
-              <li className="flex items-start gap-3"><Phone size={18} className="mt-0.5 text-white/50 flex-shrink-0" aria-hidden="true" /><a href={`tel:${p.phone.replace(/[\s-]/g, "")}`} className="underline-offset-4 hover:underline">{p.phone}</a></li>
+              <li className="flex items-start gap-3"><Phone size={18} className="mt-0.5 text-white/50 flex-shrink-0" aria-hidden="true" /><a href={`tel:${p.phone.replace(/[\s-]/g, "")}`} className="inline-flex items-center min-h-[44px] -my-3 underline-offset-4 hover:underline">{p.phone}</a></li>
             </ul>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <KnappBestall url={p.orderUrl} />
@@ -210,7 +210,7 @@ export const LocationDetail = () => {
       </section>
 
       {/* Om restaurangen + fakta */}
-      <section id="om" className="bg-itamae-cream py-20 md:py-28 px-6">
+      <section id="om" className="bg-itamae-cream py-14 md:py-28 px-6">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[1fr_340px] gap-12 lg:gap-20">
           <div className="space-y-12 md:space-y-14">
             {p.stycken.map(s => (
@@ -241,37 +241,44 @@ export const LocationDetail = () => {
 
           <aside className="lg:sticky lg:top-28 self-start rounded-2xl bg-white border border-itamae-green/10 p-7 md:p-8 space-y-7">
             <div>
-              <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-itamae-green/55 mb-3">Öppettider</h2>
+              <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-itamae-green/75 mb-3">Öppettider</h2>
               <Tider p={p} />
             </div>
             <div>
-              <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-itamae-green/55 mb-3">Adress</h2>
+              <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-itamae-green/75 mb-3">Adress</h2>
               <address className="not-italic text-itamae-charcoal leading-relaxed">{p.fulltNamn}<br />{p.address}<br />{p.zipCode}</address>
               <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Itamae ${p.address} ${p.ort}`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-2 min-h-[44px] text-itamae-red font-semibold text-[14px] hover:underline underline-offset-4">Vägbeskrivning <ArrowRight size={14} aria-hidden="true" /></a>
             </div>
             <div>
-              <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-itamae-green/55 mb-3">Telefon</h2>
-              <a href={`tel:${p.phone.replace(/[\s-]/g, "")}`} className="text-itamae-charcoal text-[18px] tabular-nums hover:text-itamae-red transition-colors">{p.phone}</a>
+              <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-itamae-green/75 mb-3">Telefon</h2>
+              <a href={`tel:${p.phone.replace(/[\s-]/g, "")}`} className="inline-flex items-center min-h-[44px] text-itamae-charcoal text-[18px] tabular-nums hover:text-itamae-red transition-colors">{p.phone}</a>
             </div>
             <KnappBestall url={p.orderUrl} />
           </aside>
         </div>
 
         <div className="max-w-6xl mx-auto mt-16 md:mt-20 rounded-2xl overflow-hidden border border-itamae-green/10 [&_iframe]:block [&_iframe]:h-[320px] md:[&_iframe]:h-[420px]">
-          <div dangerouslySetInnerHTML={{ __html: p.mapIframe.replace('title="Karta"', `title="Karta till ${p.fulltNamn}"`) }} />
+          <iframe
+            src={`https://maps.google.com/maps?q=${encodeURIComponent(`Itamae, ${p.address.replace(/E-66F$/, "")}, ${p.zipCode}`)}&hl=sv&z=16&output=embed`}
+            title={`Karta till ${p.fulltNamn}, ${p.address}`}
+            width="100%"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            style={{ border: 0 }}
+          />
         </div>
       </section>
 
       {/* Meny */}
-      <section id="meny" className="bg-white py-20 md:py-28 px-6 scroll-mt-20">
+      <section id="meny" className="bg-white py-14 md:py-28 px-6 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-12">
+          <div className="mb-10 md:mb-12">
             <div>
               <Etikett>Meny med priser</Etikett>
               <h2 className="font-serif italic text-itamae-green text-[34px] md:text-[48px] leading-tight mt-3">Menyn på {p.fulltNamn}</h2>
               <p className="text-itamae-gray text-[14px] mt-3 max-w-[60ch]">Priserna kommer från vår beställning på Qopla och uppdaterades {menyData.hamtad.split("-").reverse().join("/").replace(/^0/, "")}. Vid beställning gäller priset i kassan.</p>
             </div>
-            <KnappBestall url={p.orderUrl} text="Beställ från menyn" />
+            <div className="mt-5"><KnappBestall url={p.orderUrl} text="Beställ från menyn" /></div>
           </div>
           <MenyLista sektioner={meny} />
         </div>
@@ -280,7 +287,7 @@ export const LocationDetail = () => {
       <Faq rubrik={`Vanliga frågor om ${p.fulltNamn}`} fragor={p.faq} />
 
       {/* Andra restauranger */}
-      <section id="kontakt" className="bg-itamae-green text-white py-20 md:py-28 px-6">
+      <section id="kontakt" className="bg-itamae-green text-white pt-14 md:pt-28 pb-6 md:pb-10 px-6">
         <div className="max-w-6xl mx-auto">
           <Etikett ljus>Fler Itamae</Etikett>
           <h2 className="font-serif italic text-[32px] md:text-[44px] leading-tight mt-3 mb-10">Våra andra restauranger</h2>
@@ -336,8 +343,8 @@ export const RestaurangerPage = () => (
                 <p className="text-itamae-gray text-[15px] mt-2 leading-relaxed">{p.ingress}</p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[14px]">
-                <div><span className="block text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/55 mb-1">Adress</span>{p.address}<br />{p.zipCode}</div>
-                <div><span className="block text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/55 mb-1">Öppet</span><Tider p={p} /></div>
+                <div><span className="block text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/75 mb-1">Adress</span>{p.address}<br />{p.zipCode}</div>
+                <div><span className="block text-[11px] font-bold uppercase tracking-[0.25em] text-itamae-green/75 mb-1">Öppet</span><Tider p={p} /></div>
               </div>
               <div className="mt-auto flex flex-col sm:flex-row gap-3">
                 <Link to={`/location/${p.id}`} className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 rounded-full border border-itamae-green/25 text-itamae-green text-[14px] font-bold transition-colors duration-200 hover:bg-itamae-green hover:text-white">
@@ -381,7 +388,7 @@ export const MenyPage = () => {
               {locations.map(p => (
                 <li key={p.id}>
                   <a href={p.orderUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 min-h-[44px] px-5 rounded-full border border-white/30 text-[14px] font-semibold transition-colors duration-200 hover:bg-white hover:text-itamae-green">
-                    {p.name}
+                    {p.name} <ArrowUpRight size={14} aria-hidden="true" />
                   </a>
                 </li>
               ))}
