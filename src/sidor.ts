@@ -110,6 +110,11 @@ export function restaurangSchema(p: Plats) {
   };
 }
 
+function restaurangUtanMeny(p: Plats) {
+  const { hasMenu: _bortaMeny, ...utanMeny } = restaurangSchema(p);
+  return utanMeny;
+}
+
 const brodsmulor = (led: [string, string][]) => ({
   "@type": "BreadcrumbList",
   itemListElement: led.map(([namn, vag], i) => ({ "@type": "ListItem", position: i + 1, name: namn, item: BAS + vag })),
@@ -141,7 +146,7 @@ const HEM: Sida = {
     {
       "@type": "ItemList",
       name: "Itamaes restauranger",
-      itemListElement: locations.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `${BAS}/location/${p.id}`, name: p.fulltNamn })),
+      itemListElement: locations.map((p, i) => ({ "@type": "ListItem", position: i + 1, item: restaurangUtanMeny(p) })),
     },
   ),
   status: 200,
@@ -181,10 +186,7 @@ export function sidData(pathname: string): Sida {
       return {
         titel: "Våra sushirestauranger i Stockholm | Itamae Sushi",
         beskrivning: "Fem Itamae i Stockholm: Fleminggatan på Kungsholmen, Odengatan vid Odenplan, Hagastaden, Sundbyberg och Mörby centrum i Danderyd. Adresser, öppettider och menyer.",
-        schema: graf(organisation, ...locations.map(p => {
-          const { hasMenu: _bortaMeny, ...utanMeny } = restaurangSchema(p);
-          return utanMeny;
-        }), brodsmulor([["Start", "/"], ["Restauranger", "/restauranger"]])),
+        schema: graf(organisation, ...locations.map(restaurangUtanMeny), brodsmulor([["Start", "/"], ["Restauranger", "/restauranger"]])),
         status: 200,
       };
     case "/meny":
