@@ -75,15 +75,15 @@ const allaPlatser: Plats[] = [
     mapIframe: KARTA("https://www.google.com/maps/embed?pb=!3m2!1sen!2ses!4v1772748550829!5m2!1sen!2ses!6m8!1m7!1sV1pAMf7nhbQiMKkkCxsVoA!2m2!1d59.33299706809522!2d18.04512301671291!3f315.73257326866565!4f0.4191554857457902!5f0.7820865974627469"),
     omraden: ["Kungsholmen", "Rådhuset", "Fridhemsplan", "Kungsbron", "Stockholm"],
     seo: {
-      titel: "Sushi på Kungsholmen | Itamae, Fleminggatan 16",
-      beskrivning: "Sushi, poké bowls och sashimi på Fleminggatan 16, nära Rådhuset och Fridhemsplan. Öppet 11–21 alla dagar. Se menyn med priser och beställ take away.",
+      titel: "Sushi och japansk restaurang på Kungsholmen | Itamae, Fleminggatan 16",
+      beskrivning: "Japansk restaurang på Fleminggatan 16, nära Rådhuset och Fridhemsplan. Sushi, sashimi och poké bowls, öppet 11–21 alla dagar. Se menyn med priser och beställ take away.",
     },
-    h1: "Sushi på Kungsholmen",
+    h1: "Japansk restaurang och sushi på Kungsholmen",
     etikett: "Itamae Kungsholmen · Fleminggatan 16",
     ingress: "Vår restaurang på Fleminggatan ligger på östra Kungsholmen, några minuter från T-bana Rådhuset. Köket öppnar klockan elva varje dag.",
     stycken: [
       {
-        rubrik: "Om restaurangen på Fleminggatan",
+        rubrik: "Japansk mat på Fleminggatan",
         text: [
           "Itamae har gjort sushi i Stockholm sedan 2000, och Fleminggatan är en av våra fem restauranger. Restaurangen ligger nära kontoren runt Rådhuset och Kungsbron och bostadskvarteren bort mot Fridhemsplan, så det är lika lätt att komma hit på lunchen som att hämta middag på väg hem.",
           "Menyn är densamma som på våra andra ställen i innerstan. Blandad sushi finns i tre storlekar, från Nami med åtta bitar till Toku-Joo med fjorton. Du kan också välja nigiri med bara lax, räka, tonfisk eller avokado, sashimi, chirashi och ett dussin rullar. Poké bowls görs med lax, tonfisk, kyckling, nötkött, tofu eller avokado. Vill du ha något varmt finns yakiniku, yakitori och shake-mushi, ångkokt lax med ponzumayo, alla med ris.",
@@ -96,8 +96,9 @@ const allaPlatser: Plats[] = [
         ],
       },
       {
-        rubrik: "Lunch, take away och leverans",
+        rubrik: "Poké bowl och take away på Kungsholmen",
         text: [
+          "Poké bowls har vi i sju varianter: rå eller ångkokt lax, tonfisk, teriyakikyckling, nötkött, tofu och avokado. Alla görs med ris, blandade grönsaker och chilimajonnäs. Vill du ta med maten till jobbet eller hem, beställ den som take away på Qopla.",
           "Eftersom vi öppnar klockan elva funkar det bra att komma hit på lunchen. En Nami kostar 129 kr och en poké bowl från 159 kr. Har du bråttom kan du beställa i förväg på Qopla och hämta när maten är klar. Vill du äta hemma kör Foodora, Wolt och Uber Eats ut från Fleminggatan.",
         ],
       },
@@ -138,15 +139,15 @@ const allaPlatser: Plats[] = [
     mapIframe: KARTA("https://www.google.com/maps/embed?pb=!3m2!1sen!2ses!4v1772748413372!5m2!1sen!2ses!6m8!1m7!1sJquFglDsorZyMqVrdUDX5A!2m2!1d59.34320043629675!2d18.05224510701819!3f333.0793921462883!4f-5.581497786661785!5f2.755265777737071"),
     omraden: ["Odenplan", "Vasastan", "Odengatan", "Rådmansgatan", "Stockholm"],
     seo: {
-      titel: "Sushi vid Odenplan | Itamae, Odengatan 62",
-      beskrivning: "Sushi och poké bowls på Odengatan 62 i Vasastan, ett par minuter från Odenplan. Öppet 11–21 alla dagar. Se hela menyn med priser och beställ take away.",
+      titel: "Sushi och japansk restaurang vid Odenplan | Itamae, Odengatan 62",
+      beskrivning: "Japansk restaurang på Odengatan 62 i Vasastan, ett par minuter från Odenplan. Sushi och poké bowls, öppet 11–21 alla dagar. Se hela menyn med priser och beställ take away.",
     },
-    h1: "Sushi vid Odenplan",
+    h1: "Japansk restaurang och sushi vid Odenplan",
     etikett: "Itamae Odenplan · Odengatan 62",
     ingress: "Itamae på Odengatan 62 ligger i Vasastan, ett par hundra meter öster om Odenplan. Här har vi också vårt kontor.",
     stycken: [
       {
-        rubrik: "Om restaurangen på Odengatan",
+        rubrik: "Japansk mat på Odengatan",
         text: [
           "Odengatan är en av de mest trafikerade gatorna i Vasastan, med tunnelbana och pendeltåg vid Odenplan. Det är nära att svänga förbi på väg hem och hämta en låda sushi, eller att beställa i förväg och ta med maten till Observatorielunden, som ligger runt hörnet.",
           "Vet du inte vad du vill ha är Joo ett bra ställe att börja: elva bitar blandad nigiri och norimaki för 159 kr. Gillar du rullar har vi Rainbow Roll med lax, tonfisk och räkor ovanpå, Spicy Tuna Roll med koriander och vår egen Itamae Special Roll med tempurafriterad räka och halstrad laxöring. Poké bowls finns med rå eller ångkokt lax, tonfisk, kyckling, nötkött, tofu och avokado.",
@@ -159,7 +160,7 @@ const allaPlatser: Plats[] = [
         ],
       },
       {
-        rubrik: "Lunch, take away och leverans",
+        rubrik: "Take away vid Odenplan",
         text: [
           "Köket är igång från klockan elva och stänger 21, alla dagar. Beställer du på Qopla innan du går från jobbet står lunchen klar i disken. Hemleverans går via Foodora, Wolt och Uber Eats.",
         ],
@@ -173,6 +174,7 @@ const allaPlatser: Plats[] = [
     ],
     faq: [
       { q: "Vilka öppettider har Itamae vid Odenplan?", a: "Vi har öppet 11.00–21.00 alla dagar i veckan." },
+      { q: "Kan jag hämta take away vid Odenplan?", a: "Ja. Beställ på Qopla och hämta maten på Odengatan 62, knappt 250 meter från tunnelbanan vid Odenplan." },
       { q: "Hur nära Odenplan ligger restaurangen?", a: "Knappt 250 meter från tunnelbanan vid Odenplan, på Odengatan 62. Rådmansgatan ligger cirka 500 meter bort." },
       { q: "Kan jag beställa take away eller hemleverans?", a: "Ja. Beställ på Qopla och hämta i restaurangen, eller få maten levererad via Foodora, Wolt eller Uber Eats." },
       { q: "Vad betyder Itamae?", a: "Itamae är japanska och betyder köksmästare, det högsta en sushikock kan nå." },
@@ -272,15 +274,15 @@ const allaPlatser: Plats[] = [
     mapIframe: KARTA("https://www.google.com/maps/embed?pb=!3m2!1sen!2ses!4v1772748163634!5m2!1sen!2ses!6m8!1m7!1sy9eZvuDyk5x5BMHALuCzMw!2m2!1d59.35990314274139!2d17.97223218007605!3f250.7489!4f0!5f0.7820865974627469"),
     omraden: ["Sundbyberg", "Sundbybergs centrum", "Landsvägen", "Solna strand", "Duvbo"],
     seo: {
-      titel: "Sushi i Sundbyberg | Itamae Sushi & Grill, Landsvägen 33",
-      beskrivning: "Sushi, poké bowls och hamburgare på Landsvägen 33 i Sundbybergs centrum. Öppet 11–21, fredag och lördag till 22. Se menyn med priser och beställ take away.",
+      titel: "Sushi och take away i Sundbyberg | Itamae Sushi & Grill, Landsvägen 33",
+      beskrivning: "Japansk restaurang med sushi, poké bowls och hamburgare på Landsvägen 33 i Sundbybergs centrum. Öppet 11–21, fredag och lördag till 22. Se menyn med priser och beställ take away.",
     },
-    h1: "Sushi och grill i Sundbyberg",
+    h1: "Sushi, grill och take away i Sundbyberg",
     etikett: "Itamae Sushi & Grill · Landsvägen 33",
     ingress: "I Sundbyberg heter vi Itamae Sushi & Grill. Restaurangen ligger på Landsvägen 33, mitt i centrum och ett par minuter från stationen.",
     stycken: [
       {
-        rubrik: "Om restaurangen i Sundbyberg",
+        rubrik: "Japansk restaurang med grill i Sundbyberg",
         text: [
           "Sundbyberg är den enda av våra restauranger där det finns hamburgare på menyn. Burgarna görs på högrev och bringa och serveras med pommes, och alla går att få med Beyond Meat eller pankofriterad kyckling i stället. Så när halva sällskapet vill ha sushi och resten inte, behöver ni inte bråka om var ni ska äta.",
           "Sushin är densamma som på våra andra ställen, men menyn är större här. Utöver den vanliga sushin och rullarna finns Crispy Tuna Roll, Tonkatsu Roll, två sushiburritos, sallader med äggnudlar och en Panko Chicken Bowl med pankofriterat kycklingbröst och sweet mayo.",
@@ -293,8 +295,9 @@ const allaPlatser: Plats[] = [
         ],
       },
       {
-        rubrik: "Lunch, take away och leverans",
+        rubrik: "Take away i Sundbyberg",
         text: [
+          "Allt på menyn går att beställa som take away, både sushin och burgarna från grillen. Beställ på Qopla innan du går hemifrån och hämta på Landsvägen 33, runt 100 meter från tunnelbanan.",
           "Vi öppnar klockan elva varje dag. Fredag och lördag har vi öppet till 22, övriga dagar till 21. Beställ på Qopla och hämta, eller få maten levererad med Foodora, Wolt eller Uber Eats. Familjesushi från 399 kr räcker till flera, och barnmenyn kostar 119 kr.",
         ],
       },
@@ -335,15 +338,15 @@ const allaPlatser: Plats[] = [
     mapIframe: KARTA("https://www.google.com/maps/embed?pb=!3m2!1sen!2ses!4v1772748474107!5m2!1sen!2ses!6m8!1m7!1sBj9pkpyWlavRp11sY6ZxyA!2m2!1d59.39671684193847!2d18.03666504119831!3f65.52715188774451!4f-1.2362561577949123!5f1.8051929351732046"),
     omraden: ["Danderyd", "Mörby centrum", "Danderyds centrum", "Mörby", "Djursholm"],
     seo: {
-      titel: "Sushi i Mörby centrum, Danderyd | Itamae, Golfvägen 2",
-      beskrivning: "Itamae på Golfvägen 2 vid Mörby centrum, i dag Danderyds centrum. Sushi, poké bowls och varma rätter, öppet 11–21 alla dagar. Se menyn med priser och beställ.",
+      titel: "Sushi och lunch i Mörby centrum, Danderyd | Itamae, Golfvägen 2",
+      beskrivning: "Sushirestaurang på Golfvägen 2 vid Mörby centrum, i dag Danderyds centrum. Lunch, take away och middag att ta hem, öppet 11–21 alla dagar. Se menyn med priser och beställ.",
     },
-    h1: "Sushi i Mörby centrum, Danderyd",
+    h1: "Sushi och lunch i Mörby centrum, Danderyd",
     etikett: "Itamae Danderyd · Golfvägen 2",
     ingress: "Vår restaurang i Danderyd ligger på Golfvägen 2 vid Mörby centrum, som i dag heter Danderyds centrum. Tunnelbanan har ändstation ett par hundra meter bort.",
     stycken: [
       {
-        rubrik: "Om restaurangen i Danderyd",
+        rubrik: "Om restaurangen i Mörby centrum",
         text: [
           "Det här är vår nordligaste restaurang och den som ligger närmast för dig som bor i Danderyd, Mörby eller Djursholm. Det är lätt att ta med middag hem efter att ha handlat i centrumet, och röda linjen in mot stan börjar ett par hundra meter bort.",
           "Menyn är samma som i innerstan. Är ni flera som vill dela är Toku-Joo med fjorton bitar eller Familjesushi ett bra val. För den som vill ha fisk utan ris finns Sashimi Shake och Sashimi Moriawase. Chirashi är fiskfiléer och skaldjur på en bädd av sushiris, toppad med rom och salladslök.",
@@ -353,6 +356,13 @@ const allaPlatser: Plats[] = [
         rubrik: "Hitta hit",
         text: [
           "Tunnelbanans röda linje har sin ändstation i Mörby centrum, drygt 200 meter från restaurangen. Danderyds sjukhus ligger en station söderut, omkring 700 meter bort. Mörby park ligger precis bakom.",
+        ],
+      },
+      {
+        rubrik: "Lunch och mat i Mörby centrum",
+        text: [
+          "Köket öppnar klockan elva, så lunchen går att hämta tidigt. Den som vill ha något snabbt tar en Nami, åtta bitar blandad nigiri och norimaki. Hungrigare? Ta Joo med elva bitar.",
+          "Alla vill inte ha sushi. Poké bowls görs med rå eller ångkokt lax, tonfisk, teriyakikyckling, nötkött, tofu eller avokado, alla med ris, grönsaker och chilimajonnäs. Bland de varma rätterna finns yakiniku med tunnskivat nötkött, yakitori med fyra kycklingspett och shake-mushi, ångkokt lax med ponzumayo. Allt serveras med ris.",
         ],
       },
       {
@@ -372,6 +382,8 @@ const allaPlatser: Plats[] = [
       { q: "Vilka öppettider har Itamae i Danderyd?", a: "Vi har öppet 11.00–21.00 alla dagar i veckan." },
       { q: "Är Mörby centrum och Danderyds centrum samma sak?", a: "Ja, det är samma centrum vid tunnelbanans ändstation. Vi ligger på Golfvägen 2." },
       { q: "Hur tar jag mig till Itamae i Danderyd?", a: "Åk röda linjen till Mörby centrum. Restaurangen ligger drygt 200 meter från stationen." },
+      { q: "Kan jag hämta lunch i Mörby centrum?", a: "Ja. Köket öppnar klockan elva varje dag. Beställ på Qopla i förväg, så står maten klar när du kommer till Golfvägen 2." },
+      { q: "Finns det annan mat än sushi?", a: "Ja. Poké bowls och varma rätter som yakiniku, yakitori och shake-mushi, alla med ris." },
       { q: "Kan jag beställa take away eller hemleverans?", a: "Ja. Beställ på Qopla och hämta i restaurangen, eller välj leverans via Foodora, Wolt eller Uber Eats." },
       { q: "Finns det vegetarisk sushi?", a: "Ja, vegetarisk sushi, Avocado Roll, Tofurulle och poké bowl med tofu eller avokado." },
       { q: "Vad kostar sushin?", a: "Blandad sushi kostar 129 kr för åtta bitar, 159 kr för elva och 189 kr för fjorton. Poké bowls kostar 159–175 kr och rullarna 159–185 kr." },
