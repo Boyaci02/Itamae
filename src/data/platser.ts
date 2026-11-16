@@ -204,7 +204,7 @@ const allaPlatser: Plats[] = [
     omraden: ["Hagastaden", "Norra Stationsgatan", "Karolinska", "Norrtull", "S:t Eriksplan", "Stockholm"],
     seo: {
       titel: "Sushi i Hagastaden | Itamae, Norra Stationsgatan 66",
-      beskrivning: "Sushi och poké bowls på Norra Stationsgatan 66 i Hagastaden, nära Karolinska, Norrtull och S:t Eriksplan. Öppet 11–21 alla dagar. Se menyn med priser och beställ.",
+      beskrivning: "Sushi och poké bowls på Norra Stationsgatan 66 i Hagastaden, nära Karolinska och Torsplan. Öppet 11–21 alla dagar. Se menyn med priser och beställ.",
     },
     h1: "Sushi i Hagastaden",
     etikett: "Itamae Hagastaden · Norra Stationsgatan 66",
